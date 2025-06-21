@@ -1,0 +1,101 @@
+ID,Name,Type1,Type2,HP,Attack,SpAttack,Defense,SpDefense,Speed,ContestBeauty,ContestCool,ContestCute,ContestSmart,ContestTough,Resistances,Weaknesses,Abilities,Category,Evolutions
+001,Bulbasaur,Grass,Poison,45,49,65,49,65,45,60,50,70,65,50,Grass/Poison/Water/Electric/Fighting/Fairy,Fire/Ice/Flying/Psychic,Overgrow/Chlorophyll,Seed Pokémon,002/Ivysaur/16
+002,Ivysaur,Grass,Poison,60,62,80,63,80,60,80,60,80,70,60,Grass/Poison/Water/Electric/Fighting/Fairy,Fire/Ice/Flying/Psychic,Overgrow/Chlorophyll,Seed Pokémon,003/Venusaur/32
+003,Venusaur,Grass,Poison,80,82,100,83,100,80,100,80,90,80,70,Grass/Poison/Water/Electric/Fighting/Fairy,Fire/Ice/Flying/Psychic,Overgrow/Chlorophyll,Seed Pokémon,
+004,Charmander,Fire,,39,52,60,43,50,65,50,70,40,60,50,Fire/Grass/Ice/Bug/Steel/Fairy,Water/Ground/Rock,Blaze/Solar Power,Lizard Pokémon,005/Charmeleon/16
+005,Charmeleon,Fire,,58,64,80,58,65,80,70,80,50,70,60,Fire/Grass/Ice/Bug/Steel/Fairy,Water/Ground/Rock,Blaze/Solar Power,Flame Pokémon,006/Charizard/36
+006,Charizard,Fire,Flying,78,84,109,78,85,100,90,100,60,80,70,Fire/Grass/Fighting/Bug/Steel/Fairy,Water/Electric/Rock,Blaze/Solar Power,Flame Pokémon,
+007,Squirtle,Water,,44,48,50,65,64,43,40,50,80,50,60,Water/Steel/Fire/Ice,Electric/Grass,Torrent/Rain Dish,Tiny Turtle Pokémon,008/Wartortle/16
+008,Wartortle,Water,,59,63,65,80,80,58,60,60,90,60,70,Water/Steel/Fire/Ice,Electric/Grass,Torrent/Rain Dish,Turtle Pokémon,009/Blastoise/36
+009,Blastoise,Water,,79,83,85,100,105,78,80,80,100,80,80,Water/Steel/Fire/Ice,Electric/Grass,Torrent/Rain Dish,Shellfish Pokémon,
+010,Caterpie,Bug,,45,30,20,35,20,45,30,20,50,20,30,Bug/Grass/Fighting/Ground,Fire/Flying/Rock,Shield Dust,Worm Pokémon,011/Metapod/7
+011,Metapod,Bug,,50,20,25,55,25,30,20,10,40,20,20,Bug/Grass/Fighting/Ground,Fire/Flying/Rock,Shed Skin,Cocoon Pokémon,012/Butterfree/10
+012,Butterfree,Bug,Flying,60,45,90,50,80,70,70,60,60,90,50,Bug/Grass/Fighting/Ground,Fire/Flying/Rock/Electric/Ice,Compound Eyes/Tinted Lens,Butterfly Pokémon,
+013,Weedle,Bug,Poison,40,35,20,30,20,50,30,20,40,30,40,Bug/Grass/Fighting/Fairy,Fire/Flying/Psychic/Rock,Shield Dust/Run Away,Hairy Bug Pokémon,014/Kakuna/7
+014,Kakuna,Bug,Poison,45,25,25,50,25,35,20,10,40,20,20,Bug/Grass/Fighting/Fairy,Fire/Flying/Psychic/Rock,Shed Skin,Cocoon Pokémon,015/Beedrill/10
+015,Beedrill,Bug,Poison,65,90,45,40,80,75,70,80,30,60,50,Bug/Grass/Fighting/Fairy,Fire/Flying/Psychic/Rock,Swarm/Sniper/Adaptability,Poison Bee Pokémon,
+016,Pidgey,Normal,Flying,40,45,35,40,35,56,50,50,60,40,50,Normal/Grass/Bug/Ghost,Electric/Ice/Rock,Keen Eye/Tangled Feet/Big Pecks,Tiny Bird Pokémon,017/Pidgeotto/18
+017,Pidgeotto,Normal,Flying,63,60,50,55,50,71,60,60,70,50,60,Normal/Grass/Bug/Ghost,Electric/Ice/Rock,Keen Eye/Tangled Feet/Big Pecks,Bird Pokémon,018/Pidgeot/36
+018,Pidgeot,Normal,Flying,83,80,70,75,70,101,80,80,80,60,70,Normal/Grass/Bug/Ghost,Electric/Ice/Rock,Keen Eye/Tangled Feet/Big Pecks,Bird Pokémon,
+019,Rattata,Normal,,30,56,25,35,35,72,40,60,50,50,40,Normal,Fighting,Guts/Run Away/Hustle,Mouse Pokémon,020/Raticate/20
+020,Raticate,Normal,,55,81,50,60,70,97,60,70,60,60,50,Normal,Fighting,Guts/Hustle/Thick Fat,Mouse Pokémon,
+021,Spearow,Normal,Flying,40,60,31,30,31,70,40,60,50,50,40,Normal/Grass/Bug/Ghost,Electric/Ice/Rock,Keen Eye/Sniper,Tiny Bird Pokémon,022/Fearow/20
+022,Fearow,Normal,Flying,65,90,61,65,61,100,60,80,60,60,50,Normal/Grass/Bug/Ghost,Electric/Ice/Rock,Keen Eye/Sniper,Beak Pokémon,
+023,Ekans,Poison,,35,60,40,44,54,55,50,40,60,50,40,Poison/Grass/Bug/Fairy,Psychic/Ground,Intimidate/Shed Skin/Unnerve,Snake Pokémon,024/Arbok/22
+024,Arbok,Poison,,60,95,65,69,79,80,60,60,70,60,50,Poison/Grass/Bug/Fairy,Psychic/Ground,Intimidate/Shed Skin/Unnerve,Cobra Pokémon,
+025,Pikachu,Electric,,35,55,50,40,50,90,70,80,80,70,60,Electric/Flying/Steel,Ground,Static/Lightning Rod,Mouse Pokémon,026/Raichu/Thunder Stone
+026,Raichu,Electric,,60,90,90,55,80,110,80,90,80,80,70,Electric/Flying/Steel,Ground,Static/Lightning Rod,Mouse Pokémon,
+027,Sandshrew,Ground,,50,75,20,85,30,40,40,40,60,50,40,Ground/Poison/Rock,Water/Grass/Ice,Sand Veil/Sand Rush,Mouse Pokémon,028/Sandslash/22
+028,Sandslash,Ground,,75,100,45,110,55,65,50,60,70,60,50,Ground/Poison/Rock,Water/Grass/Ice,Sand Veil/Sand Rush,Mouse Pokémon,
+029,Nidoran♀,Poison,,55,47,40,52,40,41,40,40,60,50,40,Poison/Grass/Bug/Fairy,Psychic/Ground,Poison Point/Rivalry/Hustle,Poison Pin Pokémon,030/Nidorina/16
+030,Nidorina,Poison,,70,62,55,67,55,56,50,50,70,60,50,Poison/Grass/Bug/Fairy,Psychic/Ground,Poison Point/Rivalry/Hustle,Poison Pin Pokémon,031/Nidoqueen/Moon Stone
+031,Nidoqueen,Poison,Ground,90,92,75,87,85,76,70,70,80,70,60,Poison/Rock/Bug/Fairy,Water/Ice/Psychic/Ground,Poison Point/Rivalry/Sheer Force,Drill Pokémon,
+032,Nidoran♂,Poison,,46,57,40,40,40,50,40,50,50,50,40,Poison/Grass/Bug/Fairy,Psychic/Ground,Poison Point/Rivalry/Hustle,Poison Pin Pokémon,033/Nidorino/16
+033,Nidorino,Poison,,61,72,55,57,55,65,50,60,60,60,50,Poison/Grass/Bug/Fairy,Psychic/Ground,Poison Point/Rivalry/Hustle,Poison Pin Pokémon,034/Nidoking/Moon Stone
+034,Nidoking,Poison,Ground,81,102,85,77,75,85,80,80,70,70,60,Poison/Rock/Bug/Fairy,Water/Ice/Psychic/Ground,Poison Point/Rivalry/Sheer Force,Drill Pokémon,
+035,Clefairy,Fairy,,70,45,60,48,65,35,80,50,90,70,60,Fairy/Fighting/Bug/Dark,Steel/Poison,Cute Charm/Magic Guard/Friend Guard,Fairy Pokémon,036/Clefable/Moon Stone
+036,Clefable,Fairy,,95,70,95,73,90,60,90,60,100,80,70,Fairy/Fighting/Bug/Dark,Steel/Poison,Cute Charm/Magic Guard/Unaware,Fairy Pokémon,
+037,Vulpix,Fire,,38,41,50,40,65,65,70,60,60,70,60,Fire/Grass/Ice/Bug/Steel/Fairy,Water/Ground/Rock,Flash Fire/Drought,Fox Pokémon,038/Ninetales/Fire Stone
+038,Ninetales,Fire,,73,76,81,75,100,100,80,80,70,90,80,Fire/Grass/Ice/Bug/Steel/Fairy,Water/Ground/Rock,Flash Fire/Drought,Fox Pokémon,
+039,Jigglypuff,Normal,Fairy,115,45,45,20,25,20,90,60,80,60,50,Normal/Fairy/Bug/Dark,Steel/Poison,Cute Charm/Competitive/Friend Guard,Balloon Pokémon,040/Wigglytuff/Moon Stone
+040,Wigglytuff,Normal,Fairy,140,70,85,45,50,45,100,70,80,70,60,Normal/Fairy/Bug/Dark,Steel/Poison,Cute Charm/Competitive/Frisk,Balloon Pokémon,
+041,Zubat,Poison,Flying,40,45,30,35,40,55,40,50,50,50,40,Poison/Grass/Bug/Fairy,Psychic/Electric/Ice/Rock,Inner Focus/Infiltrator,Bat Pokémon,042/Golbat/22
+042,Golbat,Poison,Flying,75,80,65,70,75,90,50,70,60,60,50,Poison/Grass/Bug/Fairy,Psychic/Electric/Ice/Rock,Inner Focus/Infiltrator,Bat Pokémon,169/Crobat/Friendship
+043,Oddish,Grass,Poison,45,50,75,55,65,30,60,40,70,70,50,Grass/Poison/Water/Electric/Fighting/Fairy,Fire/Ice/Flying/Psychic,Chlorophyll/Run Away,Weed Pokémon,044/Gloom/21
+044,Gloom,Grass,Poison,60,65,85,70,75,40,60,40,80,80,60,Grass/Poison/Water/Electric/Fighting/Fairy,Fire/Ice/Flying/Psychic,Chlorophyll/Stench,Weed Pokémon,045/Vileplume/Leaf Stone OR 182/Bellossom/Sun Stone
+045,Vileplume,Grass,Poison,75,80,110,85,90,50,70,50,90,90,70,Grass/Poison/Water/Electric/Fighting/Fairy,Fire/Ice/Flying/Psychic,Chlorophyll/Effect Spore,Flower Pokémon,
+046,Paras,Bug,Grass,35,70,45,55,55,25,30,30,40,60,40,Bug/Grass/Ground,Fire/Flying/Rock/Ice/Poison,Dry Skin/Effect Spore/Damp,Mushroom Pokémon,047/Parasect/24
+047,Parasect,Bug,Grass,60,95,60,80,80,30,40,40,60,70,50,Bug/Grass/Ground,Fire/Flying/Rock/Ice/Poison,Dry Skin/Effect Spore/Damp,Mushroom Pokémon,
+048,Venonat,Bug,Poison,60,55,40,50,55,45,40,40,60,60,40,Bug/Poison/Grass/Fairy,Fire/Flying/Psychic/Rock,Compound Eyes/Tinted Lens/Run Away,Insect Pokémon,049/Venomoth/31
+049,Venomoth,Bug,Poison,70,65,90,60,75,90,60,60,70,80,60,Bug/Poison/Grass/Fairy,Fire/Flying/Psychic/Rock,Shield Dust/Tinted Lens/Wonder Skin,Poison Moth Pokémon,
+050,Diglett,Ground,,10,55,35,25,45,95,20,50,60,60,40,Ground/Poison/Rock,Water/Grass/Ice,Sand Veil/Arena Trap/Sand Force,Mole Pokémon,051/Dugtrio/26
+051,Dugtrio,Ground,,35,100,50,50,70,120,30,60,70,70,50,Ground/Poison/Rock,Water/Grass/Ice,Sand Veil/Arena Trap/Sand Force,Mole Pokémon,
+052,Meowth,Normal,,40,45,40,35,40,90,50,70,70,70,50,Normal,Fighting,Pickup/Technician/Unnerve,Scratch Cat Pokémon,053/Persian/28
+053,Persian,Normal,,65,70,65,60,65,115,60,80,80,80,60,Normal,Fighting,Limber/Technician/Unnerve,Classy Cat Pokémon,
+054,Psyduck,Water,,50,52,65,48,50,55,40,50,60,70,50,Water/Steel/Fire/Ice,Electric/Grass,Damp/Cloud Nine/Swift Swim,Duck Pokémon,055/Golduck/33
+055,Golduck,Water,,80,82,95,78,80,85,60,60,70,80,60,Water/Steel/Fire/Ice,Electric/Grass,Damp/Cloud Nine/Swift Swim,Duck Pokémon,
+056,Mankey,Fighting,,40,80,35,35,45,70,50,80,40,60,50,Fighting/Bug/Rock/Dark,Flying/Psychic/Fairy,Vital Spirit/Anger Point/Defiant,Pig Monkey Pokémon,057/Primeape/28
+057,Primeape,Fighting,,65,105,60,60,70,95,60,90,50,70,60,Fighting/Bug/Rock/Dark,Flying/Psychic/Fairy,Vital Spirit/Anger Point/Defiant,Pig Monkey Pokémon,
+058,Growlithe,Fire,,55,70,70,45,50,60,70,70,60,70,60,Fire/Grass/Ice/Bug/Steel/Fairy,Water/Ground/Rock,Intimidate/Flash Fire/Justified,Puppy Pokémon,059/Arcanine/Fire Stone
+059,Arcanine,Fire,,90,110,100,80,80,95,80,90,70,90,80,Fire/Grass/Ice/Bug/Steel/Fairy,Water/Ground/Rock,Intimidate/Flash Fire/Justified,Legendary Pokémon,
+060,Poliwag,Water,,40,50,40,40,40,90,40,40,50,50,40,Water/Steel/Fire/Ice,Electric/Grass,Water Absorb/Damp/Swift Swim,Tadpole Pokémon,061/Poliwhirl/25
+061,Poliwhirl,Water,,65,65,50,65,50,90,50,50,60,60,50,Water/Steel/Fire/Ice,Electric/Grass,Water Absorb/Damp/Swift Swim,Tadpole Pokémon,062/Poliwrath/Water Stone OR 186/Politoed/King's Rock
+062,Poliwrath,Water,Fighting,90,95,70,95,90,70,60,70,70,80,70,Water/Fighting/Rock/Dark,Electric/Grass/Flying/Psychic/Fairy,Water Absorb/Damp/Swift Swim,Tadpole Pokémon,
+063,Abra,Psychic,,25,20,105,15,55,90,50,60,70,90,50,Psychic/Fighting,Bug/Ghost/Dark,Synchronize/Inner Focus/Magic Guard,Psi Pokémon,064/Kadabra/16
+064,Kadabra,Psychic,,40,35,120,30,70,105,60,70,80,90,60,Psychic/Fighting,Bug/Ghost/Dark,Synchronize/Inner Focus/Magic Guard,Psi Pokémon,065/Alakazam/Trade
+065,Alakazam,Psychic,,55,50,135,45,95,120,70,80,90,100,70,Psychic/Fighting,Bug/Ghost/Dark,Synchronize/Inner Focus/Magic Guard,Psi Pokémon,
+066,Machop,Fighting,,70,80,35,50,35,35,30,70,30,60,50,Fighting/Bug/Rock/Dark,Flying/Psychic/Fairy,Guts/No Guard/Steadfast,Superpower Pokémon,067/Machoke/28
+067,Machoke,Fighting,,80,100,50,70,60,45,40,80,40,70,60,Fighting/Bug/Rock/Dark,Flying/Psychic/Fairy,Guts/No Guard/Steadfast,Superpower Pokémon,068/Machamp/Trade
+068,Machamp,Fighting,,90,130,65,80,85,55,50,90,50,80,70,Fighting/Bug/Rock/Dark,Flying/Psychic/Fairy,Guts/No Guard/Steadfast,Superpower Pokémon,
+069,Bellsprout,Grass,Poison,50,75,70,35,30,40,50,30,60,60,50,Grass/Poison/Water/Electric/Fighting/Fairy,Fire/Ice/Flying/Psychic,Chlorophyll/Gluttony,Flower Pokémon,070/Weepinbell/21
+070,Weepinbell,Grass,Poison,65,90,85,50,45,55,50,30,70,70,60,Grass/Poison/Water/Electric/Fighting/Fairy,Fire/Ice/Flying/Psychic,Chlorophyll/Gluttony,Flycatcher Pokémon,071/Victreebel/Leaf Stone
+071,Victreebel,Grass,Poison,80,105,100,65,70,70,60,40,80,80,70,Grass/Poison/Water/Electric/Fighting/Fairy,Fire/Ice/Flying/Psychic,Chlorophyll/Gluttony,Flycatcher Pokémon,
+072,Tentacool,Water,Poison,40,40,50,35,100,70,40,40,50,70,50,Water/Poison/Bug/Fairy/Fighting,Electric/Psychic/Ground,Clear Body/Liquid Ooze/Rain Dish,Jellyfish Pokémon,073/Tentacruel/30
+073,Tentacruel,Water,Poison,80,70,80,65,120,100,60,60,60,80,70,Water/Poison/Bug/Fairy/Fighting,Electric/Psychic/Ground,Clear Body/Liquid Ooze/Rain Dish,Jellyfish Pokémon,
+074,Geodude,Rock,Ground,40,80,30,100,30,20,30,60,40,40,40,Rock/Ground/Poison/Flying,Water/Grass/Ice/Fighting/Ground/Steel,Rock Head/Sturdy/Sand Veil,Rock Pokémon,075/Graveler/25
+075,Graveler,Rock,Ground,55,95,45,115,45,35,30,60,40,50,50,Rock/Ground/Poison/Flying,Water/Grass/Ice/Fighting/Ground/Steel,Rock Head/Sturdy/Sand Veil,Rock Pokémon,076/Golem/Trade
+076,Golem,Rock,Ground,80,120,55,130,65,45,40,60,40,60,60,Rock/Ground/Poison/Flying,Water/Grass/Ice/Fighting/Ground/Steel,Rock Head/Sturdy/Sand Veil,Megaton Pokémon,
+077,Ponyta,Fire,,50,85,65,55,65,90,60,80,60,60,60,Fire/Grass/Ice/Bug/Steel/Fairy,Water/Ground/Rock,Run Away/Flash Fire/Flame Body,Fire Horse Pokémon,078/Rapidash/40
+078,Rapidash,Fire,,65,100,80,70,80,105,70,90,70,70,70,Fire/Grass/Ice/Bug/Steel/Fairy,Water/Ground/Rock,Run Away/Flash Fire/Flame Body,Fire Horse Pokémon,
+079,Slowpoke,Water,Psychic,90,65,40,65,40,15,50,50,40,60,50,Water/Psychic/Fire/Ice/Steel,Bug/Ghost/Dark/Electric/Grass,Oblivious/Own Tempo/Regenerator,Dopey Pokémon,080/Slowbro/37 OR 199/Slowking/King's Rock
+080,Slowbro,Water,Psychic,95,75,100,110,80,30,60,60,50,70,60,Water/Psychic/Fire/Ice/Steel,Bug/Ghost/Dark/Electric/Grass,Oblivious/Own Tempo/Regenerator,Hermit Crab Pokémon,199/Slowking/King's Rock
+081,Magnemite,Electric,Steel,25,35,95,70,55,45,30,70,40,90,40,Electric/Steel/Flying/Rock,Fire/Fighting/Ground,Magnet Pull/Sturdy/Analytic,Magnet Pokémon,082/Magneton/30
+082,Magneton,Electric,Steel,50,60,120,95,70,70,40,80,50,100,50,Electric/Steel/Flying/Rock,Fire/Fighting/Ground,Magnet Pull/Sturdy/Analytic,Magnet Pokémon,462/Magnezone/Level Up in Magnetic Field
+083,Farfetch'd,Normal,Flying,52,90,58,55,62,60,60,70,50,60,50,Normal/Grass/Bug/Ghost,Electric/Ice/Rock,Keen Eye/Inner Focus/Defiant,Wild Duck Pokémon,865/Sirfetch'd/3 Critical Hits in Battle
+084,Doduo,Normal,Flying,35,85,35,45,35,75,50,60,40,50,40,Normal/Grass/Bug/Ghost,Electric/Ice/Rock,Run Away/Early Bird/Tangled Feet,Twin Bird Pokémon,085/Dodrio/31
+085,Dodrio,Normal,Flying,60,110,60,70,60,100,70,80,50,60,60,Normal/Grass/Bug/Ghost,Electric/Ice/Rock,Run Away/Early Bird/Tangled Feet,Triple Bird Pokémon,
+086,Seel,Water,,65,45,45,55,70,45,40,50,50,50,50,Water/Ice,Electric/Grass/Fighting/Rock,Thick Fat/Hydration/Ice Body,Sea Lion Pokémon,087/Dewgong/34
+087,Dewgong,Water,Ice,90,70,70,80,95,70,50,50,60,50,60,Water/Ice,Electric/Grass/Fighting/Rock,Thick Fat/Hydration/Ice Body,Sea Lion Pokémon,
+088,Grimer,Poison,,80,80,40,50,50,25,30,60,50,50,40,Poison/Grass/Bug/Fairy,Psychic/Ground,Stench/Sticky Hold/Poison Touch,Sludge Pokémon,089/Muk/38
+089,Muk,Poison,,105,105,65,75,100,50,40,70,60,60,50,Poison/Grass/Bug/Fairy,Psychic/Ground,Stench/Sticky Hold/Poison Touch,Sludge Pokémon,
+090,Shellder,Water,,30,65,45,100,25,40,40,50,40,50,40,Water/Ice,Electric/Grass/Fighting/Rock,Shell Armor/Skill Link/Overcoat,Bivalve Pokémon,091/Cloyster/Water Stone
+091,Cloyster,Water,Ice,50,95,85,180,45,70,50,70,40,60,60,Water/Ice,Electric/Grass/Fighting/Rock,Shell Armor/Skill Link/Overcoat,Bivalve Pokémon,
+092,Gastly,Ghost,Poison,30,35,100,30,35,80,40,30,70,90,40,Ghost/Poison/Bug/Fairy,Psychic/Ghost/Dark/Ground,Levitate,Gas Pokémon,093/Haunter/25
+093,Haunter,Ghost,Poison,45,50,115,45,55,95,50,40,80,90,50,Ghost/Poison/Bug/Fairy,Psychic/Ghost/Dark/Ground,Levitate,Gas Pokémon,094/Gengar/Trade
+094,Gengar,Ghost,Poison,60,65,130,60,75,110,60,60,90,100,60,Ghost/Poison/Bug/Fairy,Psychic/Ghost/Dark/Ground,Cursed Body,Shadow Pokémon,
+095,Onix,Rock,Ground,35,45,30,160,45,70,20,50,30,60,40,Rock/Ground/Poison/Flying,Water/Grass/Ice/Fighting/Ground/Steel,Rock Head/Sturdy/Weak Armor,Rock Snake Pokémon,208/Steelix/Trade with Metal Coat
+096,Drowzee,Psychic,,60,48,43,45,90,42,50,30,70,80,50,Psychic/Fighting,Bug/Ghost/Dark,Insomnia/Forewarn/Inner Focus,Hypnosis Pokémon,097/Hypno/26
+097,Hypno,Psychic,,85,73,73,70,115,67,50,40,80,90,60,Psychic/Fighting,Bug/Ghost/Dark,Insomnia/Forewarn/Inner Focus,Hypnosis Pokémon,
+098,Krabby,Water,,30,105,25,90,25,50,30,60,30,50,40,Water/Ice/Steel,Electric/Grass/Fighting,Hyper Cutter/Shell Armor/Sheer Force,River Crab Pokémon,099/Kingler/28
+099,Kingler,Water,,55,130,50,115,50,75,40,70,40,60,60,Water/Ice/Steel,Electric/Grass/Fighting,Hyper Cutter/Shell Armor/Sheer Force,Pincer Pokémon,
+100,Voltorb,Electric,,40,30,55,50,55,100,50,80,40,60,50,Electric/Flying/Steel,Ground,Soundproof/Static/Aftermath,Ball Pokémon,101/Electrode/30

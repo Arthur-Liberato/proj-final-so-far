@@ -1,0 +1,101 @@
+ID,Name,Category,Price,Rarity,ContestEffect,Description
+0001,Ability Capsule,Held Item,3000,Rare,Coolness +7,Allows Pokémon to switch abilities during performance
+0002,Ability Patch,Held Item,4500,Epic,Beauty +10,Unlocks Hidden Abilities for contests
+0003,Ability Shield,Held Item,1500,Rare,Toughness +5,Protects ability from being changed
+0004,Ability Urge,Berry,800,Uncommon,Smartness +8,Reactivates ability effects mid-performance
+0005,Abomasite,Mega Stone,10000,Legendary,Coolness +15,Enables Mega Evolution for Abomasnow
+0006,Abra Candy,Treat,300,Common,Smartness +3,Boosts accuracy of psychic moves
+0007,Absolite,Mega Stone,10000,Legendary,Coolness +12,Enables Mega Evolution for Absol
+0008,Absorb Bulb,Held Item,1200,Rare,Beauty +6,Powers up grass moves when hit by water
+0009,Academy Ball,Ball,600,Common,Beauty +4,Releases colorful confetti when used
+0010,Academy Bottle,Decoration,800,Uncommon,Beauty +5,Enhances water-based moves
+0011,Academy Chair,Decoration,1000,Rare,Cuteness +7,Improves seated performances
+0012,Academy Cup,Decoration,1500,Uncommon,Smartness +8,Boosts stats when behind
+0013,Academy Tablecloth,Decoration,2000,Rare,Beauty +10,Allows quick stage changes
+0014,Acro Bike,Key Item,5000,Uncommon,Coolness +12,Enables acrobatic performances
+0015,Adamant Crystal,Held Item,15000,Mythic,Toughness +20,Boosts Dialga's physical moves
+0016,Adamant Mint,Berry,500,Common,Toughness +5,Strengthens Adamant nature
+0017,Adamant Orb,Held Item,10000,Legendary,Smartness +15,Enhances steel/dragon moves
+0018,Adrenaline Orb,Battle Item,800,Uncommon,Coolness +8,Boosts speed when intimidated
+0019,Adventure Rules,Tool,400,Common,Smartness +6,Guides performance structure
+0020,Adventure Guide,Tool,300,Common,Smartness +7,Adds storytelling elements
+0021,Aerodactylite,Mega Stone,10000,Legendary,Coolness +14,Enables Mega Evolution for Aerodactyl
+0022,Aerodactyl Candy,Treat,400,Uncommon,Toughness +4,Improves rock/flying moves
+0023,Aggronite,Mega Stone,10000,Legendary,Toughness +13,Enables Mega Evolution for Aggron
+0024,Aguav Berry,Berry,200,Common,Beauty +5,Reduces water damage and adds beauty
+0025,Air Balloon,Held Item,500,Uncommon,Beauty +6,Adds floating elegance
+0026,Air Mail,Decoration,250,Common,Cuteness +3,Releases paper birds with messages
+0027,Alakazite,Mega Stone,10000,Legendary,Smartness +15,Enables Mega Evolution for Alakazam
+0028,Alcremie Treat,Treat,600,Uncommon,Cuteness +8,Adds confectionery effects to moves
+0029,Altarianite,Mega Stone,10000,Legendary,Beauty +14,Enables Mega Evolution for Altaria
+0030,Amaze Mulch,Mulch,400,Uncommon,Beauty +6,Makes flowers bloom instantly
+0031,Ampharosite,Mega Stone,10000,Legendary,Coolness +13,Enables Mega Evolution for Ampharos
+0032,Amulet Coin,Held Item,1000,Uncommon,Smartness +10,Doubles score if last to perform
+0033,Antidote,Medicine,200,Common,Beauty +5,Cures poison and adds purified shine
+0034,Apicot Berry,Berry,300,Uncommon,Toughness +7,Boosts defense at low energy
+0035,Apple,Fruit,100,Common,Cuteness +3,Versatile prop for creative tricks
+0036,Apricorn,Crafting,150,Common,Beauty +4,Natural material for colorful effects
+0037,Apricorn Box,Tool,500,Uncommon,Beauty +8,Organizes Apricorns for complex routines
+0038,Aqua Suit,Costume,3000,Uncommon,Beauty +10,Enhances water moves on land
+0039,Armor Fossil,Fossil,2000,Rare,Toughness +7,Adds prehistoric aura
+0040,Armor Pass,Key Item,1500,Uncommon,Toughness +8,Grants special shielding techniques
+0041,Armorite Ore,Material,800,Rare,Toughness +6,Strengthens steel-type moves
+0042,Articuno Candy,Treat,1000,Rare,Beauty +8,Enhances ice-type moves
+0043,Articuno Treat,Treat,1500,Epic,Beauty +10,Attracts judges' attention temporarily
+0044,Aspear Berry,Berry,200,Common,Beauty +5,Prevents freezing during ice moves
+0045,Assault Vest,Costume,2000,Uncommon,Toughness +9,Stylizes attack moves
+0046,Audinite,Mega Stone,10000,Legendary,Cuteness +12,Enables Mega Evolution for Audino
+0047,Aurora Ticket,Key Item,5000,Mythic,Beauty +15,Summons northern lights effects
+0048,Auspicious Armor,Costume,3500,Rare,Toughness +12,Adds ceremonial elegance
+0049,Autograph,Decoration,2000,Uncommon,Smartness +8,Inspires greatness when displayed
+0050,Aux Evasion,Battle Item,1200,Uncommon,Coolness +7,Improves dodging choreography
+0051,Aux Guard,Battle Item,1200,Uncommon,Toughness +6,Stylizes defensive moves
+0052,Aux Power,Battle Item,1200,Uncommon,Coolness +7,Synchronizes attacks with rhythm
+0053,Aux Powerguard,Battle Item,1500,Rare,Toughness +8,Balances attack and defense
+0054,Avocado,Berry,250,Common,Cuteness +4,Smooths transitions between moves
+0055,Awakening,Medicine,200,Common,Coolness +5,Wakes up and energizes performances
+0056,Azelf's Fang,Held Item,7500,Mythic,Smartness +15,Boosts accuracy in final moments
+0057,Azure Flute,Key Item,20000,Mythic,All stats +25,Summons celestial harmony
+0058,B&W Grass Chairs,Decoration,1200,Uncommon,Coolness +8,Creates monochrome patterns
+0059,B&W Grass Tablecloth,Decoration,1500,Rare,Beauty +9,Transforms stage into art canvas
+0060,Babiri Berry,Berry,300,Uncommon,Toughness +6,Adds metallic resilience
+0061,Bach’s Food Tin,Food,450,Rare,Beauty +7,Energizes with galant style
+0062,Bacon,Food,250,Common,Toughness +4,Adds crunchy texture to performances
+0063,Baguette,Food,200,Common,Beauty +5,Versatile bread prop
+0064,Balm Mushroom,Medicine,1500,Rare,Beauty +10,Revitalizes tired performances
+0065,Band Autograph,Decoration,2500,Rare,Cuteness +9,Inspires musical performances
+0066,Banana,Food,150,Common,Coolness +5,Improves acrobatic moves
+0067,Banettite,Mega Stone,10000,Legendary,Coolness +14,Enables Mega Evolution for Banette
+0068,Barred Cup,Decoration,800,Uncommon,Smartness +6,Enhances trapping moves
+0069,Basculegion Food,Food,1000,Rare,Toughness +8,Energizes water/ghost moves
+0070,Basement Key,Key Item,500,Uncommon,Smartness +7,Unlocks hidden potential
+0071,Basil,Berry,180,Common,Beauty +4,Purifies and refreshes moves
+0072,Battle Chairs,Decoration,1000,Uncommon,Toughness +7,Stylizes strategic pauses
+0073,Battle Tablecloth,Decoration,1200,Uncommon,Toughness +8,Simulates battle ring
+0074,Beach Glass,Decoration,300,Uncommon,Beauty +5,Creates aquatic light effects
+0075,Bean Cake,Food,400,Uncommon,Cuteness +7,Increases joy and energy
+0076,Beast Ball,Ball,1000,Rare,Coolness +9,Releases alien energy patterns
+0077,Beedrillite,Mega Stone,10000,Legendary,Coolness +13,Enables Mega Evolution for Beedrill
+0078,Bellsprout Candy,Treat,250,Common,Cuteness +4,Improves vine-based moves
+0079,Belue Berry,Berry,350,Uncommon,Beauty +6,Creates frozen dramatic pauses
+0080,Berry,Berry,100,Common,Cuteness +2,Basic versatile fruit
+0081,Berry Juice,Medicine,150,Common,Cuteness +4,Revitalizes tired moves
+0082,Berry Pots,Tool,600,Uncommon,Beauty +6,Grows berries during performance
+0083,Berry Pouch,Tool,400,Uncommon,Smartness +7,Organizes berries for quick use
+0084,Berry Sweet,Treat,300,Common,Cuteness +5,Increases natural charm
+0085,Berserk Gene,Medicine,2000,Epic,Toughness +12,Transforms rage into power
+0086,Bicycle,Key Item,1000,Common,Coolness +8,Enables continuous movement
+0087,Big Bamboo Shoot,Food,600,Uncommon,Toughness +7,Adds vertical impact
+0088,Big Malasada,Food,500,Uncommon,Cuteness +8,Boosts happiness and stamina
+0089,Big Mushroom,Decoration,1800,Rare,Beauty +9,Creates fairy tale illusions
+0090,Big Nugget,Decoration,3000,Rare,Beauty +10,Adds luxurious golden shine
+0091,Big Pearl,Decoration,2500,Rare,Beauty +9,Emanates elegant soft light
+0092,Big Root,Held Item,1200,Uncommon,Beauty +7,Stylizes energy-draining moves
+0093,Bike Voucher,Key Item,0,Uncommon,Coolness +6,Symbolizes personal growth
+0094,Binding Band,Decoration,800,Uncommon,Beauty +8,Synchronizes paired movements
+0095,Bitter Berry,Berry,200,Uncommon,Cuteness +5,Adds emotional contrast
+0096,Bitter Herba Mystica,Medicine,3000,Rare,Toughness +12,Transforms pain into art
+0097,Black Apricorn,Crafting,250,Uncommon,Coolness +5,Creates night-time effects
+0098,Black Augurite,Material,1500,Uncommon,Toughness +9,Evolves Scyther with style
+0099,Black Belt,Costume,700,Rare,Toughness +8,Adds martial arts aura
+0100,Black Flute,Tool,1200,Rare,Coolness +9,Creates mysterious atmosphere

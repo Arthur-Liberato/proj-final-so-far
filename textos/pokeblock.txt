@@ -1,0 +1,33 @@
+ID,Name,Color,Level,Spicy,Dry,Sweet,Bitter,Sour,CreationCondition,Effect,Rarity
+PB001,Basic Red,Red,10,15,0,0,0,0,Spicy ≥ 60%,Coolness +10,Common
+PB002,Strong Red,Red,25,30,0,0,0,0,Spicy ≥ 80%,Coolness +25,Rare
+PB003,Basic Blue,Blue,10,0,15,0,0,0,Dry ≥ 60%,Beauty +10,Common
+PB004,Deep Blue,Blue,25,0,30,0,0,0,Dry ≥ 80%,Beauty +25,Rare
+PB005,Basic Pink,Pink,10,0,0,15,0,0,Sweet ≥ 60%,Cuteness +10,Common
+PB006,Sweet Pink,Pink,25,0,0,30,0,0,Sweet ≥ 80%,Cuteness +25,Rare
+PB007,Basic Green,Green,10,0,0,0,15,0,Bitter ≥ 60%,Smartness +10,Common
+PB008,Intense Green,Green,25,0,0,0,30,0,Bitter ≥ 80%,Smartness +25,Rare
+PB009,Basic Yellow,Yellow,10,0,0,0,0,15,Sour ≥ 60%,Toughness +10,Common
+PB010,Acid Yellow,Yellow,25,0,0,0,0,30,Sour ≥ 80%,Toughness +25,Rare
+PB011,Classic Purple,Purple,20,15,15,0,0,0,Spicy + Dry (diff ≤ 10),Coolness +15/Beauty +15,Common
+PB012,Vibrant Purple,Purple,35,25,25,0,0,0,Spicy + Dry (both ≥ 20),Coolness +25/Beauty +25,Rare
+PB013,Soft Indigo,Indigo,20,0,15,15,0,0,Dry + Sweet (diff ≤ 10),Beauty +15/Cuteness +15,Common
+PB014,Bright Indigo,Indigo,35,0,25,25,0,0,Dry + Sweet (both ≥ 20),Beauty +25/Cuteness +25,Rare
+PB015,Earthy Brown,Brown,20,0,0,15,15,0,Sweet + Bitter (diff ≤ 10),Cuteness +15/Smartness +15,Common
+PB016,Chocolate Brown,Brown,35,0,0,25,25,0,Sweet + Bitter (both ≥ 20),Cuteness +25/Smartness +25,Rare
+PB017,Light Blue,Light Blue,20,0,0,0,15,15,Bitter + Sour (diff ≤ 10),Smartness +15/Toughness +15,Common
+PB018,Sky Blue,Light Blue,35,0,0,0,25,25,Bitter + Sour (both ≥ 20),Smartness +25/Toughness +25,Rare
+PB019,Resilient Olive,Olive,20,15,0,0,0,15,Spicy + Sour (diff ≤ 10),Coolness +15/Toughness +15,Common
+PB020,Military Olive,Olive,35,25,0,0,0,25,Spicy + Sour (both ≥ 20),Coolness +25/Toughness +25,Rare
+PB021,Legendary Gold,Gold,50,50,0,0,0,0,Any flavor ≥ 50,Max Effect (+50%),Legendary
+PB022,Mystic Silver,Silver,40,0,0,0,0,0,3+ flavors = 0,Negates negative stats,Epic
+PB023,Bad Black,Black,5,0,0,0,0,0,2+ same Berries,Min Effect (-10%),Common
+PB024,Pure White,White,30,5,5,5,5,0,4 flavors ≥ 1,All stats +5,Rare
+PB025,Neutral Gray,Gray,20,5,5,5,0,0,3 flavors ≥ 1,3 stats +3,Common
+PB026,Rainbow,Multicolor,60,10,10,10,10,10,All flavors ≥ 10,All stats +10,Epic
+PB027,Ghost,Transparent,15,0,0,0,0,0,Berries with negative values,Invisible in contests,Rare
+PB028,Epic Red,Red,60,75,0,0,0,0,Liechi Berry + RPM 150,Coolness +75,Epic
+PB029,Supreme Blue,Blue,60,0,75,0,0,0,Ganlon Berry + RPM 150,Beauty +75,Epic
+PB030,Shining Pink,Pink,60,0,0,75,0,0,Salac Berry + RPM 150,Cuteness +75,Epic
+PB031,Perfect Gold,Gold,75,75,0,0,0,0,Liechi Berry + RPM 150,Coolness +112 (75×1.5),Legendary
+PB032,Perfect Rainbow,Multicolor,80,20,20,20,20,20,Lum Berry + RPM 200,All stats +20,Legendary
