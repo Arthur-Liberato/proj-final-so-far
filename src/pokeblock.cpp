@@ -20,6 +20,13 @@ Pokeblock Pokeblock::fromCSV(const std::string& linha) {
     getline(ss, p.efeito, ',');
     getline(ss, p.raridade, ',');
 
+    if(p.nome.empty()) throw std::invalid_argument("Campo Nome do Pokeblock nao pode ser vazio");
+    if(p.cor.empty()) throw std::invalid_argument("Campo Cor do Pokeblock nao pode ser vazio");
+    if(p.condicao.empty()) throw std::invalid_argument("Campo Condicao do Pokeblock nao pode ser vazio");
+    if(p.efeito.empty()) throw std::invalid_argument("Campo Efeito do Pokeblock nao pode ser vazio");
+    if(p.raridade.empty()) throw std::invalid_argument("Campo Raridade do Pokeblock nao pode ser vazio");
+
+
     // Limpar strings
     p.nome = Utils::trim(p.nome);
     p.cor = Utils::trim(p.cor);

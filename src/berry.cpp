@@ -1,6 +1,7 @@
 #include "berry.hpp"
 #include <sstream>
 #include <string>
+#include <stdexcept>
 
 Berry Berry::fromCSV(const std::string& linha) {
     Berry b;
@@ -16,6 +17,17 @@ Berry Berry::fromCSV(const std::string& linha) {
     getline(ss, token, ','); b.azedo = Utils::safeStoi(token, "Azedo");
     getline(ss, b.raridade, ',');
     getline(ss, b.descricao, ',');
+
+    if(b.nome.empty()) {
+        throw std::invalid_argument("Campo Nome da berry nao pode ser vazio");
+    }
+    if(b.raridade.empty()) {
+        throw std::invalid_argument("Campo Raridade da berry nao pode ser vazio");
+    }
+    if(b.descricao.empty()) {
+        throw std::invalid_argument("Campo Descricao da berry nao pode ser vazio");
+    } 
+        
 
     // Limpar strings
     b.nome = Utils::trim(b.nome);

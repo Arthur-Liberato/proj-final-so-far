@@ -1,6 +1,7 @@
 #include "pokemon.hpp"
 #include <sstream>
 #include <string>
+#include <stdexcept>
 
 Pokemon Pokemon::fromCSV(const std::string& linha) {
     Pokemon p;
@@ -27,6 +28,13 @@ Pokemon Pokemon::fromCSV(const std::string& linha) {
     getline(ss, p.abilities, ',');
     getline(ss, p.category, ',');
     getline(ss, p.evolutions, ',');
+
+    if(p.nome.empty()) throw std::invalid_argument("Campo Nome do Pokemon não pode ser vazio.");
+    if(p.tipo1.empty()) throw std::invalid_argument("Campo Tipo1 do Pokemon não pode ser vazio.");    
+    if(p.resistances.empty()) throw std::invalid_argument("Campo Resistances do Pokemon não pode ser vazio.");
+    if(p.weaknesses.empty()) throw std::invalid_argument("Campo Weaknesses do Pokemon não pode ser vazio.");
+    if(p.abilities.empty()) throw std::invalid_argument("Campo Abilities do Pokemon não pode ser vazio.");
+    if(p.category.empty()) throw std::invalid_argument("Campo Category do Pokemon não pode ser vazio.");    
 
     // Limpar strings
     p.nome = Utils::trim(p.nome);
