@@ -1,6 +1,7 @@
 #include "item.hpp"
 #include <sstream>
 #include <string>
+#include <stdexcept>
 
 Item Item::fromCSV(const std::string& linha) {
     Item item;
@@ -14,6 +15,13 @@ Item Item::fromCSV(const std::string& linha) {
     getline(ss, item.raridade, ',');
     getline(ss, item.efeitoContest, ',');
     getline(ss, item.descricao, ',');
+
+    if(item.nome.empty()) throw std::invalid_argument("Campo Nome do Item nao pode ser vazio");
+    if(item.categoria.empty()) throw std::invalid_argument("Campo Categoria do Item nao pode ser vazio");
+    if(item.raridade.empty()) throw std::invalid_argument("Campo Raridade do Item nao pode ser vazio");
+    if(item.efeitoContest.empty()) throw std::invalid_argument("Campo Efeito Contest do Item nao pode ser vazio");
+    if(item.descricao.empty()) throw std::invalid_argument("Campo Descricao do Item nao pode ser vazio");
+    
 
     // Limpar strings
     item.nome = Utils::trim(item.nome);
