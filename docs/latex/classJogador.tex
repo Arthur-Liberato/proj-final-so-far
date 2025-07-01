@@ -1,0 +1,297 @@
+\doxysection{Jogador Class Reference}
+\hypertarget{classJogador}{}\label{classJogador}\index{Jogador@{Jogador}}
+
+
+Representa o jogador, mantendo seu estado e inventário.  
+
+
+
+
+{\ttfamily \#include $<$jogador.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Getters}\par
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classJogador_a56f68b57e7fb229f932ef60d2116833c}{get\+Nome}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o nome do jogador. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classJogador_ace231e84ac3d3c668059842fecb9e54c}{get\+Dinheiro}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a quantidade de dinheiro do jogador. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classPokemonJogador}{Pokemon\+Jogador}} $>$ \mbox{\hyperlink{classJogador_a43a3f2035c8dca1544eee8cb0e812744}{get\+Pokemons}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a coleção de Pokémon\+Jogador. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classItem}{Item}} $>$ \mbox{\hyperlink{classJogador_a397f29299e9494f85e8e77e95348affd}{get\+Itens}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a coleção de itens. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classBerry}{Berry}} $>$ \mbox{\hyperlink{classJogador_a8b2886d4912ec515d38b8d81910f6971}{get\+Berries}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a coleção de berries. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classPokeblock}{Pokeblock}} $>$ \mbox{\hyperlink{classJogador_aa18f1da129116a776e69225a8ab28cef}{get\+Pokeblocks}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a coleção de pokeblocks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Setters}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classJogador_a4655e7163c87abada9e207ebeee85dda}{set\+Nome}} (const std\+::string \&n)
+\begin{DoxyCompactList}\small\item\em Define o nome do jogador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJogador_a8b3e0a0ac2b72643807d2fdfed810211}{set\+Dinheiro}} (int d)
+\begin{DoxyCompactList}\small\item\em Define a quantidade de dinheiro do jogador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJogador_a95871926f60abcfd9dcddeff97cf2db3}{set\+Pokemons}} (const std\+::vector$<$ \mbox{\hyperlink{classPokemonJogador}{Pokemon\+Jogador}} $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Define a coleção de Pokémon\+Jogador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJogador_a222e2733836539ac1140def8d57221c6}{set\+Itens}} (const std\+::vector$<$ \mbox{\hyperlink{classItem}{Item}} $>$ \&i)
+\begin{DoxyCompactList}\small\item\em Define a coleção de itens. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJogador_ab6367368105fe7a0bef8cdacf3853b50}{set\+Berries}} (const std\+::vector$<$ \mbox{\hyperlink{classBerry}{Berry}} $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Define a coleção de berries. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJogador_a166f8486644d901f5cf2e1b283c37993}{set\+Pokeblocks}} (const std\+::vector$<$ \mbox{\hyperlink{classPokeblock}{Pokeblock}} $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Define a coleção de pokeblocks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Métodos de adição}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classJogador_af7114969a02873411841e99b59499a02}{add\+Pokemon}} (const \mbox{\hyperlink{classPokemonJogador}{Pokemon\+Jogador}} \&p)
+\begin{DoxyCompactList}\small\item\em Adiciona um Pokémon\+Jogador ao inventário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJogador_aa3de293d8eefd9a799926aa4d9a42fd9}{add\+Item}} (const \mbox{\hyperlink{classItem}{Item}} \&i)
+\begin{DoxyCompactList}\small\item\em Adiciona um item ao inventário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJogador_a51710062de944e624f9fea4857d9c071}{add\+Berry}} (const \mbox{\hyperlink{classBerry}{Berry}} \&b)
+\begin{DoxyCompactList}\small\item\em Adiciona uma berry ao inventário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJogador_ae8e626a3d670fb5ad85eb3fcdf23b583}{add\+Pokeblock}} (const \mbox{\hyperlink{classPokeblock}{Pokeblock}} \&p)
+\begin{DoxyCompactList}\small\item\em Adiciona um pokeblock ao inventário. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+Representa o jogador, mantendo seu estado e inventário. 
+
+Esta classe armazena o nome do jogador, sua quantidade de dinheiro e as coleções de Pokémon\+Jogador, \doxylink{classItem}{Item}, \doxylink{classBerry}{Berry} e \doxylink{classPokeblock}{Pokeblock} que ele possui. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classJogador_a51710062de944e624f9fea4857d9c071}\label{classJogador_a51710062de944e624f9fea4857d9c071} 
+\index{Jogador@{Jogador}!addBerry@{addBerry}}
+\index{addBerry@{addBerry}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{addBerry()}{addBerry()}}
+{\footnotesize\ttfamily void Jogador\+::add\+Berry (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBerry}{Berry}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adiciona uma berry ao inventário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & \doxylink{classBerry}{Berry} a adicionar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classJogador_aa3de293d8eefd9a799926aa4d9a42fd9}\label{classJogador_aa3de293d8eefd9a799926aa4d9a42fd9} 
+\index{Jogador@{Jogador}!addItem@{addItem}}
+\index{addItem@{addItem}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{addItem()}{addItem()}}
+{\footnotesize\ttfamily void Jogador\+::add\+Item (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classItem}{Item}} \&}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adiciona um item ao inventário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \doxylink{classItem}{Item} a adicionar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classJogador_ae8e626a3d670fb5ad85eb3fcdf23b583}\label{classJogador_ae8e626a3d670fb5ad85eb3fcdf23b583} 
+\index{Jogador@{Jogador}!addPokeblock@{addPokeblock}}
+\index{addPokeblock@{addPokeblock}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{addPokeblock()}{addPokeblock()}}
+{\footnotesize\ttfamily void Jogador\+::add\+Pokeblock (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPokeblock}{Pokeblock}} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adiciona um pokeblock ao inventário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \doxylink{classPokeblock}{Pokeblock} a adicionar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classJogador_af7114969a02873411841e99b59499a02}\label{classJogador_af7114969a02873411841e99b59499a02} 
+\index{Jogador@{Jogador}!addPokemon@{addPokemon}}
+\index{addPokemon@{addPokemon}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{addPokemon()}{addPokemon()}}
+{\footnotesize\ttfamily void Jogador\+::add\+Pokemon (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPokemonJogador}{Pokemon\+Jogador}} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adiciona um Pokémon\+Jogador ao inventário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pokémon\+Jogador a adicionar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classJogador_a8b2886d4912ec515d38b8d81910f6971}\label{classJogador_a8b2886d4912ec515d38b8d81910f6971} 
+\index{Jogador@{Jogador}!getBerries@{getBerries}}
+\index{getBerries@{getBerries}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{getBerries()}{getBerries()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classBerry}{Berry}} $>$ Jogador\+::get\+Berries (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém a coleção de berries. 
+
+\begin{DoxyReturn}{Returns}
+Vetor de \doxylink{classBerry}{Berry}. 
+\end{DoxyReturn}
+\Hypertarget{classJogador_ace231e84ac3d3c668059842fecb9e54c}\label{classJogador_ace231e84ac3d3c668059842fecb9e54c} 
+\index{Jogador@{Jogador}!getDinheiro@{getDinheiro}}
+\index{getDinheiro@{getDinheiro}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{getDinheiro()}{getDinheiro()}}
+{\footnotesize\ttfamily int Jogador\+::get\+Dinheiro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém a quantidade de dinheiro do jogador. 
+
+\begin{DoxyReturn}{Returns}
+Quantidade de Pokédollars. 
+\end{DoxyReturn}
+\Hypertarget{classJogador_a397f29299e9494f85e8e77e95348affd}\label{classJogador_a397f29299e9494f85e8e77e95348affd} 
+\index{Jogador@{Jogador}!getItens@{getItens}}
+\index{getItens@{getItens}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{getItens()}{getItens()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classItem}{Item}} $>$ Jogador\+::get\+Itens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém a coleção de itens. 
+
+\begin{DoxyReturn}{Returns}
+Vetor de \doxylink{classItem}{Item}. 
+\end{DoxyReturn}
+\Hypertarget{classJogador_a56f68b57e7fb229f932ef60d2116833c}\label{classJogador_a56f68b57e7fb229f932ef60d2116833c} 
+\index{Jogador@{Jogador}!getNome@{getNome}}
+\index{getNome@{getNome}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily std\+::string Jogador\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém o nome do jogador. 
+
+\begin{DoxyReturn}{Returns}
+Nome atual. 
+\end{DoxyReturn}
+\Hypertarget{classJogador_aa18f1da129116a776e69225a8ab28cef}\label{classJogador_aa18f1da129116a776e69225a8ab28cef} 
+\index{Jogador@{Jogador}!getPokeblocks@{getPokeblocks}}
+\index{getPokeblocks@{getPokeblocks}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{getPokeblocks()}{getPokeblocks()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classPokeblock}{Pokeblock}} $>$ Jogador\+::get\+Pokeblocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém a coleção de pokeblocks. 
+
+\begin{DoxyReturn}{Returns}
+Vetor de \doxylink{classPokeblock}{Pokeblock}. 
+\end{DoxyReturn}
+\Hypertarget{classJogador_a43a3f2035c8dca1544eee8cb0e812744}\label{classJogador_a43a3f2035c8dca1544eee8cb0e812744} 
+\index{Jogador@{Jogador}!getPokemons@{getPokemons}}
+\index{getPokemons@{getPokemons}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{getPokemons()}{getPokemons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classPokemonJogador}{Pokemon\+Jogador}} $>$ Jogador\+::get\+Pokemons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém a coleção de Pokémon\+Jogador. 
+
+\begin{DoxyReturn}{Returns}
+Vetor de Pokémon\+Jogador. 
+\end{DoxyReturn}
+\Hypertarget{classJogador_ab6367368105fe7a0bef8cdacf3853b50}\label{classJogador_ab6367368105fe7a0bef8cdacf3853b50} 
+\index{Jogador@{Jogador}!setBerries@{setBerries}}
+\index{setBerries@{setBerries}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{setBerries()}{setBerries()}}
+{\footnotesize\ttfamily void Jogador\+::set\+Berries (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classBerry}{Berry}} $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define a coleção de berries. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & Vetor com as berries. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classJogador_a8b3e0a0ac2b72643807d2fdfed810211}\label{classJogador_a8b3e0a0ac2b72643807d2fdfed810211} 
+\index{Jogador@{Jogador}!setDinheiro@{setDinheiro}}
+\index{setDinheiro@{setDinheiro}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{setDinheiro()}{setDinheiro()}}
+{\footnotesize\ttfamily void Jogador\+::set\+Dinheiro (\begin{DoxyParamCaption}\item[{int}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define a quantidade de dinheiro do jogador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & Novo valor em Pokédollars. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classJogador_a222e2733836539ac1140def8d57221c6}\label{classJogador_a222e2733836539ac1140def8d57221c6} 
+\index{Jogador@{Jogador}!setItens@{setItens}}
+\index{setItens@{setItens}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{setItens()}{setItens()}}
+{\footnotesize\ttfamily void Jogador\+::set\+Itens (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classItem}{Item}} $>$ \&}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define a coleção de itens. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Vetor com os itens. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classJogador_a4655e7163c87abada9e207ebeee85dda}\label{classJogador_a4655e7163c87abada9e207ebeee85dda} 
+\index{Jogador@{Jogador}!setNome@{setNome}}
+\index{setNome@{setNome}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily void Jogador\+::set\+Nome (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define o nome do jogador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Novo nome. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classJogador_a166f8486644d901f5cf2e1b283c37993}\label{classJogador_a166f8486644d901f5cf2e1b283c37993} 
+\index{Jogador@{Jogador}!setPokeblocks@{setPokeblocks}}
+\index{setPokeblocks@{setPokeblocks}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{setPokeblocks()}{setPokeblocks()}}
+{\footnotesize\ttfamily void Jogador\+::set\+Pokeblocks (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classPokeblock}{Pokeblock}} $>$ \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define a coleção de pokeblocks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Vetor com os pokeblocks. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classJogador_a95871926f60abcfd9dcddeff97cf2db3}\label{classJogador_a95871926f60abcfd9dcddeff97cf2db3} 
+\index{Jogador@{Jogador}!setPokemons@{setPokemons}}
+\index{setPokemons@{setPokemons}!Jogador@{Jogador}}
+\doxysubsubsection{\texorpdfstring{setPokemons()}{setPokemons()}}
+{\footnotesize\ttfamily void Jogador\+::set\+Pokemons (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classPokemonJogador}{Pokemon\+Jogador}} $>$ \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define a coleção de Pokémon\+Jogador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Vetor com os Pokémons. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{jogador_8hpp}{jogador.\+hpp}}\end{DoxyCompactItemize}

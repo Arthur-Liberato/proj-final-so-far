@@ -1,0 +1,120 @@
+\doxysection{Nature Class Reference}
+\hypertarget{classNature}{}\label{classNature}\index{Nature@{Nature}}
+
+
+Representa a Natureza de um Pokémon.  
+
+
+
+
+{\ttfamily \#include $<$nature.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNature_a7e3165f0e9ab3b132b15899c85b41517}{Nature}} ()=default
+\begin{DoxyCompactList}\small\item\em Construtor padrão. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Getters}\par
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classNature_ac8f6c5000048e6a0f4cc18093b35be81}{get\+Nome}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o nome da natureza. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classNature_a8aef656a55ab2f565882956bea56fc7b}{get\+Aumento}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o atributo que recebe aumento. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classNature_a4731bff50e18aad10914e5d71b8ec1a2}{get\+Diminuicao}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o atributo que recebe diminuição. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classNature}{Nature}} \mbox{\hyperlink{classNature_aa6fee4791f86fe595530e4f34225ec3d}{from\+CSV}} (const std\+::string \&linha)
+\begin{DoxyCompactList}\small\item\em Cria uma instância de \doxylink{classNature}{Nature} a partir de uma linha CSV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa a Natureza de um Pokémon. 
+
+Cada instância de \doxylink{classNature}{Nature} contém\+:
+\begin{DoxyItemize}
+\item nome\+: o nome da natureza (por exemplo, "{}\+Hardy"{}, "{}\+Lonely"{}, etc.);
+\item aumento\+: o atributo que receberá um bônus;
+\item diminuicao\+: o atributo que receberá uma penalidade. 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classNature_a7e3165f0e9ab3b132b15899c85b41517}\label{classNature_a7e3165f0e9ab3b132b15899c85b41517} 
+\index{Nature@{Nature}!Nature@{Nature}}
+\index{Nature@{Nature}!Nature@{Nature}}
+\doxysubsubsection{\texorpdfstring{Nature()}{Nature()}}
+{\footnotesize\ttfamily Nature\+::\+Nature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construtor padrão. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classNature_aa6fee4791f86fe595530e4f34225ec3d}\label{classNature_aa6fee4791f86fe595530e4f34225ec3d} 
+\index{Nature@{Nature}!fromCSV@{fromCSV}}
+\index{fromCSV@{fromCSV}!Nature@{Nature}}
+\doxysubsubsection{\texorpdfstring{fromCSV()}{fromCSV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNature}{Nature}} Nature\+::from\+CSV (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{linha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Cria uma instância de \doxylink{classNature}{Nature} a partir de uma linha CSV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & String no formato CSV\+: nome,aumento,diminuicao \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Objeto \doxylink{classNature}{Nature} preenchido com os campos da linha 
+\end{DoxyReturn}
+\Hypertarget{classNature_a8aef656a55ab2f565882956bea56fc7b}\label{classNature_a8aef656a55ab2f565882956bea56fc7b} 
+\index{Nature@{Nature}!getAumento@{getAumento}}
+\index{getAumento@{getAumento}!Nature@{Nature}}
+\doxysubsubsection{\texorpdfstring{getAumento()}{getAumento()}}
+{\footnotesize\ttfamily std\+::string Nature\+::get\+Aumento (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém o atributo que recebe aumento. 
+
+\begin{DoxyReturn}{Returns}
+Atributo de aumento 
+\end{DoxyReturn}
+\Hypertarget{classNature_a4731bff50e18aad10914e5d71b8ec1a2}\label{classNature_a4731bff50e18aad10914e5d71b8ec1a2} 
+\index{Nature@{Nature}!getDiminuicao@{getDiminuicao}}
+\index{getDiminuicao@{getDiminuicao}!Nature@{Nature}}
+\doxysubsubsection{\texorpdfstring{getDiminuicao()}{getDiminuicao()}}
+{\footnotesize\ttfamily std\+::string Nature\+::get\+Diminuicao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém o atributo que recebe diminuição. 
+
+\begin{DoxyReturn}{Returns}
+Atributo de diminuição 
+\end{DoxyReturn}
+\Hypertarget{classNature_ac8f6c5000048e6a0f4cc18093b35be81}\label{classNature_ac8f6c5000048e6a0f4cc18093b35be81} 
+\index{Nature@{Nature}!getNome@{getNome}}
+\index{getNome@{getNome}!Nature@{Nature}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily std\+::string Nature\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém o nome da natureza. 
+
+\begin{DoxyReturn}{Returns}
+Nome da natureza 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{nature_8hpp}{nature.\+hpp}}\item 
+src/\mbox{\hyperlink{nature_8cpp}{nature.\+cpp}}\end{DoxyCompactItemize}

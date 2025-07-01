@@ -1,0 +1,51 @@
+# Doxyfile 1.9.8 — para Projeto Final Jogo Pokémon
+
+#---------------------------------------------------------------------------  
+# Project related configuration options  
+#---------------------------------------------------------------------------  
+
+PROJECT_NAME           = "Projeto Final - Jogo Pokémon"  
+PROJECT_BRIEF          = "O Projeto consiste em um jogo Pokémon baseado nos atributos dos mesmos e nas melhorias feitas a partir das berries, focando principalmente na apresentação dos pokémons"  
+DOXYFILE_ENCODING      = UTF-8  
+
+#---------------------------------------------------------------------------  
+# Output  
+#---------------------------------------------------------------------------  
+
+OUTPUT_DIRECTORY       = docs  
+CREATE_SUBDIRS         = NO  
+
+#---------------------------------------------------------------------------  
+# Build related configuration  
+#---------------------------------------------------------------------------  
+
+EXTRACT_ALL            = YES  
+
+#---------------------------------------------------------------------------  
+# Inputs  
+#---------------------------------------------------------------------------  
+
+INPUT                  = include \
+                         src \
+                         readme.md
+
+RECURSIVE              = YES  
+
+FILE_PATTERNS          = *.hpp \
+                         *.cpp \
+                         *.md  
+
+EXCLUDE                = obj \
+                         bin  
+
+#---------------------------------------------------------------------------  
+# HTML output  
+#---------------------------------------------------------------------------  
+
+GENERATE_HTML          = YES  
+HTML_OUTPUT            = html  
+HTML_FILE_EXTENSION    = .html  
+
+USE_MDFILE_AS_MAINPAGE = readme.md  
+
+SEARCHENGINE           = YES  

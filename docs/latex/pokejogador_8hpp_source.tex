@@ -1,0 +1,104 @@
+\doxysection{pokejogador.\+hpp}
+\hypertarget{pokejogador_8hpp_source}{}\label{pokejogador_8hpp_source}\index{include/pokejogador.hpp@{include/pokejogador.hpp}}
+\mbox{\hyperlink{pokejogador_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ POKEMONJOGADOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ POKEMONJOGADOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pokemon_8hpp}{pokemon.hpp}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPokemonJogador}{PokemonJogador}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{classPokemon}{Pokemon}}\ base;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ level;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{int}\ ivHP;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ ivAttack;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ ivSpAttack;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ ivDefense;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ ivSpDefense;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ ivSpeed;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00022\ \ \ \ \ std::string\ habilidade;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ currentHP;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ maxHP;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ attack;\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ spAttack;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ defense;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ spDefense;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ speed;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ std::string\ natureza;\ \ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{classPokemon}{Pokemon}}\ \mbox{\hyperlink{classPokemonJogador_a160652e3c9d243e01bb38e737b619713}{getBase}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ base;\ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemonJogador_af85dc713cfc00aac9929621f1fb8eb15}{getLevel}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ level;\ \}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemonJogador_ae5d3bb72fadd5b86378909fa47307054}{getIvHP}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ ivHP;\ \}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemonJogador_a926d9e1b833ba8b5db314a66b3b68060}{getIvAttack}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ ivAttack;\ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemonJogador_a00884bf5a7bdfc45eb0491283a8ff8f7}{getIvSpAttack}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ ivSpAttack;\ \}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemonJogador_adb658bd3c8c72b976dffd771b69313fd}{getIvDefense}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ ivDefense;\ \}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemonJogador_ab8d7d179b6e5a92ae5df1914ae8066e9}{getIvSpDefense}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ ivSpDefense;\ \}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemonJogador_af313368c4087b1e026ec3107496eee91}{getIvSpeed}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ ivSpeed;\ \}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00060\ \ \ \ \ std::string\ \mbox{\hyperlink{classPokemonJogador_a17e620d57acc21de85916946fc174dd0}{getHabilidade}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ habilidade;\ \}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemonJogador_a8c9573ce9636487d83640b18d19913c1}{getCurrentHP}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ currentHP;\ \}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemonJogador_a030cf73fdbab2eb7abbd572b17ba4eb0}{getMaxHP}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ maxHP;\ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemonJogador_a5b15f927effff36c240c030bb7930e0d}{getAttack}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ attack;\ \}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemonJogador_abd46e3ddd50f7629e78cc11a254077d4}{getSpAttack}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ spAttack;\ \}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemonJogador_a356d3da3fea4abc00d0ab48c8ed61c50}{getDefense}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ defense;\ \}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemonJogador_aa7c4a82b8bdaedb70a406264cd77f74b}{getSpDefense}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ spDefense;\ \}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemonJogador_ad473a772aefeab296f164d597aaf1f2d}{getSpeed}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ speed;\ \}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00084\ \ \ \ \ std::string\ \mbox{\hyperlink{classPokemonJogador_a04dc9845b549960c9651ce93c78b484d}{getNatureza}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ natureza;\ \}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPokemonJogador_a565a62ea34635bf1ae9eec3e71be61de}{setBase}}(\mbox{\hyperlink{classPokemon}{Pokemon}}\ b)\ \{\ base\ =\ b;\ \}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPokemonJogador_a797ee3730edac0574b9ff0f8961fef99}{setLevel}}(\textcolor{keywordtype}{int}\ l)\ \{\ level\ =\ l;\ \}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPokemonJogador_a7751209c60aac51dce2bf9208ecd2130}{setIvHP}}(\textcolor{keywordtype}{int}\ iv)\ \{\ ivHP\ =\ iv;\ \}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPokemonJogador_affea43a533c54375e3ede5e8f733fe79}{setIvAttack}}(\textcolor{keywordtype}{int}\ iv)\ \{\ ivAttack\ =\ iv;\ \}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPokemonJogador_aac33e4507ccbbc4514b04934cfe95eda}{setIvSpAttack}}(\textcolor{keywordtype}{int}\ iv)\ \{\ ivSpAttack\ =\ iv;\ \}}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPokemonJogador_aa23013f9e1a6a78dfe278a05e474fae2}{setIvDefense}}(\textcolor{keywordtype}{int}\ iv)\ \{\ ivDefense\ =\ iv;\ \}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPokemonJogador_ab84d49efdd23b897d311d1372a4fd92d}{setIvSpDefense}}(\textcolor{keywordtype}{int}\ iv)\ \{\ ivSpDefense\ =\ iv;\ \}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPokemonJogador_a51ce5bebd9b530b076cd66917c60e907}{setIvSpeed}}(\textcolor{keywordtype}{int}\ iv)\ \{\ ivSpeed\ =\ iv;\ \}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPokemonJogador_a7cd14e0560be8376e0edafdefb761de1}{setHabilidade}}(\textcolor{keyword}{const}\ std::string\&\ h)\ \{\ habilidade\ =\ h;\ \}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPokemonJogador_ae0d729acb859379970e89a1555ad9348}{setCurrentHP}}(\textcolor{keywordtype}{int}\ hp)\ \{\ currentHP\ =\ hp;\ \}}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPokemonJogador_a23e1a44bf4bab76eccf86a46947c7689}{setMaxHP}}(\textcolor{keywordtype}{int}\ hp)\ \{\ maxHP\ =\ hp;\ \}}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPokemonJogador_afc2fee4e7f0973e85f1b873f273fcea0}{setAttack}}(\textcolor{keywordtype}{int}\ a)\ \{\ attack\ =\ a;\ \}}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPokemonJogador_adad8c3daf62cff33b4c31f0dec5905b4}{setSpAttack}}(\textcolor{keywordtype}{int}\ sa)\ \{\ spAttack\ =\ sa;\ \}}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPokemonJogador_a2436d53e6fa5c5362ae9c471e6afe566}{setDefense}}(\textcolor{keywordtype}{int}\ d)\ \{\ defense\ =\ d;\ \}}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPokemonJogador_a1f3fb9b8dc77d9fc47d49ca5e60ed10f}{setSpDefense}}(\textcolor{keywordtype}{int}\ sd)\ \{\ spDefense\ =\ sd;\ \}}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPokemonJogador_af9654f138153f0615394c92a594eca6c}{setSpeed}}(\textcolor{keywordtype}{int}\ s)\ \{\ speed\ =\ s;\ \}}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPokemonJogador_a4266ce37abb41d79cbc0587c4696d163}{setNatureza}}(\textcolor{keyword}{const}\ std::string\&\ n)\ \{\ natureza\ =\ n;\ \}}
+\DoxyCodeLine{00140\ \};}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00142\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ POKEMONJOGADOR\_H}}
+
+\end{DoxyCode}

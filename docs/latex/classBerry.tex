@@ -1,0 +1,203 @@
+\doxysection{Berry Class Reference}
+\hypertarget{classBerry}{}\label{classBerry}\index{Berry@{Berry}}
+
+
+Representa uma berry com atributos de sabor e metadados.  
+
+
+
+
+{\ttfamily \#include $<$berry.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBerry_a689f03536a7fe945dd8f854041d3de9e}{Berry}} ()=default
+\begin{DoxyCompactList}\small\item\em Construtor padrão. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBerry_ac78d92f2a01d1b300591e52c4931c59b}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o identificador da berry. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classBerry_a81d16429e29942d4c2cacc0321b5c1f7}{get\+Nome}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o nome da berry. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBerry_a852314c83f480ab0ee46be29f009e736}{get\+Picante}} () const
+\begin{DoxyCompactList}\small\item\em Recupera o nível de sabor picante. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBerry_a6b3d43e907b537afaee6565102722e01}{get\+Seco}} () const
+\begin{DoxyCompactList}\small\item\em Recupera o nível de sabor seco. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBerry_a1128f9ace4609a9fa8cd42eb673d6e49}{get\+Doce}} () const
+\begin{DoxyCompactList}\small\item\em Recupera o nível de sabor doce. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBerry_a7cfd419a38b4e6e22e28f44ace88bc4b}{get\+Amargo}} () const
+\begin{DoxyCompactList}\small\item\em Recupera o nível de sabor amargo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBerry_a9894cc47f2acd222253d9fe8f5648c89}{get\+Azedo}} () const
+\begin{DoxyCompactList}\small\item\em Recupera o nível de sabor azedo. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classBerry_a1d28c6170ef6521191612ab96dce5d12}{get\+Raridade}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a raridade da berry. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classBerry_a3d5514c34c1320e15f33dc668d61fb99}{get\+Descricao}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a descrição da berry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classBerry}{Berry}} \mbox{\hyperlink{classBerry_ae51ffb7d7d945c51027e7e801210fcc9}{from\+CSV}} (const std\+::string \&linha)
+\begin{DoxyCompactList}\small\item\em Cria uma \doxylink{classBerry}{Berry} a partir de uma linha CSV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa uma berry com atributos de sabor e metadados. 
+
+A classe \doxylink{classBerry}{Berry} encapsula os dados de uma berry (fruta) utilizada para melhorar atributos de um Pokémon. É possível criar uma instância a partir de uma linha CSV e recuperar cada atributo via getters. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classBerry_a689f03536a7fe945dd8f854041d3de9e}\label{classBerry_a689f03536a7fe945dd8f854041d3de9e} 
+\index{Berry@{Berry}!Berry@{Berry}}
+\index{Berry@{Berry}!Berry@{Berry}}
+\doxysubsubsection{\texorpdfstring{Berry()}{Berry()}}
+{\footnotesize\ttfamily Berry\+::\+Berry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construtor padrão. 
+
+Cria uma \doxylink{classBerry}{Berry} com valores padrão (construtor compilado automaticamente). 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classBerry_ae51ffb7d7d945c51027e7e801210fcc9}\label{classBerry_ae51ffb7d7d945c51027e7e801210fcc9} 
+\index{Berry@{Berry}!fromCSV@{fromCSV}}
+\index{fromCSV@{fromCSV}!Berry@{Berry}}
+\doxysubsubsection{\texorpdfstring{fromCSV()}{fromCSV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBerry}{Berry}} Berry\+::from\+CSV (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{linha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Cria uma \doxylink{classBerry}{Berry} a partir de uma linha CSV. 
+
+Espera uma string no formato\+: {\ttfamily id;nome;picante;seco;doce;amargo;azedo;raridade;descricao}
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & A linha lida do CSV contendo todos os campos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uma instância de \doxylink{classBerry}{Berry} populada com os valores do CSV. 
+\end{DoxyReturn}
+\Hypertarget{classBerry_a7cfd419a38b4e6e22e28f44ace88bc4b}\label{classBerry_a7cfd419a38b4e6e22e28f44ace88bc4b} 
+\index{Berry@{Berry}!getAmargo@{getAmargo}}
+\index{getAmargo@{getAmargo}!Berry@{Berry}}
+\doxysubsubsection{\texorpdfstring{getAmargo()}{getAmargo()}}
+{\footnotesize\ttfamily int Berry\+::get\+Amargo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Recupera o nível de sabor amargo. 
+
+\begin{DoxyReturn}{Returns}
+Valor inteiro de amargor. 
+\end{DoxyReturn}
+\Hypertarget{classBerry_a9894cc47f2acd222253d9fe8f5648c89}\label{classBerry_a9894cc47f2acd222253d9fe8f5648c89} 
+\index{Berry@{Berry}!getAzedo@{getAzedo}}
+\index{getAzedo@{getAzedo}!Berry@{Berry}}
+\doxysubsubsection{\texorpdfstring{getAzedo()}{getAzedo()}}
+{\footnotesize\ttfamily int Berry\+::get\+Azedo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Recupera o nível de sabor azedo. 
+
+\begin{DoxyReturn}{Returns}
+Valor inteiro de acidez. 
+\end{DoxyReturn}
+\Hypertarget{classBerry_a3d5514c34c1320e15f33dc668d61fb99}\label{classBerry_a3d5514c34c1320e15f33dc668d61fb99} 
+\index{Berry@{Berry}!getDescricao@{getDescricao}}
+\index{getDescricao@{getDescricao}!Berry@{Berry}}
+\doxysubsubsection{\texorpdfstring{getDescricao()}{getDescricao()}}
+{\footnotesize\ttfamily std\+::string Berry\+::get\+Descricao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna a descrição da berry. 
+
+\begin{DoxyReturn}{Returns}
+Descrição detalhada como std\+::string. 
+\end{DoxyReturn}
+\Hypertarget{classBerry_a1128f9ace4609a9fa8cd42eb673d6e49}\label{classBerry_a1128f9ace4609a9fa8cd42eb673d6e49} 
+\index{Berry@{Berry}!getDoce@{getDoce}}
+\index{getDoce@{getDoce}!Berry@{Berry}}
+\doxysubsubsection{\texorpdfstring{getDoce()}{getDoce()}}
+{\footnotesize\ttfamily int Berry\+::get\+Doce (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Recupera o nível de sabor doce. 
+
+\begin{DoxyReturn}{Returns}
+Valor inteiro de doçura. 
+\end{DoxyReturn}
+\Hypertarget{classBerry_ac78d92f2a01d1b300591e52c4931c59b}\label{classBerry_ac78d92f2a01d1b300591e52c4931c59b} 
+\index{Berry@{Berry}!getId@{getId}}
+\index{getId@{getId}!Berry@{Berry}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Berry\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o identificador da berry. 
+
+\begin{DoxyReturn}{Returns}
+Valor inteiro do ID. 
+\end{DoxyReturn}
+\Hypertarget{classBerry_a81d16429e29942d4c2cacc0321b5c1f7}\label{classBerry_a81d16429e29942d4c2cacc0321b5c1f7} 
+\index{Berry@{Berry}!getNome@{getNome}}
+\index{getNome@{getNome}!Berry@{Berry}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily std\+::string Berry\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o nome da berry. 
+
+\begin{DoxyReturn}{Returns}
+Nome como std\+::string. 
+\end{DoxyReturn}
+\Hypertarget{classBerry_a852314c83f480ab0ee46be29f009e736}\label{classBerry_a852314c83f480ab0ee46be29f009e736} 
+\index{Berry@{Berry}!getPicante@{getPicante}}
+\index{getPicante@{getPicante}!Berry@{Berry}}
+\doxysubsubsection{\texorpdfstring{getPicante()}{getPicante()}}
+{\footnotesize\ttfamily int Berry\+::get\+Picante (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Recupera o nível de sabor picante. 
+
+\begin{DoxyReturn}{Returns}
+Valor inteiro de picância. 
+\end{DoxyReturn}
+\Hypertarget{classBerry_a1d28c6170ef6521191612ab96dce5d12}\label{classBerry_a1d28c6170ef6521191612ab96dce5d12} 
+\index{Berry@{Berry}!getRaridade@{getRaridade}}
+\index{getRaridade@{getRaridade}!Berry@{Berry}}
+\doxysubsubsection{\texorpdfstring{getRaridade()}{getRaridade()}}
+{\footnotesize\ttfamily std\+::string Berry\+::get\+Raridade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna a raridade da berry. 
+
+\begin{DoxyReturn}{Returns}
+Texto indicando raridade. 
+\end{DoxyReturn}
+\Hypertarget{classBerry_a6b3d43e907b537afaee6565102722e01}\label{classBerry_a6b3d43e907b537afaee6565102722e01} 
+\index{Berry@{Berry}!getSeco@{getSeco}}
+\index{getSeco@{getSeco}!Berry@{Berry}}
+\doxysubsubsection{\texorpdfstring{getSeco()}{getSeco()}}
+{\footnotesize\ttfamily int Berry\+::get\+Seco (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Recupera o nível de sabor seco. 
+
+\begin{DoxyReturn}{Returns}
+Valor inteiro de secura. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{berry_8hpp}{berry.\+hpp}}\item 
+src/\mbox{\hyperlink{berry_8cpp}{berry.\+cpp}}\end{DoxyCompactItemize}

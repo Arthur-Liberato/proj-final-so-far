@@ -1,0 +1,64 @@
+\doxysection{jogador.\+hpp}
+\hypertarget{jogador_8hpp_source}{}\label{jogador_8hpp_source}\index{include/jogador.hpp@{include/jogador.hpp}}
+\mbox{\hyperlink{jogador_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ JOGADOR\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ JOGADOR\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pokejogador_8hpp}{pokejogador.hpp}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{item_8hpp}{item.hpp}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{berry_8hpp}{berry.hpp}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pokeblock_8hpp}{pokeblock.hpp}}"{}}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classJogador}{Jogador}}\ \{}
+\DoxyCodeLine{00027\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ std::string\ nome;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ dinheiro;}
+\DoxyCodeLine{00033\ \ \ \ \ std::vector<PokemonJogador>\ pokemons;}
+\DoxyCodeLine{00035\ \ \ \ \ std::vector<Item>\ itens;}
+\DoxyCodeLine{00037\ \ \ \ \ std::vector<Berry>\ berries;}
+\DoxyCodeLine{00039\ \ \ \ \ std::vector<Pokeblock>\ pokeblocks;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00048\ \ \ \ \ std::string\ \mbox{\hyperlink{classJogador_a56f68b57e7fb229f932ef60d2116833c}{getNome}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ nome;\ \}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classJogador_ace231e84ac3d3c668059842fecb9e54c}{getDinheiro}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ dinheiro;\ \}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \ \ \ \ std::vector<PokemonJogador>\ \mbox{\hyperlink{classJogador_a43a3f2035c8dca1544eee8cb0e812744}{getPokemons}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ pokemons;\ \}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00066\ \ \ \ \ std::vector<Item>\ \mbox{\hyperlink{classJogador_a397f29299e9494f85e8e77e95348affd}{getItens}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ itens;\ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ \ \ std::vector<Berry>\ \mbox{\hyperlink{classJogador_a8b2886d4912ec515d38b8d81910f6971}{getBerries}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ berries;\ \}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00078\ \ \ \ \ std::vector<Pokeblock>\ \mbox{\hyperlink{classJogador_aa18f1da129116a776e69225a8ab28cef}{getPokeblocks}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ pokeblocks;\ \}}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classJogador_a4655e7163c87abada9e207ebeee85dda}{setNome}}(\textcolor{keyword}{const}\ std::string\&\ n)\ \{\ nome\ =\ n;\ \}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classJogador_a8b3e0a0ac2b72643807d2fdfed810211}{setDinheiro}}(\textcolor{keywordtype}{int}\ d)\ \{\ dinheiro\ =\ d;\ \}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classJogador_a95871926f60abcfd9dcddeff97cf2db3}{setPokemons}}(\textcolor{keyword}{const}\ std::vector<PokemonJogador>\&\ p)\ \{\ pokemons\ =\ p;\ \}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classJogador_a222e2733836539ac1140def8d57221c6}{setItens}}(\textcolor{keyword}{const}\ std::vector<Item>\&\ i)\ \{\ itens\ =\ i;\ \}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classJogador_ab6367368105fe7a0bef8cdacf3853b50}{setBerries}}(\textcolor{keyword}{const}\ std::vector<Berry>\&\ b)\ \{\ berries\ =\ b;\ \}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classJogador_a166f8486644d901f5cf2e1b283c37993}{setPokeblocks}}(\textcolor{keyword}{const}\ std::vector<Pokeblock>\&\ p)\ \{\ pokeblocks\ =\ p;\ \}}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classJogador_af7114969a02873411841e99b59499a02}{addPokemon}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPokemonJogador}{PokemonJogador}}\&\ p)\ \{\ pokemons.push\_back(p);\ \}}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classJogador_aa3de293d8eefd9a799926aa4d9a42fd9}{addItem}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classItem}{Item}}\&\ i)\ \{\ itens.push\_back(i);\ \}}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classJogador_a51710062de944e624f9fea4857d9c071}{addBerry}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classBerry}{Berry}}\&\ b)\ \{\ berries.push\_back(b);\ \}}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classJogador_ae8e626a3d670fb5ad85eb3fcdf23b583}{addPokeblock}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPokeblock}{Pokeblock}}\&\ p)\ \{\ pokeblocks.push\_back(p);\ \}}
+\DoxyCodeLine{00146\ \};}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ JOGADOR\_H}}
+
+\end{DoxyCode}

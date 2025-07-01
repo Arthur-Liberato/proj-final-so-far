@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['calcularstatuspokemon_0',['calcularStatusPokemon',['../classGameManager.html#ab5b70b21f164d0f52506c8daab28803e',1,'GameManager']]],
+  ['carregarberries_1',['carregarBerries',['../classDataLoader.html#aa8559ef464969491f118b41272bf8342',1,'DataLoader']]],
+  ['carregardados_2',['carregarDados',['../classGameManager.html#a9a1088557c338b640a85afc19ddc496d',1,'GameManager']]],
+  ['carregaritens_3',['carregarItens',['../classDataLoader.html#ad42baf1819129c4f55754129a3816d52',1,'DataLoader']]],
+  ['carregarjogosalvo_4',['carregarJogoSalvo',['../classGameManager.html#abeac868912f4c727cede60922aea9fc1',1,'GameManager']]],
+  ['carregarnatures_5',['carregarNatures',['../classDataLoader.html#abf0cb75325e1f16b8bf5692bb3a46cad',1,'DataLoader']]],
+  ['carregarpokeblocks_6',['carregarPokeblocks',['../classDataLoader.html#ab8a1276ddff422708985740a1621c889',1,'DataLoader']]],
+  ['carregarpokemons_7',['carregarPokemons',['../classDataLoader.html#ae1ee3dfb61615f6abda0a4e55f76657d',1,'DataLoader']]],
+  ['consultarberryporid_8',['consultarBerryPorID',['../classGameManager.html#a5ac1692f0e1098d1b64da28ee52e6544',1,'GameManager']]],
+  ['consultarberrypornome_9',['consultarBerryPorNome',['../classGameManager.html#a1c6d10ea9739118d81927609785d9535',1,'GameManager']]],
+  ['consultarberryporraridade_10',['consultarBerryPorRaridade',['../classGameManager.html#a4b062eed4c2d772afe7733dd1e7f819d',1,'GameManager']]],
+  ['consultaritemporid_11',['consultarItemPorID',['../classGameManager.html#ac1cb8f8f09e2753c542e1aeb3b0b831f',1,'GameManager']]],
+  ['consultaritempornome_12',['consultarItemPorNome',['../classGameManager.html#a30989c8670f0a7c77b99d10ab7c96934',1,'GameManager']]],
+  ['consultarpokeblockporcor_13',['consultarPokeblockPorCor',['../classGameManager.html#ad2bc271c69a2f4185aa7dac0006dbdb3',1,'GameManager']]],
+  ['consultarpokeblockporid_14',['consultarPokeblockPorID',['../classGameManager.html#ad6edcb220533901ec3200a063a6ac915',1,'GameManager']]],
+  ['consultarpokeblockpornome_15',['consultarPokeblockPorNome',['../classGameManager.html#a484da98b2a1ad988362e48fcb0a67b20',1,'GameManager']]],
+  ['consultarpokeblockporraridade_16',['consultarPokeblockPorRaridade',['../classGameManager.html#ab28ae1b9111d976760292a6b47a11ea8',1,'GameManager']]],
+  ['consultarpokemonporid_17',['consultarPokemonPorID',['../classGameManager.html#a2442c7d06fc8310dae6c2a0838e47ba8',1,'GameManager']]],
+  ['consultarpokemonpornome_18',['consultarPokemonPorNome',['../classGameManager.html#a744bd5f1e84638c457873451b3b49413',1,'GameManager']]],
+  ['consultarpokemonportipo_19',['consultarPokemonPorTipo',['../classGameManager.html#a23a5c34fc8e676fdfa540a6b6686d528',1,'GameManager']]]
+];

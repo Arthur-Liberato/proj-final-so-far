@@ -1,0 +1,104 @@
+\doxysection{gamemanager.\+hpp}
+\hypertarget{gamemanager_8hpp_source}{}\label{gamemanager_8hpp_source}\index{include/gamemanager.hpp@{include/gamemanager.hpp}}
+\mbox{\hyperlink{gamemanager_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#ifndef\ GAMEMANAGER\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ GAMEMANAGER\_H}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{berry_8hpp}{berry.hpp}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{item_8hpp}{item.hpp}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pokemon_8hpp}{pokemon.hpp}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pokeblock_8hpp}{pokeblock.hpp}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{nature_8hpp}{nature.hpp}}"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{jogador_8hpp}{jogador.hpp}}"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pokejogador_8hpp}{pokejogador.hpp}}"{}}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{dataloader_8hpp}{dataloader.hpp}}"{}}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGameManager}{GameManager}}\ \{}
+\DoxyCodeLine{00038\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00040\ \ \ \ \ std::vector<Berry>\ berries;}
+\DoxyCodeLine{00042\ \ \ \ \ std::vector<Item>\ items;}
+\DoxyCodeLine{00044\ \ \ \ \ std::vector<Pokemon>\ pokemons;}
+\DoxyCodeLine{00046\ \ \ \ \ std::vector<Pokeblock>\ pokeblocks;}
+\DoxyCodeLine{00048\ \ \ \ \ std::vector<Nature>\ natures;}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{classJogador}{Jogador}}\ jogador;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ exibirPokemonTabela(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPokemonJogador}{PokemonJogador}}\&\ pj,\ \textcolor{keywordtype}{int}\ larguraColuna);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ exibirLinhaStatus(\textcolor{keyword}{const}\ std::string\&\ label,}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ valor,}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ larguraColuna);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{classGameManager_aa0e2424dc1a39d380e5b6605b179bf05}{GameManager}}();}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_a9a1088557c338b640a85afc19ddc496d}{carregarDados}}();}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classGameManager_ab1a4c1fd15c4e90dbaa725d65afb24b3}{gerarIV}}();}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00093\ \ \ \ \ std::string\ \mbox{\hyperlink{classGameManager_adb19321cbfa0af13e0a96a4ee715147b}{escolherHabilidadeAleatoria}}(\textcolor{keyword}{const}\ std::string\&\ habilidades);}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00099\ \ \ \ \ \mbox{\hyperlink{classNature}{Nature}}\ \mbox{\hyperlink{classGameManager_a826f1ab6c99f699f186e60b9411ad0e4}{escolherNatureAleatoria}}();}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00108\ \ \ \ \ \mbox{\hyperlink{classPokemonJogador}{PokemonJogador}}\ \mbox{\hyperlink{classGameManager_ab5b70b21f164d0f52506c8daab28803e}{calcularStatusPokemon}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPokemon}{Pokemon}}\&\ base,}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ level,}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classNature}{Nature}}\&\ natureza);}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_a75e254641e11345150b24694191d65c5}{exibirPokemon}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPokemonJogador}{PokemonJogador}}\&\ pj);}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_a07111f6900195cee41dfdcc698f4d797}{exibirPokemonPokedex}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPokemon}{Pokemon}}\&\ p);}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_aa74696c198fbb739b00aba6b2fb45e63}{exibirItem}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classItem}{Item}}\&\ item);}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_aeda1ebd0e3b6894b3bdf2412c046b5c1}{exibirBerry}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classBerry}{Berry}}\&\ berry);}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_ae796a6f4a4f1525035e75db689608653}{exibirPokeblock}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPokeblock}{Pokeblock}}\&\ pokeblock);}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_ae3853f26e5e2e9ce787cf4abf316ef6e}{exibirTime}}();}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_ac1cb8f8f09e2753c542e1aeb3b0b831f}{consultarItemPorID}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_a30989c8670f0a7c77b99d10ab7c96934}{consultarItemPorNome}}();}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_a5ac1692f0e1098d1b64da28ee52e6544}{consultarBerryPorID}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_a1c6d10ea9739118d81927609785d9535}{consultarBerryPorNome}}();}
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_a4b062eed4c2d772afe7733dd1e7f819d}{consultarBerryPorRaridade}}();}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00162\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_ad6edcb220533901ec3200a063a6ac915}{consultarPokeblockPorID}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_a484da98b2a1ad988362e48fcb0a67b20}{consultarPokeblockPorNome}}();}
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_ad2bc271c69a2f4185aa7dac0006dbdb3}{consultarPokeblockPorCor}}();}
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_ab28ae1b9111d976760292a6b47a11ea8}{consultarPokeblockPorRaridade}}();}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_ae952261339ecdc66f07aa1b70cf065a8}{menuConsultaPokeblocks}}();}
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_a9169d6cd744a0d57f01555dfdd3d71d9}{menuConsultaItens}}();}
+\DoxyCodeLine{00172\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_aae3db9399f8859d99c3ddd8a4110e3bc}{menuConsultaBerries}}();}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00177\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_a2442c7d06fc8310dae6c2a0838e47ba8}{consultarPokemonPorID}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00178\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_a744bd5f1e84638c457873451b3b49413}{consultarPokemonPorNome}}();}
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_a23a5c34fc8e676fdfa540a6b6686d528}{consultarPokemonPorTipo}}();}
+\DoxyCodeLine{00180\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_a1bbc67f1ef551242914bce6674c547b9}{menuConsultaPokemon}}();}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00186\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_ac1fb28ed2b3bec17fd5d3a7efed0ed6b}{salvarJogo}}();}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00192\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classGameManager_abeac868912f4c727cede60922aea9fc1}{carregarJogoSalvo}}();}
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00196\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_ab41a83d857ba3080490a64347f2aac1d}{mostrarBolsaItens}}();}
+\DoxyCodeLine{00197\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_a68bc84b1a5105ab633556f2cd21f5a4a}{mostrarBolsaBerries}}();}
+\DoxyCodeLine{00198\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_ad1724d4583cf391ca003ed0e998e4228}{mostrarBolsaPokeblocks}}();}
+\DoxyCodeLine{00199\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_aa3b54cd0fdbb5f0a0d5ce6fa4571ed42}{menuBolsa}}();}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00205\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_a843db55258f2db9473684a6e653c693c}{menuPokedex}}();}
+\DoxyCodeLine{00206\ }
+\DoxyCodeLine{00212\ \ \ \ \ \mbox{\hyperlink{classPokemonJogador}{PokemonJogador}}\ \mbox{\hyperlink{classGameManager_aade998ac211efff438780fbc85b08a48}{escolherPokemonInicial}}(\textcolor{keyword}{const}\ std::string\&\ nomeJogador);}
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00216\ }
+\DoxyCodeLine{00219\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_ad705fd54a4833ff703cb799ca78d0e40}{menuPrincipal}}();}
+\DoxyCodeLine{00220\ }
+\DoxyCodeLine{00224\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameManager_ad8d5631689715d1a9e9101ef0ae2f7f0}{iniciarJogo}}();}
+\DoxyCodeLine{00226\ \};}
+\DoxyCodeLine{00227\ }
+\DoxyCodeLine{00228\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ GAMEMANAGER\_H}}
+
+\end{DoxyCode}

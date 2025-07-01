@@ -1,0 +1,82 @@
+\doxysection{pokemon.\+hpp}
+\hypertarget{pokemon_8hpp_source}{}\label{pokemon_8hpp_source}\index{include/pokemon.hpp@{include/pokemon.hpp}}
+\mbox{\hyperlink{pokemon_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ POKEMON\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ POKEMON\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{utils_8hpp}{utils.hpp}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPokemon}{Pokemon}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{int}\ id;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ std::string\ nome;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ std::string\ tipo1;\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ std::string\ tipo2;\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ hp;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ attack;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ spAttack;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ defense;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ spDefense;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ speed;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ std::string\ abilities;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ std::string\ category;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ std::string\ evolutions;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ contestBeauty;\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ contestCool;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ contestCute;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ contestSmart;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ contestTough;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ std::string\ resistances;\ \ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ std::string\ weaknesses;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{classPokemon_a40443cbdcade4ede62b10fdc4393ba52}{Pokemon}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classPokemon}{Pokemon}}\ \mbox{\hyperlink{classPokemon_ac045cb1f27daa91b31a1c6f73d8e4bfa}{fromCSV}}(\textcolor{keyword}{const}\ std::string\&\ linha);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemon_ac527b6504b5ab19a70fb28e63e67c038}{getId}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ id;\ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00062\ \ \ \ \ std::string\ \mbox{\hyperlink{classPokemon_a0a4eb1e6bf0e63b95f6cb576c3e7fd6c}{getNome}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ nome;\ \}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00065\ \ \ \ \ std::string\ \mbox{\hyperlink{classPokemon_a080eeace500e46460c4e04947c1c3be5}{getTipo1}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ tipo1;\ \}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00068\ \ \ \ \ std::string\ \mbox{\hyperlink{classPokemon_a7d9971f54d7057a083cde7820c222c6d}{getTipo2}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ tipo2;\ \}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemon_a4f05ea5b017bab609fc62a27fcbdb8f5}{getHp}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ hp;\ \}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemon_aaf879ac44c250a42b7dd87b46c8c741f}{getAttack}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ attack;\ \}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemon_ac3573d356a2225415f97b56465429a81}{getSpAttack}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ spAttack;\ \}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemon_aa33dd257980362cf9c46fcdc7316a6b8}{getDefense}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ defense;\ \}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemon_ac674d653732985443ed1e45d1c508c17}{getSpDefense}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ spDefense;\ \}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemon_ad1503929cac79029ceb916a7f2e819f5}{getSpeed}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ speed;\ \}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00089\ \ \ \ \ std::string\ \mbox{\hyperlink{classPokemon_ab0c4c08beca028e068fab0d5e5baaa64}{getAbilities}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ abilities;\ \}}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00092\ \ \ \ \ std::string\ \mbox{\hyperlink{classPokemon_a3929219db6cae3db4de718188200c211}{getCategory}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ category;\ \}}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00095\ \ \ \ \ std::string\ \mbox{\hyperlink{classPokemon_a5c5f4b9eda08c5df3d05628b183e9bec}{getEvolutions}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ evolutions;\ \}}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemon_a8a8526234e36ae65a13da1308f873a82}{getContestBeauty}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ contestBeauty;\ \}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemon_a21a4ad3a89e6a7357329978f02e2b93b}{getContestCool}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ contestCool;\ \}}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemon_ad935d334c43b6a1de1282ee47a0da6fe}{getContestCute}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ contestCute;\ \}}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemon_ad078237d2a3f627a4cfc0739e175fde7}{getContestSmart}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ contestSmart;\ \}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokemon_aaeca0bcad92a73514dc4099baeb6105f}{getContestTough}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ contestTough;\ \}}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00113\ \ \ \ \ std::string\ \mbox{\hyperlink{classPokemon_a4d5909652a1a552e19b3738dc480564d}{getResistances}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ resistances;\ \}}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00116\ \ \ \ \ std::string\ \mbox{\hyperlink{classPokemon_aae924716aa22be88f5cae3bd2dbaabfb}{getWeaknesses}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ weaknesses;\ \}}
+\DoxyCodeLine{00118\ \};}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ POKEMON\_H}}
+
+\end{DoxyCode}

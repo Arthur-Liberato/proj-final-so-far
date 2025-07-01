@@ -1,0 +1,505 @@
+\doxysection{Game\+Manager Class Reference}
+\hypertarget{classGameManager}{}\label{classGameManager}\index{GameManager@{GameManager}}
+
+
+Responsável por toda a lógica de jogo\+: menus, carregamento, consultas, exibição e persistência.  
+
+
+
+
+{\ttfamily \#include $<$gamemanager.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGameManager_aa0e2424dc1a39d380e5b6605b179bf05}{Game\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão\+: inicializa o \doxylink{classGameManager}{Game\+Manager} sem dados carregados. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameManager_a9a1088557c338b640a85afc19ddc496d}{carregar\+Dados}} ()
+\begin{DoxyCompactList}\small\item\em Carrega todos os dados (berries, itens, pokémons, pokeblocks, natures). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classGameManager_ab1a4c1fd15c4e90dbaa725d65afb24b3}{gerar\+IV}} ()
+\begin{DoxyCompactList}\small\item\em Gera um valor de IV (Valor Individual) aleatório para um stat. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classGameManager_adb19321cbfa0af13e0a96a4ee715147b}{escolher\+Habilidade\+Aleatoria}} (const std\+::string \&habilidades)
+\begin{DoxyCompactList}\small\item\em Seleciona aleatoriamente uma das habilidades listadas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNature}{Nature}} \mbox{\hyperlink{classGameManager_a826f1ab6c99f699f186e60b9411ad0e4}{escolher\+Nature\+Aleatoria}} ()
+\begin{DoxyCompactList}\small\item\em Escolhe uma \doxylink{classNature}{Nature} aleatoriamente dentre as disponíveis. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPokemonJogador}{Pokemon\+Jogador}} \mbox{\hyperlink{classGameManager_ab5b70b21f164d0f52506c8daab28803e}{calcular\+Status\+Pokemon}} (const \mbox{\hyperlink{classPokemon}{Pokemon}} \&base, int level, const \mbox{\hyperlink{classNature}{Nature}} \&natureza)
+\begin{DoxyCompactList}\small\item\em Calcula o status final de um Pokémon de jogador com base na base e \doxylink{classNature}{Nature}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameManager_a75e254641e11345150b24694191d65c5}{exibir\+Pokemon}} (const \mbox{\hyperlink{classPokemonJogador}{Pokemon\+Jogador}} \&pj)
+\begin{DoxyCompactList}\small\item\em Exibe detalhes formatados de um Pokémon de jogador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameManager_a07111f6900195cee41dfdcc698f4d797}{exibir\+Pokemon\+Pokedex}} (const \mbox{\hyperlink{classPokemon}{Pokemon}} \&p)
+\begin{DoxyCompactList}\small\item\em Exibe detalhes formato Pokedex de um Pokémon-\/base. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameManager_aa74696c198fbb739b00aba6b2fb45e63}{exibir\+Item}} (const \mbox{\hyperlink{classItem}{Item}} \&item)
+\begin{DoxyCompactList}\small\item\em Exibe detalhes de um item no console. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameManager_aeda1ebd0e3b6894b3bdf2412c046b5c1}{exibir\+Berry}} (const \mbox{\hyperlink{classBerry}{Berry}} \&berry)
+\begin{DoxyCompactList}\small\item\em Exibe detalhes de uma berry no console. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameManager_ae796a6f4a4f1525035e75db689608653}{exibir\+Pokeblock}} (const \mbox{\hyperlink{classPokeblock}{Pokeblock}} \&pokeblock)
+\begin{DoxyCompactList}\small\item\em Exibe detalhes de um pokeblock no console. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameManager_ae3853f26e5e2e9ce787cf4abf316ef6e}{exibir\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Exibe todos os pokémons do time do jogador em formato de tabela. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameManager_ac1fb28ed2b3bec17fd5d3a7efed0ed6b}{salvar\+Jogo}} ()
+\begin{DoxyCompactList}\small\item\em Persiste o estado do jogo atual em arquivo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGameManager_abeac868912f4c727cede60922aea9fc1}{carregar\+Jogo\+Salvo}} ()
+\begin{DoxyCompactList}\small\item\em Tenta carregar um jogo salvo previamente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameManager_a843db55258f2db9473684a6e653c693c}{menu\+Pokedex}} ()
+\begin{DoxyCompactList}\small\item\em Exibe o menu de Pokedex e trata interações do usuário. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPokemonJogador}{Pokemon\+Jogador}} \mbox{\hyperlink{classGameManager_aade998ac211efff438780fbc85b08a48}{escolher\+Pokemon\+Inicial}} (const std\+::string \&nome\+Jogador)
+\begin{DoxyCompactList}\small\item\em Permite ao jogador escolher o Pokémon inicial. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Consultas de itens}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGameManager_ac1cb8f8f09e2753c542e1aeb3b0b831f}{consultar\+Item\+Por\+ID}} (int id)
+\item 
+void \mbox{\hyperlink{classGameManager_a30989c8670f0a7c77b99d10ab7c96934}{consultar\+Item\+Por\+Nome}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Consultas de berries}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGameManager_a5ac1692f0e1098d1b64da28ee52e6544}{consultar\+Berry\+Por\+ID}} (int id)
+\item 
+void \mbox{\hyperlink{classGameManager_a1c6d10ea9739118d81927609785d9535}{consultar\+Berry\+Por\+Nome}} ()
+\item 
+void \mbox{\hyperlink{classGameManager_a4b062eed4c2d772afe7733dd1e7f819d}{consultar\+Berry\+Por\+Raridade}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Consultas de pokeblocks}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGameManager_ad6edcb220533901ec3200a063a6ac915}{consultar\+Pokeblock\+Por\+ID}} (int id)
+\item 
+void \mbox{\hyperlink{classGameManager_a484da98b2a1ad988362e48fcb0a67b20}{consultar\+Pokeblock\+Por\+Nome}} ()
+\item 
+void \mbox{\hyperlink{classGameManager_ad2bc271c69a2f4185aa7dac0006dbdb3}{consultar\+Pokeblock\+Por\+Cor}} ()
+\item 
+void \mbox{\hyperlink{classGameManager_ab28ae1b9111d976760292a6b47a11ea8}{consultar\+Pokeblock\+Por\+Raridade}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Menus de consulta específicos}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGameManager_ae952261339ecdc66f07aa1b70cf065a8}{menu\+Consulta\+Pokeblocks}} ()
+\item 
+void \mbox{\hyperlink{classGameManager_a9169d6cd744a0d57f01555dfdd3d71d9}{menu\+Consulta\+Itens}} ()
+\item 
+void \mbox{\hyperlink{classGameManager_aae3db9399f8859d99c3ddd8a4110e3bc}{menu\+Consulta\+Berries}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Consultas de pokémons}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGameManager_a2442c7d06fc8310dae6c2a0838e47ba8}{consultar\+Pokemon\+Por\+ID}} (int id)
+\item 
+void \mbox{\hyperlink{classGameManager_a744bd5f1e84638c457873451b3b49413}{consultar\+Pokemon\+Por\+Nome}} ()
+\item 
+void \mbox{\hyperlink{classGameManager_a23a5c34fc8e676fdfa540a6b6686d528}{consultar\+Pokemon\+Por\+Tipo}} ()
+\item 
+void \mbox{\hyperlink{classGameManager_a1bbc67f1ef551242914bce6674c547b9}{menu\+Consulta\+Pokemon}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Exibição de bolsas do jogador}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGameManager_ab41a83d857ba3080490a64347f2aac1d}{mostrar\+Bolsa\+Itens}} ()
+\item 
+void \mbox{\hyperlink{classGameManager_a68bc84b1a5105ab633556f2cd21f5a4a}{mostrar\+Bolsa\+Berries}} ()
+\item 
+void \mbox{\hyperlink{classGameManager_ad1724d4583cf391ca003ed0e998e4228}{mostrar\+Bolsa\+Pokeblocks}} ()
+\item 
+void \mbox{\hyperlink{classGameManager_aa3b54cd0fdbb5f0a0d5ce6fa4571ed42}{menu\+Bolsa}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Fluxos principais do jogo}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGameManager_ad705fd54a4833ff703cb799ca78d0e40}{menu\+Principal}} ()
+\begin{DoxyCompactList}\small\item\em Exibe o menu principal e executa operações conforme escolha. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGameManager_ad8d5631689715d1a9e9101ef0ae2f7f0}{iniciar\+Jogo}} ()
+\begin{DoxyCompactList}\small\item\em Inicia o fluxo completo do jogo (tela de boas-\/vindas, carregamento, loops). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+Responsável por toda a lógica de jogo\+: menus, carregamento, consultas, exibição e persistência. 
+
+Armazena coleções de berries, itens, pokémons, pokeblocks e natures, além do jogador atual. Fornece métodos para\+:
+\begin{DoxyItemize}
+\item carregar dados via \doxylink{classDataLoader}{Data\+Loader}
+\item gerar IVs e escolher atributos aleatórios
+\item calcular status de um Pokémon de jogador
+\item exibir informações na tela (tabelas, detalhes de itens, pokémons etc.)
+\item navegar em menus de consulta e seleção
+\item salvar/carregar progresso do jogo 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classGameManager_aa0e2424dc1a39d380e5b6605b179bf05}\label{classGameManager_aa0e2424dc1a39d380e5b6605b179bf05} 
+\index{GameManager@{GameManager}!GameManager@{GameManager}}
+\index{GameManager@{GameManager}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{GameManager()}{GameManager()}}
+{\footnotesize\ttfamily Game\+Manager\+::\+Game\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor padrão\+: inicializa o \doxylink{classGameManager}{Game\+Manager} sem dados carregados. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classGameManager_ab5b70b21f164d0f52506c8daab28803e}\label{classGameManager_ab5b70b21f164d0f52506c8daab28803e} 
+\index{GameManager@{GameManager}!calcularStatusPokemon@{calcularStatusPokemon}}
+\index{calcularStatusPokemon@{calcularStatusPokemon}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{calcularStatusPokemon()}{calcularStatusPokemon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPokemonJogador}{Pokemon\+Jogador}} Game\+Manager\+::calcular\+Status\+Pokemon (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPokemon}{Pokemon}} \&}]{base,  }\item[{int}]{level,  }\item[{const \mbox{\hyperlink{classNature}{Nature}} \&}]{natureza }\end{DoxyParamCaption})}
+
+
+
+Calcula o status final de um Pokémon de jogador com base na base e \doxylink{classNature}{Nature}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & Objeto \doxylink{classPokemon}{Pokemon} com estatísticas-\/base. \\
+\hline
+{\em level} & Nível do Pokémon (1–100). \\
+\hline
+{\em natureza} & \doxylink{classNature}{Nature} a influenciar os stats. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Objeto \doxylink{classPokemonJogador}{Pokemon\+Jogador} com todos os stats e habilidades definidos. 
+\end{DoxyReturn}
+\Hypertarget{classGameManager_a9a1088557c338b640a85afc19ddc496d}\label{classGameManager_a9a1088557c338b640a85afc19ddc496d} 
+\index{GameManager@{GameManager}!carregarDados@{carregarDados}}
+\index{carregarDados@{carregarDados}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{carregarDados()}{carregarDados()}}
+{\footnotesize\ttfamily void Game\+Manager\+::carregar\+Dados (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Carrega todos os dados (berries, itens, pokémons, pokeblocks, natures). 
+
+Internamente usa \doxylink{classDataLoader}{Data\+Loader} para cada tipo de dado. \Hypertarget{classGameManager_abeac868912f4c727cede60922aea9fc1}\label{classGameManager_abeac868912f4c727cede60922aea9fc1} 
+\index{GameManager@{GameManager}!carregarJogoSalvo@{carregarJogoSalvo}}
+\index{carregarJogoSalvo@{carregarJogoSalvo}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{carregarJogoSalvo()}{carregarJogoSalvo()}}
+{\footnotesize\ttfamily bool Game\+Manager\+::carregar\+Jogo\+Salvo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tenta carregar um jogo salvo previamente. 
+
+\begin{DoxyReturn}{Returns}
+true se o carregamento for bem-\/sucedido, false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{classGameManager_a5ac1692f0e1098d1b64da28ee52e6544}\label{classGameManager_a5ac1692f0e1098d1b64da28ee52e6544} 
+\index{GameManager@{GameManager}!consultarBerryPorID@{consultarBerryPorID}}
+\index{consultarBerryPorID@{consultarBerryPorID}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{consultarBerryPorID()}{consultarBerryPorID()}}
+{\footnotesize\ttfamily void Game\+Manager\+::consultar\+Berry\+Por\+ID (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_a1c6d10ea9739118d81927609785d9535}\label{classGameManager_a1c6d10ea9739118d81927609785d9535} 
+\index{GameManager@{GameManager}!consultarBerryPorNome@{consultarBerryPorNome}}
+\index{consultarBerryPorNome@{consultarBerryPorNome}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{consultarBerryPorNome()}{consultarBerryPorNome()}}
+{\footnotesize\ttfamily void Game\+Manager\+::consultar\+Berry\+Por\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_a4b062eed4c2d772afe7733dd1e7f819d}\label{classGameManager_a4b062eed4c2d772afe7733dd1e7f819d} 
+\index{GameManager@{GameManager}!consultarBerryPorRaridade@{consultarBerryPorRaridade}}
+\index{consultarBerryPorRaridade@{consultarBerryPorRaridade}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{consultarBerryPorRaridade()}{consultarBerryPorRaridade()}}
+{\footnotesize\ttfamily void Game\+Manager\+::consultar\+Berry\+Por\+Raridade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_ac1cb8f8f09e2753c542e1aeb3b0b831f}\label{classGameManager_ac1cb8f8f09e2753c542e1aeb3b0b831f} 
+\index{GameManager@{GameManager}!consultarItemPorID@{consultarItemPorID}}
+\index{consultarItemPorID@{consultarItemPorID}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{consultarItemPorID()}{consultarItemPorID()}}
+{\footnotesize\ttfamily void Game\+Manager\+::consultar\+Item\+Por\+ID (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_a30989c8670f0a7c77b99d10ab7c96934}\label{classGameManager_a30989c8670f0a7c77b99d10ab7c96934} 
+\index{GameManager@{GameManager}!consultarItemPorNome@{consultarItemPorNome}}
+\index{consultarItemPorNome@{consultarItemPorNome}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{consultarItemPorNome()}{consultarItemPorNome()}}
+{\footnotesize\ttfamily void Game\+Manager\+::consultar\+Item\+Por\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_ad2bc271c69a2f4185aa7dac0006dbdb3}\label{classGameManager_ad2bc271c69a2f4185aa7dac0006dbdb3} 
+\index{GameManager@{GameManager}!consultarPokeblockPorCor@{consultarPokeblockPorCor}}
+\index{consultarPokeblockPorCor@{consultarPokeblockPorCor}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{consultarPokeblockPorCor()}{consultarPokeblockPorCor()}}
+{\footnotesize\ttfamily void Game\+Manager\+::consultar\+Pokeblock\+Por\+Cor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_ad6edcb220533901ec3200a063a6ac915}\label{classGameManager_ad6edcb220533901ec3200a063a6ac915} 
+\index{GameManager@{GameManager}!consultarPokeblockPorID@{consultarPokeblockPorID}}
+\index{consultarPokeblockPorID@{consultarPokeblockPorID}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{consultarPokeblockPorID()}{consultarPokeblockPorID()}}
+{\footnotesize\ttfamily void Game\+Manager\+::consultar\+Pokeblock\+Por\+ID (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_a484da98b2a1ad988362e48fcb0a67b20}\label{classGameManager_a484da98b2a1ad988362e48fcb0a67b20} 
+\index{GameManager@{GameManager}!consultarPokeblockPorNome@{consultarPokeblockPorNome}}
+\index{consultarPokeblockPorNome@{consultarPokeblockPorNome}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{consultarPokeblockPorNome()}{consultarPokeblockPorNome()}}
+{\footnotesize\ttfamily void Game\+Manager\+::consultar\+Pokeblock\+Por\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_ab28ae1b9111d976760292a6b47a11ea8}\label{classGameManager_ab28ae1b9111d976760292a6b47a11ea8} 
+\index{GameManager@{GameManager}!consultarPokeblockPorRaridade@{consultarPokeblockPorRaridade}}
+\index{consultarPokeblockPorRaridade@{consultarPokeblockPorRaridade}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{consultarPokeblockPorRaridade()}{consultarPokeblockPorRaridade()}}
+{\footnotesize\ttfamily void Game\+Manager\+::consultar\+Pokeblock\+Por\+Raridade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_a2442c7d06fc8310dae6c2a0838e47ba8}\label{classGameManager_a2442c7d06fc8310dae6c2a0838e47ba8} 
+\index{GameManager@{GameManager}!consultarPokemonPorID@{consultarPokemonPorID}}
+\index{consultarPokemonPorID@{consultarPokemonPorID}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{consultarPokemonPorID()}{consultarPokemonPorID()}}
+{\footnotesize\ttfamily void Game\+Manager\+::consultar\+Pokemon\+Por\+ID (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_a744bd5f1e84638c457873451b3b49413}\label{classGameManager_a744bd5f1e84638c457873451b3b49413} 
+\index{GameManager@{GameManager}!consultarPokemonPorNome@{consultarPokemonPorNome}}
+\index{consultarPokemonPorNome@{consultarPokemonPorNome}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{consultarPokemonPorNome()}{consultarPokemonPorNome()}}
+{\footnotesize\ttfamily void Game\+Manager\+::consultar\+Pokemon\+Por\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_a23a5c34fc8e676fdfa540a6b6686d528}\label{classGameManager_a23a5c34fc8e676fdfa540a6b6686d528} 
+\index{GameManager@{GameManager}!consultarPokemonPorTipo@{consultarPokemonPorTipo}}
+\index{consultarPokemonPorTipo@{consultarPokemonPorTipo}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{consultarPokemonPorTipo()}{consultarPokemonPorTipo()}}
+{\footnotesize\ttfamily void Game\+Manager\+::consultar\+Pokemon\+Por\+Tipo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_adb19321cbfa0af13e0a96a4ee715147b}\label{classGameManager_adb19321cbfa0af13e0a96a4ee715147b} 
+\index{GameManager@{GameManager}!escolherHabilidadeAleatoria@{escolherHabilidadeAleatoria}}
+\index{escolherHabilidadeAleatoria@{escolherHabilidadeAleatoria}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{escolherHabilidadeAleatoria()}{escolherHabilidadeAleatoria()}}
+{\footnotesize\ttfamily std\+::string Game\+Manager\+::escolher\+Habilidade\+Aleatoria (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{habilidades }\end{DoxyParamCaption})}
+
+
+
+Seleciona aleatoriamente uma das habilidades listadas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em habilidades} & String contendo habilidades separadas por vírgula. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O nome da habilidade escolhida. 
+\end{DoxyReturn}
+\Hypertarget{classGameManager_a826f1ab6c99f699f186e60b9411ad0e4}\label{classGameManager_a826f1ab6c99f699f186e60b9411ad0e4} 
+\index{GameManager@{GameManager}!escolherNatureAleatoria@{escolherNatureAleatoria}}
+\index{escolherNatureAleatoria@{escolherNatureAleatoria}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{escolherNatureAleatoria()}{escolherNatureAleatoria()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNature}{Nature}} Game\+Manager\+::escolher\+Nature\+Aleatoria (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Escolhe uma \doxylink{classNature}{Nature} aleatoriamente dentre as disponíveis. 
+
+\begin{DoxyReturn}{Returns}
+Uma instância de \doxylink{classNature}{Nature} escolhida ao acaso. 
+\end{DoxyReturn}
+\Hypertarget{classGameManager_aade998ac211efff438780fbc85b08a48}\label{classGameManager_aade998ac211efff438780fbc85b08a48} 
+\index{GameManager@{GameManager}!escolherPokemonInicial@{escolherPokemonInicial}}
+\index{escolherPokemonInicial@{escolherPokemonInicial}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{escolherPokemonInicial()}{escolherPokemonInicial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPokemonJogador}{Pokemon\+Jogador}} Game\+Manager\+::escolher\+Pokemon\+Inicial (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome\+Jogador }\end{DoxyParamCaption})}
+
+
+
+Permite ao jogador escolher o Pokémon inicial. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Jogador} & Nome digitado pelo jogador para saudação. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Objeto \doxylink{classPokemonJogador}{Pokemon\+Jogador} correspondente à escolha. 
+\end{DoxyReturn}
+\Hypertarget{classGameManager_aeda1ebd0e3b6894b3bdf2412c046b5c1}\label{classGameManager_aeda1ebd0e3b6894b3bdf2412c046b5c1} 
+\index{GameManager@{GameManager}!exibirBerry@{exibirBerry}}
+\index{exibirBerry@{exibirBerry}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{exibirBerry()}{exibirBerry()}}
+{\footnotesize\ttfamily void Game\+Manager\+::exibir\+Berry (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBerry}{Berry}} \&}]{berry }\end{DoxyParamCaption})}
+
+
+
+Exibe detalhes de uma berry no console. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em berry} & \doxylink{classBerry}{Berry} a ser exibida. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGameManager_aa74696c198fbb739b00aba6b2fb45e63}\label{classGameManager_aa74696c198fbb739b00aba6b2fb45e63} 
+\index{GameManager@{GameManager}!exibirItem@{exibirItem}}
+\index{exibirItem@{exibirItem}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{exibirItem()}{exibirItem()}}
+{\footnotesize\ttfamily void Game\+Manager\+::exibir\+Item (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classItem}{Item}} \&}]{item }\end{DoxyParamCaption})}
+
+
+
+Exibe detalhes de um item no console. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & \doxylink{classItem}{Item} a ser exibido. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGameManager_ae796a6f4a4f1525035e75db689608653}\label{classGameManager_ae796a6f4a4f1525035e75db689608653} 
+\index{GameManager@{GameManager}!exibirPokeblock@{exibirPokeblock}}
+\index{exibirPokeblock@{exibirPokeblock}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{exibirPokeblock()}{exibirPokeblock()}}
+{\footnotesize\ttfamily void Game\+Manager\+::exibir\+Pokeblock (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPokeblock}{Pokeblock}} \&}]{pokeblock }\end{DoxyParamCaption})}
+
+
+
+Exibe detalhes de um pokeblock no console. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pokeblock} & \doxylink{classPokeblock}{Pokeblock} a ser exibido. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGameManager_a75e254641e11345150b24694191d65c5}\label{classGameManager_a75e254641e11345150b24694191d65c5} 
+\index{GameManager@{GameManager}!exibirPokemon@{exibirPokemon}}
+\index{exibirPokemon@{exibirPokemon}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{exibirPokemon()}{exibirPokemon()}}
+{\footnotesize\ttfamily void Game\+Manager\+::exibir\+Pokemon (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPokemonJogador}{Pokemon\+Jogador}} \&}]{pj }\end{DoxyParamCaption})}
+
+
+
+Exibe detalhes formatados de um Pokémon de jogador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pj} & Pokémon\+Jogador a ser exibido. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGameManager_a07111f6900195cee41dfdcc698f4d797}\label{classGameManager_a07111f6900195cee41dfdcc698f4d797} 
+\index{GameManager@{GameManager}!exibirPokemonPokedex@{exibirPokemonPokedex}}
+\index{exibirPokemonPokedex@{exibirPokemonPokedex}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{exibirPokemonPokedex()}{exibirPokemonPokedex()}}
+{\footnotesize\ttfamily void Game\+Manager\+::exibir\+Pokemon\+Pokedex (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPokemon}{Pokemon}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Exibe detalhes formato Pokedex de um Pokémon-\/base. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pokémon a ser exibido. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGameManager_ae3853f26e5e2e9ce787cf4abf316ef6e}\label{classGameManager_ae3853f26e5e2e9ce787cf4abf316ef6e} 
+\index{GameManager@{GameManager}!exibirTime@{exibirTime}}
+\index{exibirTime@{exibirTime}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{exibirTime()}{exibirTime()}}
+{\footnotesize\ttfamily void Game\+Manager\+::exibir\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exibe todos os pokémons do time do jogador em formato de tabela. 
+
+\Hypertarget{classGameManager_ab1a4c1fd15c4e90dbaa725d65afb24b3}\label{classGameManager_ab1a4c1fd15c4e90dbaa725d65afb24b3} 
+\index{GameManager@{GameManager}!gerarIV@{gerarIV}}
+\index{gerarIV@{gerarIV}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{gerarIV()}{gerarIV()}}
+{\footnotesize\ttfamily int Game\+Manager\+::gerar\+IV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gera um valor de IV (Valor Individual) aleatório para um stat. 
+
+\begin{DoxyReturn}{Returns}
+Um inteiro entre 0 e 31 representando o IV. 
+\end{DoxyReturn}
+\Hypertarget{classGameManager_ad8d5631689715d1a9e9101ef0ae2f7f0}\label{classGameManager_ad8d5631689715d1a9e9101ef0ae2f7f0} 
+\index{GameManager@{GameManager}!iniciarJogo@{iniciarJogo}}
+\index{iniciarJogo@{iniciarJogo}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{iniciarJogo()}{iniciarJogo()}}
+{\footnotesize\ttfamily void Game\+Manager\+::iniciar\+Jogo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicia o fluxo completo do jogo (tela de boas-\/vindas, carregamento, loops). 
+
+\Hypertarget{classGameManager_aa3b54cd0fdbb5f0a0d5ce6fa4571ed42}\label{classGameManager_aa3b54cd0fdbb5f0a0d5ce6fa4571ed42} 
+\index{GameManager@{GameManager}!menuBolsa@{menuBolsa}}
+\index{menuBolsa@{menuBolsa}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{menuBolsa()}{menuBolsa()}}
+{\footnotesize\ttfamily void Game\+Manager\+::menu\+Bolsa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_aae3db9399f8859d99c3ddd8a4110e3bc}\label{classGameManager_aae3db9399f8859d99c3ddd8a4110e3bc} 
+\index{GameManager@{GameManager}!menuConsultaBerries@{menuConsultaBerries}}
+\index{menuConsultaBerries@{menuConsultaBerries}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{menuConsultaBerries()}{menuConsultaBerries()}}
+{\footnotesize\ttfamily void Game\+Manager\+::menu\+Consulta\+Berries (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_a9169d6cd744a0d57f01555dfdd3d71d9}\label{classGameManager_a9169d6cd744a0d57f01555dfdd3d71d9} 
+\index{GameManager@{GameManager}!menuConsultaItens@{menuConsultaItens}}
+\index{menuConsultaItens@{menuConsultaItens}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{menuConsultaItens()}{menuConsultaItens()}}
+{\footnotesize\ttfamily void Game\+Manager\+::menu\+Consulta\+Itens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_ae952261339ecdc66f07aa1b70cf065a8}\label{classGameManager_ae952261339ecdc66f07aa1b70cf065a8} 
+\index{GameManager@{GameManager}!menuConsultaPokeblocks@{menuConsultaPokeblocks}}
+\index{menuConsultaPokeblocks@{menuConsultaPokeblocks}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{menuConsultaPokeblocks()}{menuConsultaPokeblocks()}}
+{\footnotesize\ttfamily void Game\+Manager\+::menu\+Consulta\+Pokeblocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_a1bbc67f1ef551242914bce6674c547b9}\label{classGameManager_a1bbc67f1ef551242914bce6674c547b9} 
+\index{GameManager@{GameManager}!menuConsultaPokemon@{menuConsultaPokemon}}
+\index{menuConsultaPokemon@{menuConsultaPokemon}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{menuConsultaPokemon()}{menuConsultaPokemon()}}
+{\footnotesize\ttfamily void Game\+Manager\+::menu\+Consulta\+Pokemon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_a843db55258f2db9473684a6e653c693c}\label{classGameManager_a843db55258f2db9473684a6e653c693c} 
+\index{GameManager@{GameManager}!menuPokedex@{menuPokedex}}
+\index{menuPokedex@{menuPokedex}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{menuPokedex()}{menuPokedex()}}
+{\footnotesize\ttfamily void Game\+Manager\+::menu\+Pokedex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exibe o menu de Pokedex e trata interações do usuário. 
+
+\Hypertarget{classGameManager_ad705fd54a4833ff703cb799ca78d0e40}\label{classGameManager_ad705fd54a4833ff703cb799ca78d0e40} 
+\index{GameManager@{GameManager}!menuPrincipal@{menuPrincipal}}
+\index{menuPrincipal@{menuPrincipal}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{menuPrincipal()}{menuPrincipal()}}
+{\footnotesize\ttfamily void Game\+Manager\+::menu\+Principal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exibe o menu principal e executa operações conforme escolha. 
+
+\Hypertarget{classGameManager_a68bc84b1a5105ab633556f2cd21f5a4a}\label{classGameManager_a68bc84b1a5105ab633556f2cd21f5a4a} 
+\index{GameManager@{GameManager}!mostrarBolsaBerries@{mostrarBolsaBerries}}
+\index{mostrarBolsaBerries@{mostrarBolsaBerries}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{mostrarBolsaBerries()}{mostrarBolsaBerries()}}
+{\footnotesize\ttfamily void Game\+Manager\+::mostrar\+Bolsa\+Berries (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_ab41a83d857ba3080490a64347f2aac1d}\label{classGameManager_ab41a83d857ba3080490a64347f2aac1d} 
+\index{GameManager@{GameManager}!mostrarBolsaItens@{mostrarBolsaItens}}
+\index{mostrarBolsaItens@{mostrarBolsaItens}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{mostrarBolsaItens()}{mostrarBolsaItens()}}
+{\footnotesize\ttfamily void Game\+Manager\+::mostrar\+Bolsa\+Itens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_ad1724d4583cf391ca003ed0e998e4228}\label{classGameManager_ad1724d4583cf391ca003ed0e998e4228} 
+\index{GameManager@{GameManager}!mostrarBolsaPokeblocks@{mostrarBolsaPokeblocks}}
+\index{mostrarBolsaPokeblocks@{mostrarBolsaPokeblocks}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{mostrarBolsaPokeblocks()}{mostrarBolsaPokeblocks()}}
+{\footnotesize\ttfamily void Game\+Manager\+::mostrar\+Bolsa\+Pokeblocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{classGameManager_ac1fb28ed2b3bec17fd5d3a7efed0ed6b}\label{classGameManager_ac1fb28ed2b3bec17fd5d3a7efed0ed6b} 
+\index{GameManager@{GameManager}!salvarJogo@{salvarJogo}}
+\index{salvarJogo@{salvarJogo}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{salvarJogo()}{salvarJogo()}}
+{\footnotesize\ttfamily void Game\+Manager\+::salvar\+Jogo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Persiste o estado do jogo atual em arquivo. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{gamemanager_8hpp}{gamemanager.\+hpp}}\item 
+src/\mbox{\hyperlink{gamemanager_8cpp}{gamemanager.\+cpp}}\end{DoxyCompactItemize}

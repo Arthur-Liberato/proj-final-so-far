@@ -1,0 +1,103 @@
+\doxysection{Utils Class Reference}
+\hypertarget{classUtils}{}\label{classUtils}\index{Utils@{Utils}}
+
+
+Funções utilitárias para conversão e manipulação de strings.  
+
+
+
+
+{\ttfamily \#include $<$utils.\+hpp$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classUtils_a4e938fd3515163aa3490afdae9d96b31}{safe\+Stoi}} (const std\+::string \&str, const std\+::string \&field\+Name="{}"{})
+\begin{DoxyCompactList}\small\item\em Converte com segurança uma string para inteiro. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classUtils_aaca95247b9f2a78fb1f10db2c9dabfb6}{to\+Lower}} (const std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em Converte todos os caracteres de uma string para minúsculas. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classUtils_a709fc9d3286a8b90de822055fed9ca88}{trim}} (const std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em Remove espaços em branco no início e no fim de uma string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Funções utilitárias para conversão e manipulação de strings. 
+
+Contém métodos estáticos para converter strings para números com verificação, transformar para caixa baixa e remover espaços em branco nas extremidades. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classUtils_a4e938fd3515163aa3490afdae9d96b31}\label{classUtils_a4e938fd3515163aa3490afdae9d96b31} 
+\index{Utils@{Utils}!safeStoi@{safeStoi}}
+\index{safeStoi@{safeStoi}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{safeStoi()}{safeStoi()}}
+{\footnotesize\ttfamily int Utils\+::safe\+Stoi (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str,  }\item[{const std\+::string \&}]{field\+Name = {\ttfamily "{}"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converte com segurança uma string para inteiro. 
+
+Internamente usa std\+::stoi, mas captura exceções e lança std\+::invalid\+\_\+argument ou std\+::out\+\_\+of\+\_\+range com mensagem que inclui o nome do campo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & A string a ser convertida. \\
+\hline
+{\em field\+Name} & (opcional) Nome do campo ou contexto para incluir na mensagem de erro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O valor inteiro convertido. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Se a string não contiver um número válido. \\
+\hline
+{\em std\+::out\+\_\+of\+\_\+range} & Se o número for fora do alcance de um int. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classUtils_aaca95247b9f2a78fb1f10db2c9dabfb6}\label{classUtils_aaca95247b9f2a78fb1f10db2c9dabfb6} 
+\index{Utils@{Utils}!toLower@{toLower}}
+\index{toLower@{toLower}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{toLower()}{toLower()}}
+{\footnotesize\ttfamily std\+::string Utils\+::to\+Lower (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converte todos os caracteres de uma string para minúsculas. 
+
+Percorre cada caractere de {\ttfamily str} e retorna uma nova string com todos os caracteres convertidos para sua forma minúscula.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & A string original. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uma nova string em caixa baixa. 
+\end{DoxyReturn}
+\Hypertarget{classUtils_a709fc9d3286a8b90de822055fed9ca88}\label{classUtils_a709fc9d3286a8b90de822055fed9ca88} 
+\index{Utils@{Utils}!trim@{trim}}
+\index{trim@{trim}!Utils@{Utils}}
+\doxysubsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily std\+::string Utils\+::trim (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Remove espaços em branco no início e no fim de uma string. 
+
+Elimina caracteres de espaço, tabulação ou nova linha das extremidades de {\ttfamily str}, retornando a substring "{}trimmed"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & A string a ser aparada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uma nova string sem espaços nas extremidades. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{utils_8hpp}{utils.\+hpp}}\item 
+src/\mbox{\hyperlink{utils_8cpp}{utils.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,214 @@
+\doxysection{Pokeblock Class Reference}
+\hypertarget{classPokeblock}{}\label{classPokeblock}\index{Pokeblock@{Pokeblock}}
+
+
+Representa um Pokéblock, um item consumível usado para alterar estatísticas de Pokémon baseando-\/se em sabores e outras propriedades.  
+
+
+
+
+{\ttfamily \#include $<$pokeblock.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPokeblock_a327c061dcddb397da0ae02c71efeed96}{Pokeblock}} ()=default
+\begin{DoxyCompactList}\small\item\em Construtor padrão. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Getters}\par
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classPokeblock_a49aaab83c17f1562bc2c4ecddafacdd8}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o identificador. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPokeblock_a357b68e9411370c1e2bf9d0156f12e89}{get\+Nome}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o nome. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPokeblock_aa456df02b45b9f1c9dae0d2f6db68240}{get\+Cor}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a cor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokeblock_a54b221dad8902a86fe943d470b7e819a}{get\+Nivel}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o nível de qualidade. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokeblock_a0aab70b7e069a6d199d7760ad258872b}{get\+Picante}} () const
+\begin{DoxyCompactList}\small\item\em Retorna intensidade de picante. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokeblock_ad4436ab9c6fb9407a312c6852ed4239e}{get\+Seco}} () const
+\begin{DoxyCompactList}\small\item\em Retorna intensidade de seco. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokeblock_a66353cdc7acacdc156e59aa19636f07e}{get\+Doce}} () const
+\begin{DoxyCompactList}\small\item\em Retorna intensidade de doce. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokeblock_a2f43efff02b6a50f7d46b91eb25c1801}{get\+Amargo}} () const
+\begin{DoxyCompactList}\small\item\em Retorna intensidade de amargo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokeblock_accb0fda0699c1f3262f601ce53e89c28}{get\+Azedo}} () const
+\begin{DoxyCompactList}\small\item\em Retorna intensidade de azedo. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPokeblock_a8ab980030adf9c5dda7ffeb9f8dc08f2}{get\+Condicao}} () const
+\begin{DoxyCompactList}\small\item\em Retorna condição de uso. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPokeblock_a082fec0d000d999ec382167a36377180}{get\+Efeito}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o efeito especial. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPokeblock_a3fb59bb0a56c7abbadb6370d71d0c116}{get\+Raridade}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a raridade. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{Indent}\textbf{ Conversão CSV}\par
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPokeblock}{Pokeblock}} \mbox{\hyperlink{classPokeblock_a445f43c042858344a9f5fbab9693caec}{from\+CSV}} (const std\+::string \&linha)
+\begin{DoxyCompactList}\small\item\em Constrói um Pokéblock a partir de uma linha CSV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+Representa um Pokéblock, um item consumível usado para alterar estatísticas de Pokémon baseando-\/se em sabores e outras propriedades. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classPokeblock_a327c061dcddb397da0ae02c71efeed96}\label{classPokeblock_a327c061dcddb397da0ae02c71efeed96} 
+\index{Pokeblock@{Pokeblock}!Pokeblock@{Pokeblock}}
+\index{Pokeblock@{Pokeblock}!Pokeblock@{Pokeblock}}
+\doxysubsubsection{\texorpdfstring{Pokeblock()}{Pokeblock()}}
+{\footnotesize\ttfamily Pokeblock\+::\+Pokeblock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construtor padrão. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPokeblock_a445f43c042858344a9f5fbab9693caec}\label{classPokeblock_a445f43c042858344a9f5fbab9693caec} 
+\index{Pokeblock@{Pokeblock}!fromCSV@{fromCSV}}
+\index{fromCSV@{fromCSV}!Pokeblock@{Pokeblock}}
+\doxysubsubsection{\texorpdfstring{fromCSV()}{fromCSV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPokeblock}{Pokeblock}} Pokeblock\+::from\+CSV (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{linha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Constrói um Pokéblock a partir de uma linha CSV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & Linha CSV no formato\+: id,nome,cor,nivel,picante,seco,doce,amargo,azedo,condicao,efeito,raridade \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Objeto \doxylink{classPokeblock}{Pokeblock} preenchido. 
+\end{DoxyReturn}
+\Hypertarget{classPokeblock_a2f43efff02b6a50f7d46b91eb25c1801}\label{classPokeblock_a2f43efff02b6a50f7d46b91eb25c1801} 
+\index{Pokeblock@{Pokeblock}!getAmargo@{getAmargo}}
+\index{getAmargo@{getAmargo}!Pokeblock@{Pokeblock}}
+\doxysubsubsection{\texorpdfstring{getAmargo()}{getAmargo()}}
+{\footnotesize\ttfamily int Pokeblock\+::get\+Amargo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna intensidade de amargo. 
+
+\Hypertarget{classPokeblock_accb0fda0699c1f3262f601ce53e89c28}\label{classPokeblock_accb0fda0699c1f3262f601ce53e89c28} 
+\index{Pokeblock@{Pokeblock}!getAzedo@{getAzedo}}
+\index{getAzedo@{getAzedo}!Pokeblock@{Pokeblock}}
+\doxysubsubsection{\texorpdfstring{getAzedo()}{getAzedo()}}
+{\footnotesize\ttfamily int Pokeblock\+::get\+Azedo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna intensidade de azedo. 
+
+\Hypertarget{classPokeblock_a8ab980030adf9c5dda7ffeb9f8dc08f2}\label{classPokeblock_a8ab980030adf9c5dda7ffeb9f8dc08f2} 
+\index{Pokeblock@{Pokeblock}!getCondicao@{getCondicao}}
+\index{getCondicao@{getCondicao}!Pokeblock@{Pokeblock}}
+\doxysubsubsection{\texorpdfstring{getCondicao()}{getCondicao()}}
+{\footnotesize\ttfamily std\+::string Pokeblock\+::get\+Condicao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna condição de uso. 
+
+\Hypertarget{classPokeblock_aa456df02b45b9f1c9dae0d2f6db68240}\label{classPokeblock_aa456df02b45b9f1c9dae0d2f6db68240} 
+\index{Pokeblock@{Pokeblock}!getCor@{getCor}}
+\index{getCor@{getCor}!Pokeblock@{Pokeblock}}
+\doxysubsubsection{\texorpdfstring{getCor()}{getCor()}}
+{\footnotesize\ttfamily std\+::string Pokeblock\+::get\+Cor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna a cor. 
+
+\Hypertarget{classPokeblock_a66353cdc7acacdc156e59aa19636f07e}\label{classPokeblock_a66353cdc7acacdc156e59aa19636f07e} 
+\index{Pokeblock@{Pokeblock}!getDoce@{getDoce}}
+\index{getDoce@{getDoce}!Pokeblock@{Pokeblock}}
+\doxysubsubsection{\texorpdfstring{getDoce()}{getDoce()}}
+{\footnotesize\ttfamily int Pokeblock\+::get\+Doce (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna intensidade de doce. 
+
+\Hypertarget{classPokeblock_a082fec0d000d999ec382167a36377180}\label{classPokeblock_a082fec0d000d999ec382167a36377180} 
+\index{Pokeblock@{Pokeblock}!getEfeito@{getEfeito}}
+\index{getEfeito@{getEfeito}!Pokeblock@{Pokeblock}}
+\doxysubsubsection{\texorpdfstring{getEfeito()}{getEfeito()}}
+{\footnotesize\ttfamily std\+::string Pokeblock\+::get\+Efeito (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o efeito especial. 
+
+\Hypertarget{classPokeblock_a49aaab83c17f1562bc2c4ecddafacdd8}\label{classPokeblock_a49aaab83c17f1562bc2c4ecddafacdd8} 
+\index{Pokeblock@{Pokeblock}!getId@{getId}}
+\index{getId@{getId}!Pokeblock@{Pokeblock}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Pokeblock\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o identificador. 
+
+\Hypertarget{classPokeblock_a54b221dad8902a86fe943d470b7e819a}\label{classPokeblock_a54b221dad8902a86fe943d470b7e819a} 
+\index{Pokeblock@{Pokeblock}!getNivel@{getNivel}}
+\index{getNivel@{getNivel}!Pokeblock@{Pokeblock}}
+\doxysubsubsection{\texorpdfstring{getNivel()}{getNivel()}}
+{\footnotesize\ttfamily int Pokeblock\+::get\+Nivel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o nível de qualidade. 
+
+\Hypertarget{classPokeblock_a357b68e9411370c1e2bf9d0156f12e89}\label{classPokeblock_a357b68e9411370c1e2bf9d0156f12e89} 
+\index{Pokeblock@{Pokeblock}!getNome@{getNome}}
+\index{getNome@{getNome}!Pokeblock@{Pokeblock}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily std\+::string Pokeblock\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o nome. 
+
+\Hypertarget{classPokeblock_a0aab70b7e069a6d199d7760ad258872b}\label{classPokeblock_a0aab70b7e069a6d199d7760ad258872b} 
+\index{Pokeblock@{Pokeblock}!getPicante@{getPicante}}
+\index{getPicante@{getPicante}!Pokeblock@{Pokeblock}}
+\doxysubsubsection{\texorpdfstring{getPicante()}{getPicante()}}
+{\footnotesize\ttfamily int Pokeblock\+::get\+Picante (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna intensidade de picante. 
+
+\Hypertarget{classPokeblock_a3fb59bb0a56c7abbadb6370d71d0c116}\label{classPokeblock_a3fb59bb0a56c7abbadb6370d71d0c116} 
+\index{Pokeblock@{Pokeblock}!getRaridade@{getRaridade}}
+\index{getRaridade@{getRaridade}!Pokeblock@{Pokeblock}}
+\doxysubsubsection{\texorpdfstring{getRaridade()}{getRaridade()}}
+{\footnotesize\ttfamily std\+::string Pokeblock\+::get\+Raridade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna a raridade. 
+
+\Hypertarget{classPokeblock_ad4436ab9c6fb9407a312c6852ed4239e}\label{classPokeblock_ad4436ab9c6fb9407a312c6852ed4239e} 
+\index{Pokeblock@{Pokeblock}!getSeco@{getSeco}}
+\index{getSeco@{getSeco}!Pokeblock@{Pokeblock}}
+\doxysubsubsection{\texorpdfstring{getSeco()}{getSeco()}}
+{\footnotesize\ttfamily int Pokeblock\+::get\+Seco (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna intensidade de seco. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{pokeblock_8hpp}{pokeblock.\+hpp}}\item 
+src/\mbox{\hyperlink{pokeblock_8cpp}{pokeblock.\+cpp}}\end{DoxyCompactItemize}

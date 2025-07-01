@@ -1,0 +1,32 @@
+\doxysection{dataloader.\+hpp}
+\hypertarget{dataloader_8hpp_source}{}\label{dataloader_8hpp_source}\index{include/dataloader.hpp@{include/dataloader.hpp}}
+\mbox{\hyperlink{dataloader_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ DATALOADER\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ DATALOADER\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{berry_8hpp}{berry.hpp}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{item_8hpp}{item.hpp}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pokemon_8hpp}{pokemon.hpp}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pokeblock_8hpp}{pokeblock.hpp}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{nature_8hpp}{nature.hpp}}"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDataLoader}{DataLoader}}\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{static}\ std::vector<Berry>\ \mbox{\hyperlink{classDataLoader_aa8559ef464969491f118b41272bf8342}{carregarBerries}}(\textcolor{keyword}{const}\ std::string\&\ arquivo);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{static}\ std::vector<Item>\ \mbox{\hyperlink{classDataLoader_ad42baf1819129c4f55754129a3816d52}{carregarItens}}(\textcolor{keyword}{const}\ std::string\&\ arquivo);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{static}\ std::vector<Pokemon>\ \mbox{\hyperlink{classDataLoader_ae1ee3dfb61615f6abda0a4e55f76657d}{carregarPokemons}}(\textcolor{keyword}{const}\ std::string\&\ arquivo);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{static}\ std::vector<Pokeblock>\ \mbox{\hyperlink{classDataLoader_ab8a1276ddff422708985740a1621c889}{carregarPokeblocks}}(\textcolor{keyword}{const}\ std::string\&\ arquivo);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{static}\ std::vector<Nature>\ \mbox{\hyperlink{classDataLoader_abf0cb75325e1f16b8bf5692bb3a46cad}{carregarNatures}}(\textcolor{keyword}{const}\ std::string\&\ arquivo);}
+\DoxyCodeLine{00063\ \};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DATALOADER\_H}}
+
+\end{DoxyCode}
