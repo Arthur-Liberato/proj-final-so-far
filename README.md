@@ -7,8 +7,8 @@ Listagem dos integrantes: Arthur Henrique Liberato Lima, Allan Victor Matos Temp
 
 # Cartões CRC
 
-https://github.com/Arthur-Liberato/PDS2-20251-TF-Jogo-Pokemon/blob/main/CART%C3%95ES%20CRC.pdf
+https://github.com/Arthur-Liberato/PDS2-20251-TF-Jogo-Pokemon/blob/proj-final01/User%20Stories%20.pdf
 
 # User Stories
 
-https://github.com/Arthur-Liberato/PDS2-20251-TF-Jogo-Pokemon/blob/main/User%20Stories%20.pdf
+ https://github.com/Arthur-Liberato/PDS2-20251-TF-Jogo-Pokemon/blob/proj-final01/User%20Stories%20.pdf
