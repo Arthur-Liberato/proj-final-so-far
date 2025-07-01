@@ -10,21 +10,25 @@ Este projeto implementa um jogo estilo Pokémon em linha de comando, onde cada c
 
 A solução foi construída em C++, seguindo uma arquitetura modular organizada em camadas:
 
-### 1. Modelos (`include/`)
+### 1. Modelos
+`include/`
+
 
 - `Berry`, `Item`, `Pokeblock`, `Nature`, `Pokemon`, `PokemonJogador`, `Jogador`  
   Representam as entidades do domínio, com atributos privados, métodos getters/setters e método estático `fromCSV` para construir instâncias a partir de linhas dos arquivos CSV.
 
 ---
 
-### 2. Carregamento de Dados (`src/dataloader.cpp`)
+### 2. Carregamento de Dados 
+`src/dataloader.cpp`
 
 - **DataLoader**  
   Responsável por ler todos os CSVs e transformar cada linha em instâncias das classes modelo, retornando vetores de objetos prontos para uso.
 
 ---
 
-### 3. Lógica de Jogo (`src/gamemanager.cpp`)
+### 3. Lógica de Jogo 
+`src/gamemanager.cpp`
 
 - **GameManager**  
   Controla o fluxo principal do programa:
@@ -38,7 +42,8 @@ A solução foi construída em C++, seguindo uma arquitetura modular organizada 
 
 ---
 
-### 4. Funções Auxiliares (`include/utils.hpp`)
+### 4. Funções Auxiliares 
+`include/utils.hpp`
 
 - Contém métodos estáticos para:
   - Conversão segura de string para inteiro (`safeStoi`).
@@ -47,7 +52,8 @@ A solução foi construída em C++, seguindo uma arquitetura modular organizada 
 
 ---
 
-### 5. Ponto de Entrada (`src/main.cpp`)
+### 5. Ponto de Entrada 
+`src/main.cpp`
 
 - Inicializa o **GameManager**, carrega os dados e inicia o menu principal.
 
