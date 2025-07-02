@@ -1,0 +1,49 @@
+\doxysection{pokeblock.\+hpp}
+\hypertarget{pokeblock_8hpp_source}{}\label{pokeblock_8hpp_source}\index{include/pokeblock.hpp@{include/pokeblock.hpp}}
+\mbox{\hyperlink{pokeblock_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ POKEBLOCK\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ POKEBLOCK\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{utils_8hpp}{utils.hpp}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPokeblock}{Pokeblock}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ id;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00020\ \ \ \ \ std::string\ nome;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ std::string\ cor;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ nivel;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ picante;\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ seco;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ doce;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ amargo;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ azedo;\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ std::string\ condicao;\ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ std::string\ efeito;\ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ std::string\ raridade;\ \ \ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{classPokeblock_a327c061dcddb397da0ae02c71efeed96}{Pokeblock}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classPokeblock}{Pokeblock}}\ \mbox{\hyperlink{classPokeblock_a445f43c042858344a9f5fbab9693caec}{fromCSV}}(\textcolor{keyword}{const}\ std::string\&\ linha);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokeblock_a49aaab83c17f1562bc2c4ecddafacdd8}{getId}}()\textcolor{keyword}{\ \ \ \ \ \ \ \ const\ }\{\ \textcolor{keywordflow}{return}\ id;\ \}\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ std::string\ \mbox{\hyperlink{classPokeblock_a357b68e9411370c1e2bf9d0156f12e89}{getNome}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ nome;\ \}\ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ std::string\ \mbox{\hyperlink{classPokeblock_aa456df02b45b9f1c9dae0d2f6db68240}{getCor}}()\textcolor{keyword}{\ \ const\ }\{\ \textcolor{keywordflow}{return}\ cor;\ \}\ \ \ \ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokeblock_a54b221dad8902a86fe943d470b7e819a}{getNivel}}()\textcolor{keyword}{\ \ \ \ \ \ const\ }\{\ \textcolor{keywordflow}{return}\ nivel;\ \}\ \ \ \ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokeblock_a0aab70b7e069a6d199d7760ad258872b}{getPicante}}()\textcolor{keyword}{\ \ \ \ const\ }\{\ \textcolor{keywordflow}{return}\ picante;\ \}\ \ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokeblock_ad4436ab9c6fb9407a312c6852ed4239e}{getSeco}}()\textcolor{keyword}{\ \ \ \ \ \ \ const\ }\{\ \textcolor{keywordflow}{return}\ seco;\ \}\ \ \ \ \ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokeblock_a66353cdc7acacdc156e59aa19636f07e}{getDoce}}()\textcolor{keyword}{\ \ \ \ \ \ \ const\ }\{\ \textcolor{keywordflow}{return}\ doce;\ \}\ \ \ \ \ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokeblock_a2f43efff02b6a50f7d46b91eb25c1801}{getAmargo}}()\textcolor{keyword}{\ \ \ \ \ const\ }\{\ \textcolor{keywordflow}{return}\ amargo;\ \}\ \ \ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPokeblock_accb0fda0699c1f3262f601ce53e89c28}{getAzedo}}()\textcolor{keyword}{\ \ \ \ \ \ const\ }\{\ \textcolor{keywordflow}{return}\ azedo;\ \}\ \ \ \ }
+\DoxyCodeLine{00060\ \ \ \ \ std::string\ \mbox{\hyperlink{classPokeblock_a8ab980030adf9c5dda7ffeb9f8dc08f2}{getCondicao}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ condicao;\ \}\ }
+\DoxyCodeLine{00061\ \ \ \ \ std::string\ \mbox{\hyperlink{classPokeblock_a082fec0d000d999ec382167a36377180}{getEfeito}}()\textcolor{keyword}{\ \ \ const\ }\{\ \textcolor{keywordflow}{return}\ efeito;\ \}\ \ \ }
+\DoxyCodeLine{00062\ \ \ \ \ std::string\ \mbox{\hyperlink{classPokeblock_a3fb59bb0a56c7abbadb6370d71d0c116}{getRaridade}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ raridade;\ \}\ }
+\DoxyCodeLine{00064\ \};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#endif }\textcolor{comment}{// POKEBLOCK\_H}}
+
+\end{DoxyCode}

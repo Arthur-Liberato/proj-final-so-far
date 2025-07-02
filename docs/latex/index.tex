@@ -1,0 +1,105 @@
+\chapter{Projeto Final – Jogo Pokémon}
+\hypertarget{index}{}\label{index}\index{Projeto Final – Jogo Pokémon@{Projeto Final – Jogo Pokémon}}
+\label{index_md_readme}%
+\Hypertarget{index_md_readme}%
+ \hypertarget{index_autotoc_md1}{}\doxysection{\texorpdfstring{Descrição do Problema}{Descrição do Problema}}\label{index_autotoc_md1}
+Este projeto implementa um jogo estilo Pokémon em linha de comando, onde cada criatura possui atributos de combate (HP, Attack, Defense etc.) e atributos de concurso (Beauty, Cool, Cute, Smart, Tough). O jogador pode carregar dados de diferentes fontes (berries, itens, pokéblocks, natures e pokémons) a partir de arquivos CSV, consultar, visualizar e interagir com esses elementos, além de salvar e carregar seu progresso.
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md3}{}\doxysection{\texorpdfstring{Visão Geral da Solução}{Visão Geral da Solução}}\label{index_autotoc_md3}
+A solução foi construída em C++, seguindo uma arquitetura modular organizada em camadas\+:\hypertarget{index_autotoc_md4}{}\doxysubsection{\texorpdfstring{1. Modelos ($<$tt$>$include/$<$/tt$>$)}{1. Modelos (<tt>include/</tt>)}}\label{index_autotoc_md4}
+
+\begin{DoxyItemize}
+\item {\ttfamily \doxylink{classBerry}{Berry}}, {\ttfamily \doxylink{classItem}{Item}}, {\ttfamily \doxylink{classPokeblock}{Pokeblock}}, {\ttfamily \doxylink{classNature}{Nature}}, {\ttfamily \doxylink{classPokemon}{Pokemon}}, {\ttfamily \doxylink{classPokemonJogador}{Pokemon\+Jogador}}, {\ttfamily \doxylink{classJogador}{Jogador}} ~\newline
+ Representam as entidades do domínio, com atributos privados, métodos getters/setters e método estático {\ttfamily from\+CSV} para construir instâncias a partir de linhas dos arquivos CSV.
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md6}{}\doxysubsection{\texorpdfstring{2. Carregamento de Dados ($<$tt$>$src/dataloader.\+cpp$<$/tt$>$)}{2. Carregamento de Dados (<tt>src/dataloader.cpp</tt>)}}\label{index_autotoc_md6}
+
+\begin{DoxyItemize}
+\item {\bfseries{\doxylink{classDataLoader}{Data\+Loader}}} ~\newline
+ Responsável por ler todos os CSVs e transformar cada linha em instâncias das classes modelo, retornando vetores de objetos prontos para uso.
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md8}{}\doxysubsection{\texorpdfstring{3. Lógica de Jogo ($<$tt$>$src/gamemanager.\+cpp$<$/tt$>$)}{3. Lógica de Jogo (<tt>src/gamemanager.cpp</tt>)}}\label{index_autotoc_md8}
+
+\begin{DoxyItemize}
+\item {\bfseries{\doxylink{classGameManager}{Game\+Manager}}} ~\newline
+ Controla o fluxo principal do programa\+:
+\begin{DoxyItemize}
+\item Exibe menus interativos para o jogador.
+\item Permite consultas por ID, nome, tipo, cor ou raridade.
+\item Gera IVs aleatórios para Pokémon.
+\item Escolhe habilidades e natures de forma aleatória.
+\item Calcula status completos dos Pokémon do jogador.
+\item Gerencia o inventário (itens, berries, pokéblocks).
+\item Salva e carrega o progresso do jogo.
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md10}{}\doxysubsection{\texorpdfstring{4. Funções Auxiliares ($<$tt$>$include/utils.\+hpp$<$/tt$>$)}{4. Funções Auxiliares (<tt>include/utils.hpp</tt>)}}\label{index_autotoc_md10}
+
+\begin{DoxyItemize}
+\item Contém métodos estáticos para\+:
+\begin{DoxyItemize}
+\item Conversão segura de string para inteiro ({\ttfamily safe\+Stoi}).
+\item Transformação de texto para minúsculas ({\ttfamily to\+Lower}).
+\item Remoção de espaços extras ({\ttfamily trim}).
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md12}{}\doxysubsection{\texorpdfstring{5. Ponto de Entrada ($<$tt$>$src/main.\+cpp$<$/tt$>$)}{5. Ponto de Entrada (<tt>src/main.cpp</tt>)}}\label{index_autotoc_md12}
+
+\begin{DoxyItemize}
+\item Inicializa o {\bfseries{\doxylink{classGameManager}{Game\+Manager}}}, carrega os dados e inicia o menu principal.
+\end{DoxyItemize}\hypertarget{index_autotoc_md13}{}\doxysection{\texorpdfstring{Principais Dificuldades}{Principais Dificuldades}}\label{index_autotoc_md13}
+
+\begin{DoxyItemize}
+\item {\bfseries{Leitura e parse de CSVs}}\+: lidar com campos de texto contendo vírgulas ou espaços.
+\item {\bfseries{Formatação no terminal}}\+: criar tabelas legíveis com colunas alinhadas.
+\item {\bfseries{Persistência de estado}}\+: salvar e carregar o progresso do jogador, incluindo time e inventário.
+\item {\bfseries{Navegação de menus}}\+: desenhar fluxos intuitivos para consultas por diferentes filtros (nome, tipo, cor, raridade).
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{index_autotoc_md15}{}\doxysection{\texorpdfstring{Extras Implementados}{Extras Implementados}}\label{index_autotoc_md15}
+
+\begin{DoxyItemize}
+\item {\bfseries{Salvamento e Carregamento de Jogo}} ~\newline
+
+\begin{DoxyItemize}
+\item Funções {\ttfamily salvar\+Jogo()} e {\ttfamily carregar\+Jogo\+Salvo()} para gravar e restaurar o estado completo do jogador (nome, dinheiro, pokémons, itens, berries, pokéblocks).
+\end{DoxyItemize}
+\item {\bfseries{Menus de Consulta Avançada}} ~\newline
+
+\begin{DoxyItemize}
+\item Filtros por raridade, cor, tipo, além de buscas parciais por nome.
+\item Submenus organizados por categoria (berries, itens, pokéblocks, pokémons).
+\end{DoxyItemize}
+\item {\bfseries{Pokédex Interativa}} ~\newline
+
+\begin{DoxyItemize}
+\item Exibe informações detalhadas dos Pokémon\+: tipos, estatísticas base, habilidades, evoluções, resistências e fraquezas.
+\end{DoxyItemize}
+\item {\bfseries{Sistema de Concursos}} ~\newline
+
+\begin{DoxyItemize}
+\item Mostra atributos de contest (beauty, cool, cute, smart, tough).
+\item Aplica efeitos de berries e pokéblocks nesses atributos.
+\end{DoxyItemize}
+\item {\bfseries{Geração Aleatória de IVs e \doxylink{classNature}{Nature}}} ~\newline
+
+\begin{DoxyItemize}
+\item Algoritmo para atribuir IVs randômicos aos Pokémon do jogador.
+\item Seleção aleatória de naturezas que modificam os atributos.
+\end{DoxyItemize}
+\item {\bfseries{Documentação Automática (Doxygen)}} ~\newline
+
+\begin{DoxyItemize}
+\item Configurada com {\ttfamily EXTRACT\+\_\+\+ALL = YES}, gera documentação HTML completa com base nos comentários das classes, disponível em {\ttfamily docs/html/}. 
+\end{DoxyItemize}
+\end{DoxyItemize}

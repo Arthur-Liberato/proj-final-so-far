@@ -1,0 +1,439 @@
+\doxysection{Pokemon\+Jogador Class Reference}
+\hypertarget{classPokemonJogador}{}\label{classPokemonJogador}\index{PokemonJogador@{PokemonJogador}}
+
+
+Representa um Pokémon capturado/treinado por um jogador, com estatísticas calculadas (IVs, stats finais, nível, habilidade e natureza).  
+
+
+
+
+{\ttfamily \#include $<$pokejogador.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Getters}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPokemon}{Pokemon}} \mbox{\hyperlink{classPokemonJogador_a160652e3c9d243e01bb38e737b619713}{get\+Base}} () const
+\begin{DoxyCompactList}\small\item\em Retorna os dados básicos do Pokémon. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemonJogador_af85dc713cfc00aac9929621f1fb8eb15}{get\+Level}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o nível atual. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemonJogador_ae5d3bb72fadd5b86378909fa47307054}{get\+Iv\+HP}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o IV de HP. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemonJogador_a926d9e1b833ba8b5db314a66b3b68060}{get\+Iv\+Attack}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o IV de Attack. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemonJogador_a00884bf5a7bdfc45eb0491283a8ff8f7}{get\+Iv\+Sp\+Attack}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o IV de Special Attack. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemonJogador_adb658bd3c8c72b976dffd771b69313fd}{get\+Iv\+Defense}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o IV de Defense. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemonJogador_ab8d7d179b6e5a92ae5df1914ae8066e9}{get\+Iv\+Sp\+Defense}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o IV de Special Defense. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemonJogador_af313368c4087b1e026ec3107496eee91}{get\+Iv\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o IV de Speed. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPokemonJogador_a17e620d57acc21de85916946fc174dd0}{get\+Habilidade}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a habilidade (Ability). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemonJogador_a8c9573ce9636487d83640b18d19913c1}{get\+Current\+HP}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o HP atual. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemonJogador_a030cf73fdbab2eb7abbd572b17ba4eb0}{get\+Max\+HP}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o HP máximo calculado. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemonJogador_a5b15f927effff36c240c030bb7930e0d}{get\+Attack}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o Attack calculado. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemonJogador_abd46e3ddd50f7629e78cc11a254077d4}{get\+Sp\+Attack}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o Special Attack calculado. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemonJogador_a356d3da3fea4abc00d0ab48c8ed61c50}{get\+Defense}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o Defense calculado. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemonJogador_aa7c4a82b8bdaedb70a406264cd77f74b}{get\+Sp\+Defense}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o Special Defense calculado. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemonJogador_ad473a772aefeab296f164d597aaf1f2d}{get\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o Speed calculado. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPokemonJogador_a04dc9845b549960c9651ce93c78b484d}{get\+Natureza}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a Natureza aplicada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Setters}\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classPokemonJogador_a565a62ea34635bf1ae9eec3e71be61de}{set\+Base}} (\mbox{\hyperlink{classPokemon}{Pokemon}} b)
+\begin{DoxyCompactList}\small\item\em Define os dados básicos do Pokémon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPokemonJogador_a797ee3730edac0574b9ff0f8961fef99}{set\+Level}} (int l)
+\begin{DoxyCompactList}\small\item\em Define o nível. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPokemonJogador_a7751209c60aac51dce2bf9208ecd2130}{set\+Iv\+HP}} (int iv)
+\begin{DoxyCompactList}\small\item\em Define o IV de HP. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPokemonJogador_affea43a533c54375e3ede5e8f733fe79}{set\+Iv\+Attack}} (int iv)
+\begin{DoxyCompactList}\small\item\em Define o IV de Attack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPokemonJogador_aac33e4507ccbbc4514b04934cfe95eda}{set\+Iv\+Sp\+Attack}} (int iv)
+\begin{DoxyCompactList}\small\item\em Define o IV de Special Attack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPokemonJogador_aa23013f9e1a6a78dfe278a05e474fae2}{set\+Iv\+Defense}} (int iv)
+\begin{DoxyCompactList}\small\item\em Define o IV de Defense. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPokemonJogador_ab84d49efdd23b897d311d1372a4fd92d}{set\+Iv\+Sp\+Defense}} (int iv)
+\begin{DoxyCompactList}\small\item\em Define o IV de Special Defense. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPokemonJogador_a51ce5bebd9b530b076cd66917c60e907}{set\+Iv\+Speed}} (int iv)
+\begin{DoxyCompactList}\small\item\em Define o IV de Speed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPokemonJogador_a7cd14e0560be8376e0edafdefb761de1}{set\+Habilidade}} (const std\+::string \&h)
+\begin{DoxyCompactList}\small\item\em Define a habilidade (Ability). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPokemonJogador_ae0d729acb859379970e89a1555ad9348}{set\+Current\+HP}} (int hp)
+\begin{DoxyCompactList}\small\item\em Define o HP atual. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPokemonJogador_a23e1a44bf4bab76eccf86a46947c7689}{set\+Max\+HP}} (int hp)
+\begin{DoxyCompactList}\small\item\em Define o HP máximo calculado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPokemonJogador_afc2fee4e7f0973e85f1b873f273fcea0}{set\+Attack}} (int a)
+\begin{DoxyCompactList}\small\item\em Define o Attack calculado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPokemonJogador_adad8c3daf62cff33b4c31f0dec5905b4}{set\+Sp\+Attack}} (int sa)
+\begin{DoxyCompactList}\small\item\em Define o Special Attack calculado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPokemonJogador_a2436d53e6fa5c5362ae9c471e6afe566}{set\+Defense}} (int d)
+\begin{DoxyCompactList}\small\item\em Define o Defense calculado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPokemonJogador_a1f3fb9b8dc77d9fc47d49ca5e60ed10f}{set\+Sp\+Defense}} (int sd)
+\begin{DoxyCompactList}\small\item\em Define o Special Defense calculado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPokemonJogador_af9654f138153f0615394c92a594eca6c}{set\+Speed}} (int s)
+\begin{DoxyCompactList}\small\item\em Define o Speed calculado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPokemonJogador_a4266ce37abb41d79cbc0587c4696d163}{set\+Natureza}} (const std\+::string \&n)
+\begin{DoxyCompactList}\small\item\em Define a Natureza aplicada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+Representa um Pokémon capturado/treinado por um jogador, com estatísticas calculadas (IVs, stats finais, nível, habilidade e natureza). 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPokemonJogador_a5b15f927effff36c240c030bb7930e0d}\label{classPokemonJogador_a5b15f927effff36c240c030bb7930e0d} 
+\index{PokemonJogador@{PokemonJogador}!getAttack@{getAttack}}
+\index{getAttack@{getAttack}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{getAttack()}{getAttack()}}
+{\footnotesize\ttfamily int Pokemon\+Jogador\+::get\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o Attack calculado. 
+
+\Hypertarget{classPokemonJogador_a160652e3c9d243e01bb38e737b619713}\label{classPokemonJogador_a160652e3c9d243e01bb38e737b619713} 
+\index{PokemonJogador@{PokemonJogador}!getBase@{getBase}}
+\index{getBase@{getBase}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{getBase()}{getBase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPokemon}{Pokemon}} Pokemon\+Jogador\+::get\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna os dados básicos do Pokémon. 
+
+\Hypertarget{classPokemonJogador_a8c9573ce9636487d83640b18d19913c1}\label{classPokemonJogador_a8c9573ce9636487d83640b18d19913c1} 
+\index{PokemonJogador@{PokemonJogador}!getCurrentHP@{getCurrentHP}}
+\index{getCurrentHP@{getCurrentHP}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{getCurrentHP()}{getCurrentHP()}}
+{\footnotesize\ttfamily int Pokemon\+Jogador\+::get\+Current\+HP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o HP atual. 
+
+\Hypertarget{classPokemonJogador_a356d3da3fea4abc00d0ab48c8ed61c50}\label{classPokemonJogador_a356d3da3fea4abc00d0ab48c8ed61c50} 
+\index{PokemonJogador@{PokemonJogador}!getDefense@{getDefense}}
+\index{getDefense@{getDefense}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{getDefense()}{getDefense()}}
+{\footnotesize\ttfamily int Pokemon\+Jogador\+::get\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o Defense calculado. 
+
+\Hypertarget{classPokemonJogador_a17e620d57acc21de85916946fc174dd0}\label{classPokemonJogador_a17e620d57acc21de85916946fc174dd0} 
+\index{PokemonJogador@{PokemonJogador}!getHabilidade@{getHabilidade}}
+\index{getHabilidade@{getHabilidade}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{getHabilidade()}{getHabilidade()}}
+{\footnotesize\ttfamily std\+::string Pokemon\+Jogador\+::get\+Habilidade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna a habilidade (Ability). 
+
+\Hypertarget{classPokemonJogador_a926d9e1b833ba8b5db314a66b3b68060}\label{classPokemonJogador_a926d9e1b833ba8b5db314a66b3b68060} 
+\index{PokemonJogador@{PokemonJogador}!getIvAttack@{getIvAttack}}
+\index{getIvAttack@{getIvAttack}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{getIvAttack()}{getIvAttack()}}
+{\footnotesize\ttfamily int Pokemon\+Jogador\+::get\+Iv\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o IV de Attack. 
+
+\Hypertarget{classPokemonJogador_adb658bd3c8c72b976dffd771b69313fd}\label{classPokemonJogador_adb658bd3c8c72b976dffd771b69313fd} 
+\index{PokemonJogador@{PokemonJogador}!getIvDefense@{getIvDefense}}
+\index{getIvDefense@{getIvDefense}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{getIvDefense()}{getIvDefense()}}
+{\footnotesize\ttfamily int Pokemon\+Jogador\+::get\+Iv\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o IV de Defense. 
+
+\Hypertarget{classPokemonJogador_ae5d3bb72fadd5b86378909fa47307054}\label{classPokemonJogador_ae5d3bb72fadd5b86378909fa47307054} 
+\index{PokemonJogador@{PokemonJogador}!getIvHP@{getIvHP}}
+\index{getIvHP@{getIvHP}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{getIvHP()}{getIvHP()}}
+{\footnotesize\ttfamily int Pokemon\+Jogador\+::get\+Iv\+HP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o IV de HP. 
+
+\Hypertarget{classPokemonJogador_a00884bf5a7bdfc45eb0491283a8ff8f7}\label{classPokemonJogador_a00884bf5a7bdfc45eb0491283a8ff8f7} 
+\index{PokemonJogador@{PokemonJogador}!getIvSpAttack@{getIvSpAttack}}
+\index{getIvSpAttack@{getIvSpAttack}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{getIvSpAttack()}{getIvSpAttack()}}
+{\footnotesize\ttfamily int Pokemon\+Jogador\+::get\+Iv\+Sp\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o IV de Special Attack. 
+
+\Hypertarget{classPokemonJogador_ab8d7d179b6e5a92ae5df1914ae8066e9}\label{classPokemonJogador_ab8d7d179b6e5a92ae5df1914ae8066e9} 
+\index{PokemonJogador@{PokemonJogador}!getIvSpDefense@{getIvSpDefense}}
+\index{getIvSpDefense@{getIvSpDefense}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{getIvSpDefense()}{getIvSpDefense()}}
+{\footnotesize\ttfamily int Pokemon\+Jogador\+::get\+Iv\+Sp\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o IV de Special Defense. 
+
+\Hypertarget{classPokemonJogador_af313368c4087b1e026ec3107496eee91}\label{classPokemonJogador_af313368c4087b1e026ec3107496eee91} 
+\index{PokemonJogador@{PokemonJogador}!getIvSpeed@{getIvSpeed}}
+\index{getIvSpeed@{getIvSpeed}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{getIvSpeed()}{getIvSpeed()}}
+{\footnotesize\ttfamily int Pokemon\+Jogador\+::get\+Iv\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o IV de Speed. 
+
+\Hypertarget{classPokemonJogador_af85dc713cfc00aac9929621f1fb8eb15}\label{classPokemonJogador_af85dc713cfc00aac9929621f1fb8eb15} 
+\index{PokemonJogador@{PokemonJogador}!getLevel@{getLevel}}
+\index{getLevel@{getLevel}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{getLevel()}{getLevel()}}
+{\footnotesize\ttfamily int Pokemon\+Jogador\+::get\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o nível atual. 
+
+\Hypertarget{classPokemonJogador_a030cf73fdbab2eb7abbd572b17ba4eb0}\label{classPokemonJogador_a030cf73fdbab2eb7abbd572b17ba4eb0} 
+\index{PokemonJogador@{PokemonJogador}!getMaxHP@{getMaxHP}}
+\index{getMaxHP@{getMaxHP}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{getMaxHP()}{getMaxHP()}}
+{\footnotesize\ttfamily int Pokemon\+Jogador\+::get\+Max\+HP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o HP máximo calculado. 
+
+\Hypertarget{classPokemonJogador_a04dc9845b549960c9651ce93c78b484d}\label{classPokemonJogador_a04dc9845b549960c9651ce93c78b484d} 
+\index{PokemonJogador@{PokemonJogador}!getNatureza@{getNatureza}}
+\index{getNatureza@{getNatureza}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{getNatureza()}{getNatureza()}}
+{\footnotesize\ttfamily std\+::string Pokemon\+Jogador\+::get\+Natureza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna a Natureza aplicada. 
+
+\Hypertarget{classPokemonJogador_abd46e3ddd50f7629e78cc11a254077d4}\label{classPokemonJogador_abd46e3ddd50f7629e78cc11a254077d4} 
+\index{PokemonJogador@{PokemonJogador}!getSpAttack@{getSpAttack}}
+\index{getSpAttack@{getSpAttack}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{getSpAttack()}{getSpAttack()}}
+{\footnotesize\ttfamily int Pokemon\+Jogador\+::get\+Sp\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o Special Attack calculado. 
+
+\Hypertarget{classPokemonJogador_aa7c4a82b8bdaedb70a406264cd77f74b}\label{classPokemonJogador_aa7c4a82b8bdaedb70a406264cd77f74b} 
+\index{PokemonJogador@{PokemonJogador}!getSpDefense@{getSpDefense}}
+\index{getSpDefense@{getSpDefense}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{getSpDefense()}{getSpDefense()}}
+{\footnotesize\ttfamily int Pokemon\+Jogador\+::get\+Sp\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o Special Defense calculado. 
+
+\Hypertarget{classPokemonJogador_ad473a772aefeab296f164d597aaf1f2d}\label{classPokemonJogador_ad473a772aefeab296f164d597aaf1f2d} 
+\index{PokemonJogador@{PokemonJogador}!getSpeed@{getSpeed}}
+\index{getSpeed@{getSpeed}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{getSpeed()}{getSpeed()}}
+{\footnotesize\ttfamily int Pokemon\+Jogador\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o Speed calculado. 
+
+\Hypertarget{classPokemonJogador_afc2fee4e7f0973e85f1b873f273fcea0}\label{classPokemonJogador_afc2fee4e7f0973e85f1b873f273fcea0} 
+\index{PokemonJogador@{PokemonJogador}!setAttack@{setAttack}}
+\index{setAttack@{setAttack}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{setAttack()}{setAttack()}}
+{\footnotesize\ttfamily void Pokemon\+Jogador\+::set\+Attack (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define o Attack calculado. 
+
+\Hypertarget{classPokemonJogador_a565a62ea34635bf1ae9eec3e71be61de}\label{classPokemonJogador_a565a62ea34635bf1ae9eec3e71be61de} 
+\index{PokemonJogador@{PokemonJogador}!setBase@{setBase}}
+\index{setBase@{setBase}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{setBase()}{setBase()}}
+{\footnotesize\ttfamily void Pokemon\+Jogador\+::set\+Base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPokemon}{Pokemon}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define os dados básicos do Pokémon. 
+
+\Hypertarget{classPokemonJogador_ae0d729acb859379970e89a1555ad9348}\label{classPokemonJogador_ae0d729acb859379970e89a1555ad9348} 
+\index{PokemonJogador@{PokemonJogador}!setCurrentHP@{setCurrentHP}}
+\index{setCurrentHP@{setCurrentHP}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{setCurrentHP()}{setCurrentHP()}}
+{\footnotesize\ttfamily void Pokemon\+Jogador\+::set\+Current\+HP (\begin{DoxyParamCaption}\item[{int}]{hp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define o HP atual. 
+
+\Hypertarget{classPokemonJogador_a2436d53e6fa5c5362ae9c471e6afe566}\label{classPokemonJogador_a2436d53e6fa5c5362ae9c471e6afe566} 
+\index{PokemonJogador@{PokemonJogador}!setDefense@{setDefense}}
+\index{setDefense@{setDefense}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{setDefense()}{setDefense()}}
+{\footnotesize\ttfamily void Pokemon\+Jogador\+::set\+Defense (\begin{DoxyParamCaption}\item[{int}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define o Defense calculado. 
+
+\Hypertarget{classPokemonJogador_a7cd14e0560be8376e0edafdefb761de1}\label{classPokemonJogador_a7cd14e0560be8376e0edafdefb761de1} 
+\index{PokemonJogador@{PokemonJogador}!setHabilidade@{setHabilidade}}
+\index{setHabilidade@{setHabilidade}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{setHabilidade()}{setHabilidade()}}
+{\footnotesize\ttfamily void Pokemon\+Jogador\+::set\+Habilidade (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define a habilidade (Ability). 
+
+\Hypertarget{classPokemonJogador_affea43a533c54375e3ede5e8f733fe79}\label{classPokemonJogador_affea43a533c54375e3ede5e8f733fe79} 
+\index{PokemonJogador@{PokemonJogador}!setIvAttack@{setIvAttack}}
+\index{setIvAttack@{setIvAttack}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{setIvAttack()}{setIvAttack()}}
+{\footnotesize\ttfamily void Pokemon\+Jogador\+::set\+Iv\+Attack (\begin{DoxyParamCaption}\item[{int}]{iv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define o IV de Attack. 
+
+\Hypertarget{classPokemonJogador_aa23013f9e1a6a78dfe278a05e474fae2}\label{classPokemonJogador_aa23013f9e1a6a78dfe278a05e474fae2} 
+\index{PokemonJogador@{PokemonJogador}!setIvDefense@{setIvDefense}}
+\index{setIvDefense@{setIvDefense}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{setIvDefense()}{setIvDefense()}}
+{\footnotesize\ttfamily void Pokemon\+Jogador\+::set\+Iv\+Defense (\begin{DoxyParamCaption}\item[{int}]{iv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define o IV de Defense. 
+
+\Hypertarget{classPokemonJogador_a7751209c60aac51dce2bf9208ecd2130}\label{classPokemonJogador_a7751209c60aac51dce2bf9208ecd2130} 
+\index{PokemonJogador@{PokemonJogador}!setIvHP@{setIvHP}}
+\index{setIvHP@{setIvHP}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{setIvHP()}{setIvHP()}}
+{\footnotesize\ttfamily void Pokemon\+Jogador\+::set\+Iv\+HP (\begin{DoxyParamCaption}\item[{int}]{iv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define o IV de HP. 
+
+\Hypertarget{classPokemonJogador_aac33e4507ccbbc4514b04934cfe95eda}\label{classPokemonJogador_aac33e4507ccbbc4514b04934cfe95eda} 
+\index{PokemonJogador@{PokemonJogador}!setIvSpAttack@{setIvSpAttack}}
+\index{setIvSpAttack@{setIvSpAttack}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{setIvSpAttack()}{setIvSpAttack()}}
+{\footnotesize\ttfamily void Pokemon\+Jogador\+::set\+Iv\+Sp\+Attack (\begin{DoxyParamCaption}\item[{int}]{iv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define o IV de Special Attack. 
+
+\Hypertarget{classPokemonJogador_ab84d49efdd23b897d311d1372a4fd92d}\label{classPokemonJogador_ab84d49efdd23b897d311d1372a4fd92d} 
+\index{PokemonJogador@{PokemonJogador}!setIvSpDefense@{setIvSpDefense}}
+\index{setIvSpDefense@{setIvSpDefense}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{setIvSpDefense()}{setIvSpDefense()}}
+{\footnotesize\ttfamily void Pokemon\+Jogador\+::set\+Iv\+Sp\+Defense (\begin{DoxyParamCaption}\item[{int}]{iv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define o IV de Special Defense. 
+
+\Hypertarget{classPokemonJogador_a51ce5bebd9b530b076cd66917c60e907}\label{classPokemonJogador_a51ce5bebd9b530b076cd66917c60e907} 
+\index{PokemonJogador@{PokemonJogador}!setIvSpeed@{setIvSpeed}}
+\index{setIvSpeed@{setIvSpeed}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{setIvSpeed()}{setIvSpeed()}}
+{\footnotesize\ttfamily void Pokemon\+Jogador\+::set\+Iv\+Speed (\begin{DoxyParamCaption}\item[{int}]{iv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define o IV de Speed. 
+
+\Hypertarget{classPokemonJogador_a797ee3730edac0574b9ff0f8961fef99}\label{classPokemonJogador_a797ee3730edac0574b9ff0f8961fef99} 
+\index{PokemonJogador@{PokemonJogador}!setLevel@{setLevel}}
+\index{setLevel@{setLevel}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{setLevel()}{setLevel()}}
+{\footnotesize\ttfamily void Pokemon\+Jogador\+::set\+Level (\begin{DoxyParamCaption}\item[{int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define o nível. 
+
+\Hypertarget{classPokemonJogador_a23e1a44bf4bab76eccf86a46947c7689}\label{classPokemonJogador_a23e1a44bf4bab76eccf86a46947c7689} 
+\index{PokemonJogador@{PokemonJogador}!setMaxHP@{setMaxHP}}
+\index{setMaxHP@{setMaxHP}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{setMaxHP()}{setMaxHP()}}
+{\footnotesize\ttfamily void Pokemon\+Jogador\+::set\+Max\+HP (\begin{DoxyParamCaption}\item[{int}]{hp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define o HP máximo calculado. 
+
+\Hypertarget{classPokemonJogador_a4266ce37abb41d79cbc0587c4696d163}\label{classPokemonJogador_a4266ce37abb41d79cbc0587c4696d163} 
+\index{PokemonJogador@{PokemonJogador}!setNatureza@{setNatureza}}
+\index{setNatureza@{setNatureza}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{setNatureza()}{setNatureza()}}
+{\footnotesize\ttfamily void Pokemon\+Jogador\+::set\+Natureza (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define a Natureza aplicada. 
+
+\Hypertarget{classPokemonJogador_adad8c3daf62cff33b4c31f0dec5905b4}\label{classPokemonJogador_adad8c3daf62cff33b4c31f0dec5905b4} 
+\index{PokemonJogador@{PokemonJogador}!setSpAttack@{setSpAttack}}
+\index{setSpAttack@{setSpAttack}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{setSpAttack()}{setSpAttack()}}
+{\footnotesize\ttfamily void Pokemon\+Jogador\+::set\+Sp\+Attack (\begin{DoxyParamCaption}\item[{int}]{sa }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define o Special Attack calculado. 
+
+\Hypertarget{classPokemonJogador_a1f3fb9b8dc77d9fc47d49ca5e60ed10f}\label{classPokemonJogador_a1f3fb9b8dc77d9fc47d49ca5e60ed10f} 
+\index{PokemonJogador@{PokemonJogador}!setSpDefense@{setSpDefense}}
+\index{setSpDefense@{setSpDefense}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{setSpDefense()}{setSpDefense()}}
+{\footnotesize\ttfamily void Pokemon\+Jogador\+::set\+Sp\+Defense (\begin{DoxyParamCaption}\item[{int}]{sd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define o Special Defense calculado. 
+
+\Hypertarget{classPokemonJogador_af9654f138153f0615394c92a594eca6c}\label{classPokemonJogador_af9654f138153f0615394c92a594eca6c} 
+\index{PokemonJogador@{PokemonJogador}!setSpeed@{setSpeed}}
+\index{setSpeed@{setSpeed}!PokemonJogador@{PokemonJogador}}
+\doxysubsubsection{\texorpdfstring{setSpeed()}{setSpeed()}}
+{\footnotesize\ttfamily void Pokemon\+Jogador\+::set\+Speed (\begin{DoxyParamCaption}\item[{int}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define o Speed calculado. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{pokejogador_8hpp}{pokejogador.\+hpp}}\end{DoxyCompactItemize}

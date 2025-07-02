@@ -1,0 +1,312 @@
+\doxysection{Pokemon Class Reference}
+\hypertarget{classPokemon}{}\label{classPokemon}\index{Pokemon@{Pokemon}}
+
+
+Representa os dados básicos de um Pokémon, conforme carregados de CSV.  
+
+
+
+
+{\ttfamily \#include $<$pokemon.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPokemon_a40443cbdcade4ede62b10fdc4393ba52}{Pokemon}} ()=default
+\begin{DoxyCompactList}\small\item\em Construtor padrão. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Getters}\par
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classPokemon_ac527b6504b5ab19a70fb28e63e67c038}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o ID do Pokémon. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPokemon_a0a4eb1e6bf0e63b95f6cb576c3e7fd6c}{get\+Nome}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o nome do Pokémon. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPokemon_a080eeace500e46460c4e04947c1c3be5}{get\+Tipo1}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o tipo primário. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPokemon_a7d9971f54d7057a083cde7820c222c6d}{get\+Tipo2}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o tipo secundário (ou vazio). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemon_a4f05ea5b017bab609fc62a27fcbdb8f5}{get\+Hp}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o HP base. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemon_aaf879ac44c250a42b7dd87b46c8c741f}{get\+Attack}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o Attack base. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemon_ac3573d356a2225415f97b56465429a81}{get\+Sp\+Attack}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o Special Attack base. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemon_aa33dd257980362cf9c46fcdc7316a6b8}{get\+Defense}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o Defense base. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemon_ac674d653732985443ed1e45d1c508c17}{get\+Sp\+Defense}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o Special Defense base. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemon_ad1503929cac79029ceb916a7f2e819f5}{get\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o Speed base. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPokemon_ab0c4c08beca028e068fab0d5e5baaa64}{get\+Abilities}} () const
+\begin{DoxyCompactList}\small\item\em Retorna as habilidades (CSV). \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPokemon_a3929219db6cae3db4de718188200c211}{get\+Category}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a categoria/classificação. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPokemon_a5c5f4b9eda08c5df3d05628b183e9bec}{get\+Evolutions}} () const
+\begin{DoxyCompactList}\small\item\em Retorna as evoluções possíveis (CSV). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemon_a8a8526234e36ae65a13da1308f873a82}{get\+Contest\+Beauty}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a pontuação em Contest Beauty. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemon_a21a4ad3a89e6a7357329978f02e2b93b}{get\+Contest\+Cool}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a pontuação em Contest Cool. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemon_ad935d334c43b6a1de1282ee47a0da6fe}{get\+Contest\+Cute}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a pontuação em Contest Cute. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemon_ad078237d2a3f627a4cfc0739e175fde7}{get\+Contest\+Smart}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a pontuação em Contest Smart. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPokemon_aaeca0bcad92a73514dc4099baeb6105f}{get\+Contest\+Tough}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a pontuação em Contest Tough. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPokemon_a4d5909652a1a552e19b3738dc480564d}{get\+Resistances}} () const
+\begin{DoxyCompactList}\small\item\em Retorna os tipos de resistência (CSV). \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPokemon_aae924716aa22be88f5cae3bd2dbaabfb}{get\+Weaknesses}} () const
+\begin{DoxyCompactList}\small\item\em Retorna os tipos de fraqueza (CSV). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classPokemon}{Pokemon}} \mbox{\hyperlink{classPokemon_ac045cb1f27daa91b31a1c6f73d8e4bfa}{from\+CSV}} (const std\+::string \&linha)
+\begin{DoxyCompactList}\small\item\em Cria um objeto \doxylink{classPokemon}{Pokemon} a partir de uma linha CSV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa os dados básicos de um Pokémon, conforme carregados de CSV. 
+
+Contém estatísticas base, tipos, habilidades, categorias, evoluções e características de concursos e resistências/fraquezas. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classPokemon_a40443cbdcade4ede62b10fdc4393ba52}\label{classPokemon_a40443cbdcade4ede62b10fdc4393ba52} 
+\index{Pokemon@{Pokemon}!Pokemon@{Pokemon}}
+\index{Pokemon@{Pokemon}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{Pokemon()}{Pokemon()}}
+{\footnotesize\ttfamily Pokemon\+::\+Pokemon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construtor padrão. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPokemon_ac045cb1f27daa91b31a1c6f73d8e4bfa}\label{classPokemon_ac045cb1f27daa91b31a1c6f73d8e4bfa} 
+\index{Pokemon@{Pokemon}!fromCSV@{fromCSV}}
+\index{fromCSV@{fromCSV}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{fromCSV()}{fromCSV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPokemon}{Pokemon}} Pokemon\+::from\+CSV (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{linha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Cria um objeto \doxylink{classPokemon}{Pokemon} a partir de uma linha CSV. 
+
+A linha deve conter os campos na ordem\+: id, nome, tipo1, tipo2, hp, attack, sp\+Attack, defense, sp\+Defense, speed, abilities, category, evolutions, contest\+Beauty, contest\+Cool, contest\+Cute, contest\+Smart, contest\+Tough, resistances, weaknesses.
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & Linha CSV com os valores separados por vírgula. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instância de \doxylink{classPokemon}{Pokemon} populada conforme o CSV. 
+\end{DoxyReturn}
+\Hypertarget{classPokemon_ab0c4c08beca028e068fab0d5e5baaa64}\label{classPokemon_ab0c4c08beca028e068fab0d5e5baaa64} 
+\index{Pokemon@{Pokemon}!getAbilities@{getAbilities}}
+\index{getAbilities@{getAbilities}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getAbilities()}{getAbilities()}}
+{\footnotesize\ttfamily std\+::string Pokemon\+::get\+Abilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna as habilidades (CSV). 
+
+\Hypertarget{classPokemon_aaf879ac44c250a42b7dd87b46c8c741f}\label{classPokemon_aaf879ac44c250a42b7dd87b46c8c741f} 
+\index{Pokemon@{Pokemon}!getAttack@{getAttack}}
+\index{getAttack@{getAttack}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getAttack()}{getAttack()}}
+{\footnotesize\ttfamily int Pokemon\+::get\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o Attack base. 
+
+\Hypertarget{classPokemon_a3929219db6cae3db4de718188200c211}\label{classPokemon_a3929219db6cae3db4de718188200c211} 
+\index{Pokemon@{Pokemon}!getCategory@{getCategory}}
+\index{getCategory@{getCategory}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
+{\footnotesize\ttfamily std\+::string Pokemon\+::get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna a categoria/classificação. 
+
+\Hypertarget{classPokemon_a8a8526234e36ae65a13da1308f873a82}\label{classPokemon_a8a8526234e36ae65a13da1308f873a82} 
+\index{Pokemon@{Pokemon}!getContestBeauty@{getContestBeauty}}
+\index{getContestBeauty@{getContestBeauty}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getContestBeauty()}{getContestBeauty()}}
+{\footnotesize\ttfamily int Pokemon\+::get\+Contest\+Beauty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna a pontuação em Contest Beauty. 
+
+\Hypertarget{classPokemon_a21a4ad3a89e6a7357329978f02e2b93b}\label{classPokemon_a21a4ad3a89e6a7357329978f02e2b93b} 
+\index{Pokemon@{Pokemon}!getContestCool@{getContestCool}}
+\index{getContestCool@{getContestCool}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getContestCool()}{getContestCool()}}
+{\footnotesize\ttfamily int Pokemon\+::get\+Contest\+Cool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna a pontuação em Contest Cool. 
+
+\Hypertarget{classPokemon_ad935d334c43b6a1de1282ee47a0da6fe}\label{classPokemon_ad935d334c43b6a1de1282ee47a0da6fe} 
+\index{Pokemon@{Pokemon}!getContestCute@{getContestCute}}
+\index{getContestCute@{getContestCute}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getContestCute()}{getContestCute()}}
+{\footnotesize\ttfamily int Pokemon\+::get\+Contest\+Cute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna a pontuação em Contest Cute. 
+
+\Hypertarget{classPokemon_ad078237d2a3f627a4cfc0739e175fde7}\label{classPokemon_ad078237d2a3f627a4cfc0739e175fde7} 
+\index{Pokemon@{Pokemon}!getContestSmart@{getContestSmart}}
+\index{getContestSmart@{getContestSmart}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getContestSmart()}{getContestSmart()}}
+{\footnotesize\ttfamily int Pokemon\+::get\+Contest\+Smart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna a pontuação em Contest Smart. 
+
+\Hypertarget{classPokemon_aaeca0bcad92a73514dc4099baeb6105f}\label{classPokemon_aaeca0bcad92a73514dc4099baeb6105f} 
+\index{Pokemon@{Pokemon}!getContestTough@{getContestTough}}
+\index{getContestTough@{getContestTough}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getContestTough()}{getContestTough()}}
+{\footnotesize\ttfamily int Pokemon\+::get\+Contest\+Tough (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna a pontuação em Contest Tough. 
+
+\Hypertarget{classPokemon_aa33dd257980362cf9c46fcdc7316a6b8}\label{classPokemon_aa33dd257980362cf9c46fcdc7316a6b8} 
+\index{Pokemon@{Pokemon}!getDefense@{getDefense}}
+\index{getDefense@{getDefense}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getDefense()}{getDefense()}}
+{\footnotesize\ttfamily int Pokemon\+::get\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o Defense base. 
+
+\Hypertarget{classPokemon_a5c5f4b9eda08c5df3d05628b183e9bec}\label{classPokemon_a5c5f4b9eda08c5df3d05628b183e9bec} 
+\index{Pokemon@{Pokemon}!getEvolutions@{getEvolutions}}
+\index{getEvolutions@{getEvolutions}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getEvolutions()}{getEvolutions()}}
+{\footnotesize\ttfamily std\+::string Pokemon\+::get\+Evolutions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna as evoluções possíveis (CSV). 
+
+\Hypertarget{classPokemon_a4f05ea5b017bab609fc62a27fcbdb8f5}\label{classPokemon_a4f05ea5b017bab609fc62a27fcbdb8f5} 
+\index{Pokemon@{Pokemon}!getHp@{getHp}}
+\index{getHp@{getHp}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getHp()}{getHp()}}
+{\footnotesize\ttfamily int Pokemon\+::get\+Hp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o HP base. 
+
+\Hypertarget{classPokemon_ac527b6504b5ab19a70fb28e63e67c038}\label{classPokemon_ac527b6504b5ab19a70fb28e63e67c038} 
+\index{Pokemon@{Pokemon}!getId@{getId}}
+\index{getId@{getId}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Pokemon\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o ID do Pokémon. 
+
+\Hypertarget{classPokemon_a0a4eb1e6bf0e63b95f6cb576c3e7fd6c}\label{classPokemon_a0a4eb1e6bf0e63b95f6cb576c3e7fd6c} 
+\index{Pokemon@{Pokemon}!getNome@{getNome}}
+\index{getNome@{getNome}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily std\+::string Pokemon\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o nome do Pokémon. 
+
+\Hypertarget{classPokemon_a4d5909652a1a552e19b3738dc480564d}\label{classPokemon_a4d5909652a1a552e19b3738dc480564d} 
+\index{Pokemon@{Pokemon}!getResistances@{getResistances}}
+\index{getResistances@{getResistances}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getResistances()}{getResistances()}}
+{\footnotesize\ttfamily std\+::string Pokemon\+::get\+Resistances (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna os tipos de resistência (CSV). 
+
+\Hypertarget{classPokemon_ac3573d356a2225415f97b56465429a81}\label{classPokemon_ac3573d356a2225415f97b56465429a81} 
+\index{Pokemon@{Pokemon}!getSpAttack@{getSpAttack}}
+\index{getSpAttack@{getSpAttack}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getSpAttack()}{getSpAttack()}}
+{\footnotesize\ttfamily int Pokemon\+::get\+Sp\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o Special Attack base. 
+
+\Hypertarget{classPokemon_ac674d653732985443ed1e45d1c508c17}\label{classPokemon_ac674d653732985443ed1e45d1c508c17} 
+\index{Pokemon@{Pokemon}!getSpDefense@{getSpDefense}}
+\index{getSpDefense@{getSpDefense}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getSpDefense()}{getSpDefense()}}
+{\footnotesize\ttfamily int Pokemon\+::get\+Sp\+Defense (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o Special Defense base. 
+
+\Hypertarget{classPokemon_ad1503929cac79029ceb916a7f2e819f5}\label{classPokemon_ad1503929cac79029ceb916a7f2e819f5} 
+\index{Pokemon@{Pokemon}!getSpeed@{getSpeed}}
+\index{getSpeed@{getSpeed}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getSpeed()}{getSpeed()}}
+{\footnotesize\ttfamily int Pokemon\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o Speed base. 
+
+\Hypertarget{classPokemon_a080eeace500e46460c4e04947c1c3be5}\label{classPokemon_a080eeace500e46460c4e04947c1c3be5} 
+\index{Pokemon@{Pokemon}!getTipo1@{getTipo1}}
+\index{getTipo1@{getTipo1}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getTipo1()}{getTipo1()}}
+{\footnotesize\ttfamily std\+::string Pokemon\+::get\+Tipo1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o tipo primário. 
+
+\Hypertarget{classPokemon_a7d9971f54d7057a083cde7820c222c6d}\label{classPokemon_a7d9971f54d7057a083cde7820c222c6d} 
+\index{Pokemon@{Pokemon}!getTipo2@{getTipo2}}
+\index{getTipo2@{getTipo2}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getTipo2()}{getTipo2()}}
+{\footnotesize\ttfamily std\+::string Pokemon\+::get\+Tipo2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o tipo secundário (ou vazio). 
+
+\Hypertarget{classPokemon_aae924716aa22be88f5cae3bd2dbaabfb}\label{classPokemon_aae924716aa22be88f5cae3bd2dbaabfb} 
+\index{Pokemon@{Pokemon}!getWeaknesses@{getWeaknesses}}
+\index{getWeaknesses@{getWeaknesses}!Pokemon@{Pokemon}}
+\doxysubsubsection{\texorpdfstring{getWeaknesses()}{getWeaknesses()}}
+{\footnotesize\ttfamily std\+::string Pokemon\+::get\+Weaknesses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna os tipos de fraqueza (CSV). 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{pokemon_8hpp}{pokemon.\+hpp}}\item 
+src/\mbox{\hyperlink{pokemon_8cpp}{pokemon.\+cpp}}\end{DoxyCompactItemize}

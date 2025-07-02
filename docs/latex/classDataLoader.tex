@@ -1,0 +1,128 @@
+\doxysection{Data\+Loader Class Reference}
+\hypertarget{classDataLoader}{}\label{classDataLoader}\index{DataLoader@{DataLoader}}
+
+
+Classe utilitária para carregar coleções de objetos a partir de arquivos.  
+
+
+
+
+{\ttfamily \#include $<$dataloader.\+hpp$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{classBerry}{Berry}} $>$ \mbox{\hyperlink{classDataLoader_aa8559ef464969491f118b41272bf8342}{carregar\+Berries}} (const std\+::string \&arquivo)
+\begin{DoxyCompactList}\small\item\em Carrega todas as berries de um arquivo CSV. \end{DoxyCompactList}\item 
+static std\+::vector$<$ \mbox{\hyperlink{classItem}{Item}} $>$ \mbox{\hyperlink{classDataLoader_ad42baf1819129c4f55754129a3816d52}{carregar\+Itens}} (const std\+::string \&arquivo)
+\begin{DoxyCompactList}\small\item\em Carrega todos os itens de um arquivo CSV. \end{DoxyCompactList}\item 
+static std\+::vector$<$ \mbox{\hyperlink{classPokemon}{Pokemon}} $>$ \mbox{\hyperlink{classDataLoader_ae1ee3dfb61615f6abda0a4e55f76657d}{carregar\+Pokemons}} (const std\+::string \&arquivo)
+\begin{DoxyCompactList}\small\item\em Carrega todos os pokémons de um arquivo CSV. \end{DoxyCompactList}\item 
+static std\+::vector$<$ \mbox{\hyperlink{classPokeblock}{Pokeblock}} $>$ \mbox{\hyperlink{classDataLoader_ab8a1276ddff422708985740a1621c889}{carregar\+Pokeblocks}} (const std\+::string \&arquivo)
+\begin{DoxyCompactList}\small\item\em Carrega todos os pokeblocks de um arquivo CSV. \end{DoxyCompactList}\item 
+static std\+::vector$<$ \mbox{\hyperlink{classNature}{Nature}} $>$ \mbox{\hyperlink{classDataLoader_abf0cb75325e1f16b8bf5692bb3a46cad}{carregar\+Natures}} (const std\+::string \&arquivo)
+\begin{DoxyCompactList}\small\item\em Carrega todas as natures de um arquivo CSV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe utilitária para carregar coleções de objetos a partir de arquivos. 
+
+Todos os métodos retornam um std\+::vector com instâncias do respectivo tipo, lidas de um arquivo CSV cujo caminho é informado como parâmetro. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classDataLoader_aa8559ef464969491f118b41272bf8342}\label{classDataLoader_aa8559ef464969491f118b41272bf8342} 
+\index{DataLoader@{DataLoader}!carregarBerries@{carregarBerries}}
+\index{carregarBerries@{carregarBerries}!DataLoader@{DataLoader}}
+\doxysubsubsection{\texorpdfstring{carregarBerries()}{carregarBerries()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classBerry}{Berry}} $>$ Data\+Loader\+::carregar\+Berries (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{arquivo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Carrega todas as berries de um arquivo CSV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arquivo} & Caminho para o arquivo CSV contendo as linhas de \doxylink{classBerry}{Berry}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vetor de objetos \doxylink{classBerry}{Berry} populados a partir de cada linha do arquivo. 
+\end{DoxyReturn}
+\Hypertarget{classDataLoader_ad42baf1819129c4f55754129a3816d52}\label{classDataLoader_ad42baf1819129c4f55754129a3816d52} 
+\index{DataLoader@{DataLoader}!carregarItens@{carregarItens}}
+\index{carregarItens@{carregarItens}!DataLoader@{DataLoader}}
+\doxysubsubsection{\texorpdfstring{carregarItens()}{carregarItens()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classItem}{Item}} $>$ Data\+Loader\+::carregar\+Itens (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{arquivo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Carrega todos os itens de um arquivo CSV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arquivo} & Caminho para o arquivo CSV contendo as linhas de \doxylink{classItem}{Item}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vetor de objetos \doxylink{classItem}{Item} populados a partir de cada linha do arquivo. 
+\end{DoxyReturn}
+\Hypertarget{classDataLoader_abf0cb75325e1f16b8bf5692bb3a46cad}\label{classDataLoader_abf0cb75325e1f16b8bf5692bb3a46cad} 
+\index{DataLoader@{DataLoader}!carregarNatures@{carregarNatures}}
+\index{carregarNatures@{carregarNatures}!DataLoader@{DataLoader}}
+\doxysubsubsection{\texorpdfstring{carregarNatures()}{carregarNatures()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classNature}{Nature}} $>$ Data\+Loader\+::carregar\+Natures (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{arquivo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Carrega todas as natures de um arquivo CSV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arquivo} & Caminho para o arquivo CSV contendo as linhas de \doxylink{classNature}{Nature}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vetor de objetos \doxylink{classNature}{Nature} populados a partir de cada linha do arquivo. 
+\end{DoxyReturn}
+\Hypertarget{classDataLoader_ab8a1276ddff422708985740a1621c889}\label{classDataLoader_ab8a1276ddff422708985740a1621c889} 
+\index{DataLoader@{DataLoader}!carregarPokeblocks@{carregarPokeblocks}}
+\index{carregarPokeblocks@{carregarPokeblocks}!DataLoader@{DataLoader}}
+\doxysubsubsection{\texorpdfstring{carregarPokeblocks()}{carregarPokeblocks()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classPokeblock}{Pokeblock}} $>$ Data\+Loader\+::carregar\+Pokeblocks (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{arquivo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Carrega todos os pokeblocks de um arquivo CSV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arquivo} & Caminho para o arquivo CSV contendo as linhas de \doxylink{classPokeblock}{Pokeblock}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vetor de objetos \doxylink{classPokeblock}{Pokeblock} populados a partir de cada linha do arquivo. 
+\end{DoxyReturn}
+\Hypertarget{classDataLoader_ae1ee3dfb61615f6abda0a4e55f76657d}\label{classDataLoader_ae1ee3dfb61615f6abda0a4e55f76657d} 
+\index{DataLoader@{DataLoader}!carregarPokemons@{carregarPokemons}}
+\index{carregarPokemons@{carregarPokemons}!DataLoader@{DataLoader}}
+\doxysubsubsection{\texorpdfstring{carregarPokemons()}{carregarPokemons()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classPokemon}{Pokemon}} $>$ Data\+Loader\+::carregar\+Pokemons (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{arquivo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Carrega todos os pokémons de um arquivo CSV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arquivo} & Caminho para o arquivo CSV contendo as linhas de \doxylink{classPokemon}{Pokemon}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vetor de objetos \doxylink{classPokemon}{Pokemon} populados a partir de cada linha do arquivo. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{dataloader_8hpp}{dataloader.\+hpp}}\item 
+src/\mbox{\hyperlink{dataloader_8cpp}{dataloader.\+cpp}}\end{DoxyCompactItemize}

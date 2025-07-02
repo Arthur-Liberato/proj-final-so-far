@@ -1,0 +1,175 @@
+\doxysection{Item Class Reference}
+\hypertarget{classItem}{}\label{classItem}\index{Item@{Item}}
+
+
+Representa um item que pode ser usado ou vendido no jogo.  
+
+
+
+
+{\ttfamily \#include $<$item.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classItem_a832b1c2723768454375dd4b33668285e}{Item}} ()=default
+\begin{DoxyCompactList}\small\item\em Construtor padrão. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Getters}\par
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classItem_a74b41f137200eea8fcdeb26bba0a332b}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o ID do item. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classItem_acb31bcb1eb27f940a3ab359b6744df1c}{get\+Nome}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o nome do item. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classItem_ae60f2f6901852908a75eaf1347b1f05d}{get\+Categoria}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a categoria do item. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classItem_a29f3efffda89421d3a0c7f22fa50334e}{get\+Preco}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o preço do item. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classItem_a63e895ba923753f084932f955d511694}{get\+Raridade}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a raridade do item. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classItem_a118b8e21d1f3e98fadc8c9e8c70e78f9}{get\+Efeito\+Contest}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o efeito em concursos (contest) do item. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classItem_aaf7c18b4c70a9480a2662f7839fb82a5}{get\+Descricao}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a descrição detalhada do item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classItem}{Item}} \mbox{\hyperlink{classItem_a0b145224c4092a9d1eff219d8e21a213}{from\+CSV}} (const std\+::string \&linha)
+\begin{DoxyCompactList}\small\item\em Cria um \doxylink{classItem}{Item} a partir de uma linha CSV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa um item que pode ser usado ou vendido no jogo. 
+
+Cada \doxylink{classItem}{Item} possui um ID único, nome, categoria (como Potion, Poké Ball etc.), preço de compra/venda, raridade, efeito em concursos (contest) e uma descrição completa para uso no jogo. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classItem_a832b1c2723768454375dd4b33668285e}\label{classItem_a832b1c2723768454375dd4b33668285e} 
+\index{Item@{Item}!Item@{Item}}
+\index{Item@{Item}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{Item()}{Item()}}
+{\footnotesize\ttfamily Item\+::\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construtor padrão. 
+
+Inicializa um \doxylink{classItem}{Item} sem dados. Utilize os setters ou from\+CSV para povoar. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classItem_a0b145224c4092a9d1eff219d8e21a213}\label{classItem_a0b145224c4092a9d1eff219d8e21a213} 
+\index{Item@{Item}!fromCSV@{fromCSV}}
+\index{fromCSV@{fromCSV}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{fromCSV()}{fromCSV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classItem}{Item}} Item\+::from\+CSV (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{linha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Cria um \doxylink{classItem}{Item} a partir de uma linha CSV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & String contendo os campos separados por vírgula na ordem\+: id, nome, categoria, preco, raridade, efeito\+Contest, descricao \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instância de \doxylink{classItem}{Item} preenchida com os valores extraídos.
+\end{DoxyReturn}
+Exemplo de formato de linha CSV\+: "{}10,\+Potion,\+Consumível,300,\+Comum,\+Nenhum,\+Restaura 20 HP"{} \Hypertarget{classItem_ae60f2f6901852908a75eaf1347b1f05d}\label{classItem_ae60f2f6901852908a75eaf1347b1f05d} 
+\index{Item@{Item}!getCategoria@{getCategoria}}
+\index{getCategoria@{getCategoria}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{getCategoria()}{getCategoria()}}
+{\footnotesize\ttfamily std\+::string Item\+::get\+Categoria (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém a categoria do item. 
+
+\begin{DoxyReturn}{Returns}
+String com a categoria. 
+\end{DoxyReturn}
+\Hypertarget{classItem_aaf7c18b4c70a9480a2662f7839fb82a5}\label{classItem_aaf7c18b4c70a9480a2662f7839fb82a5} 
+\index{Item@{Item}!getDescricao@{getDescricao}}
+\index{getDescricao@{getDescricao}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{getDescricao()}{getDescricao()}}
+{\footnotesize\ttfamily std\+::string Item\+::get\+Descricao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém a descrição detalhada do item. 
+
+\begin{DoxyReturn}{Returns}
+String contendo a descrição completa. 
+\end{DoxyReturn}
+\Hypertarget{classItem_a118b8e21d1f3e98fadc8c9e8c70e78f9}\label{classItem_a118b8e21d1f3e98fadc8c9e8c70e78f9} 
+\index{Item@{Item}!getEfeitoContest@{getEfeitoContest}}
+\index{getEfeitoContest@{getEfeitoContest}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{getEfeitoContest()}{getEfeitoContest()}}
+{\footnotesize\ttfamily std\+::string Item\+::get\+Efeito\+Contest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém o efeito em concursos (contest) do item. 
+
+\begin{DoxyReturn}{Returns}
+String com a descrição do efeito em concursos. 
+\end{DoxyReturn}
+\Hypertarget{classItem_a74b41f137200eea8fcdeb26bba0a332b}\label{classItem_a74b41f137200eea8fcdeb26bba0a332b} 
+\index{Item@{Item}!getId@{getId}}
+\index{getId@{getId}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Item\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém o ID do item. 
+
+\begin{DoxyReturn}{Returns}
+Valor inteiro do identificador. 
+\end{DoxyReturn}
+\Hypertarget{classItem_acb31bcb1eb27f940a3ab359b6744df1c}\label{classItem_acb31bcb1eb27f940a3ab359b6744df1c} 
+\index{Item@{Item}!getNome@{getNome}}
+\index{getNome@{getNome}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily std\+::string Item\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém o nome do item. 
+
+\begin{DoxyReturn}{Returns}
+String com o nome. 
+\end{DoxyReturn}
+\Hypertarget{classItem_a29f3efffda89421d3a0c7f22fa50334e}\label{classItem_a29f3efffda89421d3a0c7f22fa50334e} 
+\index{Item@{Item}!getPreco@{getPreco}}
+\index{getPreco@{getPreco}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{getPreco()}{getPreco()}}
+{\footnotesize\ttfamily int Item\+::get\+Preco (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém o preço do item. 
+
+\begin{DoxyReturn}{Returns}
+Valor inteiro do preço em Pokédollars. 
+\end{DoxyReturn}
+\Hypertarget{classItem_a63e895ba923753f084932f955d511694}\label{classItem_a63e895ba923753f084932f955d511694} 
+\index{Item@{Item}!getRaridade@{getRaridade}}
+\index{getRaridade@{getRaridade}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{getRaridade()}{getRaridade()}}
+{\footnotesize\ttfamily std\+::string Item\+::get\+Raridade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtém a raridade do item. 
+
+\begin{DoxyReturn}{Returns}
+String indicando a raridade. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{item_8hpp}{item.\+hpp}}\item 
+src/\mbox{\hyperlink{item_8cpp}{item.\+cpp}}\end{DoxyCompactItemize}

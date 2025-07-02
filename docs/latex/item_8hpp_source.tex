@@ -1,0 +1,45 @@
+\doxysection{item.\+hpp}
+\hypertarget{item_8hpp_source}{}\label{item_8hpp_source}\index{include/item.hpp@{include/item.hpp}}
+\mbox{\hyperlink{item_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#ifndef\ ITEM\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ ITEM\_H}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{utils_8hpp}{utils.hpp}}"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classItem}{Item}}\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{00029\ \ \ \ \ std::string\ nome;}
+\DoxyCodeLine{00031\ \ \ \ \ std::string\ categoria;}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ preco;}
+\DoxyCodeLine{00035\ \ \ \ \ std::string\ raridade;}
+\DoxyCodeLine{00037\ \ \ \ \ std::string\ efeitoContest;}
+\DoxyCodeLine{00039\ \ \ \ \ std::string\ descricao;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{classItem_a832b1c2723768454375dd4b33668285e}{Item}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classItem}{Item}}\ \mbox{\hyperlink{classItem_a0b145224c4092a9d1eff219d8e21a213}{fromCSV}}(\textcolor{keyword}{const}\ std::string\&\ linha);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classItem_a74b41f137200eea8fcdeb26bba0a332b}{getId}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ id;\ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ \ \ std::string\ \mbox{\hyperlink{classItem_acb31bcb1eb27f940a3ab359b6744df1c}{getNome}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ nome;\ \}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00078\ \ \ \ \ std::string\ \mbox{\hyperlink{classItem_ae60f2f6901852908a75eaf1347b1f05d}{getCategoria}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ categoria;\ \}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classItem_a29f3efffda89421d3a0c7f22fa50334e}{getPreco}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ preco;\ \}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00090\ \ \ \ \ std::string\ \mbox{\hyperlink{classItem_a63e895ba923753f084932f955d511694}{getRaridade}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ raridade;\ \}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00096\ \ \ \ \ std::string\ \mbox{\hyperlink{classItem_a118b8e21d1f3e98fadc8c9e8c70e78f9}{getEfeitoContest}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ efeitoContest;\ \}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00102\ \ \ \ \ std::string\ \mbox{\hyperlink{classItem_aaf7c18b4c70a9480a2662f7839fb82a5}{getDescricao}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ descricao;\ \}}
+\DoxyCodeLine{00104\ \};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ITEM\_H}}
+
+\end{DoxyCode}
